@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Богов](https://up.htmlacademy.ru/adaptive/6/user/114050).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Буевич](https://htmlacademy.ru/profile/id25272).
 
 ---
 
