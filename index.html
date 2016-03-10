@@ -2,11 +2,139 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink-index</title>
   </head>
   <body>
+	<header class="main-header">
+		<div class="main-header__wrapper">
+		<h1 class="main-header__title">Pink</h1>
+		<div class="main-header__menu"></div>
+		<button class="main-menu__toggle">
+			<span class="main-menu__sandwich">
+				<span class="sw-up"></span>
+				<span class="sw-middle"></span>
+				<span class="sw-down"></span>
+			</span>
+		</button>
+		<nav class="main-menu__nav">
+			<ul class="main-menu__list">
+				<li class="main-menu__item"><a href="#">Информация</a></li>
+				<li class="main-menu__item"><a href="#">Возможности</a></li>
+				<li class="main-menu__item"><a href="#">Отзывы</a></li>
+				<li class="main-menu__item"><a href="#">Стоимость</a></li>
+			</ul>
+		</nav>
+	</div>
+	</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+		<section class="main-intro">
+			<div class="main-intro__wrapper">
+		<h1 class="main-intro__title">Взгляните на жизнь иначе!</h1>
+          <div class="download-app__block">
+            <a class="btn btn-download" href="#">Скачать приложение</a>
+            <div class="download-app__links">
+              <a class="download-app__link  download-app__link--ios" href="#"><img src="http://placehold.it/60x60"></a>
+              <a class="download-app__link  download-app__link--android" href="#"><img src="http://placehold.it/60x60"></a> 
+              <a class="download-app__link  download-app__link--windows" href="#"><img src="http://placehold.it/60x60"></a>
+            </div>
+            <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8
+            </p>
+          </div>
+      		</div>
+      	</section>
 
+      	<section class="main-info">
+      		<div class="main-info__wrapper">
+          <p class="main-info__title">Устали от серости мегаполиса?</p>
+          <p class="main-info__title">Нам есть, что вам предложить!</p>
+          <ul class="block-info">
+            <li class="block-info__item">
+              <div class="block-info__title">Поднимает настроение</div>
+              <p> Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="block-info__item">
+              <div class="block-info__title">Меняет мир вокруг</div>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="block-info__item">
+              <div class="block-info__title">Заводит новых друзей</div>
+              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+      		</div>
+      </section>
+
+      <section class="main-reviews">
+			<div class="main-reviews__wrapper">
+          <div class="main-reviews__slide">
+            <div class="review">
+              <div class="review__name">Николай Петров</div>
+              <blockquote class="review__text">
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              </blockquote>
+            </div>
+          </div>
+          <div class="slider-rewiew__controls">
+            <i class="slider-rewiew__control  slider-rewiew__control--active"></i>
+            <i class="slider-rewiew__control"></i>
+            <i class="slider-rewiew__control"></i>
+          </div>
+      </div>
+      </section>
+
+      <section class="slider-price">
+        <div class="slider-price__wrapper">
+          <div class="slider-price__slide">
+            <div class="price">
+              <div class="price-flag">Хит</div>
+              <p class="price-name">Стандарт</p>
+              <p class="price-cost">3,99 USD</p>
+              <table class="price-table">
+                <tr>
+                  <td>Розовый фильтр</td>
+                  <td><img src="http://placehold.it/30x20"></td>
+                </tr>
+                <tr>
+                  <td>Смайлики</td>
+                  <td><img src="http://placehold.it/30x20"></td>
+                </tr>
+                <tr>
+                  <td>Комментарии</td>
+                  <td><img src="http://placehold.it/30x20"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="slider-price__controls">
+            <i class="slider-price__control"></i> 
+            <i class="slider-price__control  slider-price__control--active"></i> 
+            <i class="slider-price__control"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-contacts">
+        <div class="main-contacts__wrapper">
+          <p class="main-contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="main-contacts__info">
+            <li class="main-contacts__item">
+              <div class="main-contacts__title">Звоните:</div>
+              <p class="main-contacts__phone">+7 (812) 555-66-66</p>
+            </li>
+            <li class="main-contacts__item">
+              <div class="main-contacts__title">Пишите:</div>
+              <p class="cmain-ontacts__email">mail@htmlacademy.ru</p>
+            </li>
+            <li class="main-contacts__item">
+              <div class="main-contacts__title">Приезжайте в гости:</div>
+              <p class="main-contacts__address">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+		
   </body>
 </html>
+
