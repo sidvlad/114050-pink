@@ -12,12 +12,13 @@
     <header class="main-header">
       <div class="wrapper">
         <h1 class="main-header__title">Pink</h1>
-        <div class="main-header__menu"></div>
-        <button class="main-menu__toggle">
-        <span class="main-menu__hamburger">
-          <span class="hamburger-up"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-down"></span>
+        <div class="main-menu">
+          <button class="main-menu__toggle">
+          <span class="main-menu__hamburger">
+            <span class="hamburger-up"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-down"></span>
+          </div>
         </span>
         </button>
         <nav class="main-menu__nav">
@@ -29,7 +30,7 @@
           </ul>
         </nav>
       </div>
-      <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <section class="block-intro">
       <div class="intro wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
@@ -37,83 +38,80 @@
     </section>
     <section class="block-intro">
       <form action="" method="post">
-        <div class="form-input">
-          <label class="form-group">
-            <p class="form-text__title">Имя:</p>
-            <input type="form-text" name="name" placeholder="Введите ваше имя" required />
-          </label>
-          <label class="form-group">
-            <p class="form-text__title">Фамилия:</p>
-            <input type="form-text" name="soname" placeholder="Укажите фамилию" required />
-          </label>
-          <label class="form-group">
-            <p class="form-text__title">Отчество:</p>
-            <input type="form-text" name="second-name" placeholder="Ну и отчество тоже" required />
-          </label>
-        </div>
-        <div class="form-checkblock">
-          <p class="form-text__title">Ваши безбашенные достижения в путешествии</p>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="shark" checked>
-            <label class="label" for="shark">Сделал селфи с акулой</label>
+        <fieldset>
+          <div class="form-input">
+            <label class="form-group">Имя:
+              <input type="form-text" name="name" placeholder="Введите ваше имя" required />
+            </label>
+            <label class="form-group">Фамилия:
+              <input type="form-text" name="soname" placeholder="Укажите фамилию" required />
+            </label>
+            <label class="form-group">Отчество:
+              <input type="form-text" name="second-name" placeholder="Ну и отчество тоже" required />
+            </label>
           </div>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="beach" checked>
-            <label class="label" for="beach">Обгорел на пляже</label>
+          <div class="form-checkblock">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="shark" name="shark" checked>
+              <label class="label" for="shark">Сделал селфи с акулой</label>
+            </div>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="beach" name="beach" checked>
+              <label class="label" for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="norris" name="norris">
+              <label class="label" for="norris">Видел Чака Норриса</label>
+            </div>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="souvenir" name="souvenir">
+              <label class="label" for="souvenir">Накупил сувениров</label>
+            </div>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="tower" name="tower" checked>
+              <label class="label" for="tower">Удержал башню</label>
+            </div>
+            <div class="check-block">
+              <input class="checkbox" type="checkbox" id="hotel" name="hotel">
+              <label class="label" for="hotel">Разгромил отель</label>
+            </div>
           </div>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="norris">
-            <label class="label" for="norris">Видел Чака Норриса</label>
+          <div class="form-input">
+            <label class="form-group">Номерок телефончика:
+              <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста" required />
+            </label>
+            <label class="form-group">Адресок почты:
+              <input type="email" id="email" name="email" placeholder="Email, пожалуйста" required />
+            </label>
           </div>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="souvenir">
-            <label class="label" for="souvenir">Накупил сувениров</label>
+          <div class="form-radio">
+            <p class="form-text__title">С каким приложением путешествовали?</p>
+            <input type="radio" name="ios" value="ios" checked>Pink для iOS
+            <input type="radio" name="android" value="android">Pink Android
+            <input type="radio" name="windows" value="windows">Windows Phone
+            <legend>Опишите свои эмоции</legend>
+            <textarea name="comment" cols="40" rows="3" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
+            <button>Отправить форму</button>
           </div>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="tower" checked>
-            <label class="label" for="tower">Удержал башню</label>
-          </div>
-          <div class="check-block">
-            <input class="checkbox" type="checkbox" name="hotel">
-            <label class="label" for="hotel">Разгромил отель</label>
-          </div>
-        </div>
-        <div class="form-input">
-          <label class="form-group">
-            <p class="form-text__title">Номерок телефончика:</p>
-            <input type="tel" name="tel" placeholder="Номер, пожалуйста" required />
-          </label>
-          <label class="form-group">
-            <p class="form-text__title">Адресок почты:</p>
-            <input type="email" name="email" placeholder="Email, пожалуйста" required />
-          </label>
-        </div>
-        <div class="form-radio">
-          <p>С каким приложением путешествовали?</p>
-          <input type="radio" name="ios" value="ios" checked>Pink для iOS
-          <input type="radio" name="android" value="android">Pink Android
-          <input type="radio" name="windows" value="windows">Windows Phone
-          <p>Опишите свои эмоции</p>
-          <textarea name="comment" cols="40" rows="3" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
-          <input type="submit" value="Отправить форму">
-        </div>
-      </form>
-      <footer class="main-footer">
-        <div class="main-footer__logo">
-          <img src="http://placehold.it/100x30"  width="100" height="30" alt="logo">
-        </div>
-        <div class="main-footer__social">
-          <div class="social-links">
-            <a class="social-link social-link__twitter" href="#">Twitter</a>
-            <a class="social-link social-link__facebook" href="#">Facebook</a>
-            <a class="social-link social-link__youtube" href="#">Youtube</a>
-          </div>
-        </div>
-        <div class="main-footer__copyright">Разработано:
-          <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
-        </div>
-      </footer>
+          </fieldset>
+          </form>
+          <footer class="main-footer">
+            <div class="main-footer__logo">
+              <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
+            </div>
+            <div class="main-footer__social">
+              <div class="social-links">
+                <a class="social-link social-link--twitter" href="#">Twitter</a>
+                <a class="social-link social-link--facebook" href="#">Facebook</a>
+                <a class="social-link social-link--youtube" href="#">Youtube</a>
+              </div>
+            </div>
+            <div class="main-footer__copyright">Разработано:
+              <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
+            </div>
+          </footer>
+        </body>
+      </html>
     </body>
   </html>
-</body>
-</html>
