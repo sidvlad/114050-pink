@@ -12,16 +12,15 @@
     <header class="main-header">
       <div class="wrapper">
         <h1 class="main-header__title">Pink</h1>
-        <div class="main-menu">
-          <button class="main-menu__toggle">
-          <span class="main-menu__hamburger">
-            <span class="hamburger-up"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-down"></span>
-          </div>
-        </span>
+        <div class="main-header__menu"></div>
+        <button class="main-header__toggle">
+          <span class="main-header__hamburger">
+            <span class="hamburger--up"></span>
+            <span class="hamburger--middle"></span>
+            <span class="hamburger--down"></span>
+          </span>
         </button>
-        <nav class="main-menu__nav">
+        <nav class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item"><a href="#">Главная</a></li>
             <li class="main-menu__item"><a href="#">Фотографии</a></li>
@@ -30,16 +29,21 @@
           </ul>
         </nav>
       </div>
-      <h1 class="">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
+
     <section class="block-intro">
-      <div class="intro wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      <div class="wrapper">
+        <div class="intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        </div>
       </div>
     </section>
+
     <section class="block-intro">
+      <div class="wrapper">
       <form action="" method="post">
         <fieldset>
-          <div class="form-input">
+          <div class="personal-data">
             <label class="form-group">Имя:
               <input type="form-text" name="name" placeholder="Введите ваше имя" required />
             </label>
@@ -92,23 +96,27 @@
             <input type="radio" name="windows" value="windows">Windows Phone
             <legend>Опишите свои эмоции</legend>
             <textarea name="comment" cols="40" rows="3" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
-            <button>Отправить форму</button>
+            <button class="btn-getform">Отправить форму</button>
           </div>
         </fieldset>
+      </div>
       </form>
+
       <footer class="main-footer">
-        <div class="main-footer__logo">
-          <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
-        </div>
-        <div class="main-footer__social">
-          <div class="social-links">
-            <a class="social-link social-link--twitter" href="#">Twitter</a>
-            <a class="social-link social-link--facebook" href="#">Facebook</a>
-            <a class="social-link social-link--youtube" href="#">Youtube</a>
+        <div class="wrapper">
+          <div class="main-footer__logo">
+            <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
           </div>
-        </div>
-        <div class="main-footer__copyright">Разработано:
-          <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
+          <div class="main-footer__social">
+            <div class="social-links">
+              <a class="social-link social-link--twitter" href="#">Twitter</a>
+              <a class="social-link social-link--facebook" href="#">Facebook</a>
+              <a class="social-link social-link--youtube" href="#">Youtube</a>
+            </div>
+          </div>
+          <div class="main-footer__copyright">Разработано:
+            <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
+          </div>
         </div>
       </footer>
     </body>
