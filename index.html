@@ -49,19 +49,19 @@
       <div class="wrapper">
         <p class="info__title">Устали от серости мегаполиса?</p>
         <p class="info__title">Нам есть, что вам предложить!</p>
-        <ul class="block-info">
-          <li class="block-info__item">
-            <div class="block-info__title">Поднимает настроение</div>
+        <ul class="info__table">
+          <li class="info__table--item">
+            <div class="info__table--title">Поднимает настроение</div>
             <p> Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
             </p>
           </li>
-          <li class="block-info__item">
-            <div class="block-info__title">Меняет мир вокруг</div>
+          <li class="info__table--item">
+            <div class="info__table--title">Меняет мир вокруг</div>
             <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
-          <li class="block-info__item">
-            <div class="block-info__title">Заводит новых друзей</div>
+          <li class="info__table--item">
+            <div class="info__table--title">Заводит новых друзей</div>
             <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -87,30 +87,31 @@
     <section class="slider-price">
       <div class="wrapper">
         <div class="slider-price__slide">
-          <div class="price">
-            <div class="price-flag">Хит</div>
-            <p class="price-name">Стандарт</p>
-            <p class="price-cost">3,99 USD</p>
-            <table class="price-table">
-              <tr>
-                <td>Розовый фильтр</td>
-                <td><img src="http://placehold.it/30x20"></td>
-              </tr>
-              <tr>
-                <td>Смайлики</td>
-                <td><img src="http://placehold.it/30x20"></td>
-              </tr>
-              <tr>
-                <td>Комментарии</td>
-                <td><img src="http://placehold.it/30x20"></td>
-              </tr>
-            </table>
+          <table class="price-table">
+            <tr>
+              <th class="price-tr--hit">
+                <p class="price-name">Стандарт</p>
+                <p class="price-cost">3,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+          </table>
+          <div class="slider-price__controls">
+            <i class="slider-price__control"></i>
+            <i class="slider-price__control  slider-price__control--active"></i>
+            <i class="slider-price__control"></i>
           </div>
-        </div>
-        <div class="slider-price__controls">
-          <i class="slider-price__control"></i>
-          <i class="slider-price__control  slider-price__control--active"></i>
-          <i class="slider-price__control"></i>
         </div>
       </div>
     </section>
@@ -120,21 +121,21 @@
         <ul class="contacts__info">
           <li class="contacts__item">
             <div class="contacts__title">Звоните:</div>
-          <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</p>
-        </li>
-        <li class="contacts__item">
-          <div class="contacts__title">Пишите:</div>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</p>
-      </li>
-      <li class="contacts__item">
-        <div class="contacts__title">Приезжайте в гости:</div>
-        <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-      </li>
-    </ul>
-  </div>
-  <div class="map">
-    <img src="http://placehold.it/320x250" width="320" height="250" alt="Карта">
-  </div>
-</section>
-</body>
+            <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title">Пишите:</div>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title">Приезжайте в гости:</div>
+            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/320x250" width="320" height="250" alt="Карта">
+      </div>
+    </section>
+  </body>
 </html>
