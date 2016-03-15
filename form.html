@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,11 +14,11 @@
         <h1 class="main-header__title">Pink</h1>
         <div class="main-header__menu"></div>
         <button class="main-header__toggle">
-          <span class="main-header__hamburger">
-            <span class="hamburger--up"></span>
-            <span class="hamburger--middle"></span>
-            <span class="hamburger--down"></span>
-          </span>
+        <span class="main-header__hamburger">
+          <span class="hamburger hamburger--up"></span>
+          <span class="hamburger hamburger--middle"></span>
+          <span class="hamburger hamburger--down"></span>
+        </span>
         </button>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -29,97 +29,84 @@
           </ul>
         </nav>
       </div>
-      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</div>
     </header>
-
     <section class="block-intro">
       <div class="wrapper">
-        <div class="intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        <div class="block-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </div>
       </div>
     </section>
-
-    <section class="block-intro">
+    <section class="form">
       <div class="wrapper">
-      <form action="" method="post">
-        <fieldset>
-          <div class="personal-data">
-            <label class="form-group">Имя:
-              <input type="form-text" name="name" placeholder="Введите ваше имя" required />
-            </label>
-            <label class="form-group">Фамилия:
-              <input type="form-text" name="soname" placeholder="Укажите фамилию" required />
-            </label>
-            <label class="form-group">Отчество:
-              <input type="form-text" name="second-name" placeholder="Ну и отчество тоже" required />
-            </label>
+        <form action="https://htmlacademy.ru/echo" method="post">
+          <fieldset class="form-filter">
+            <label class="form-filter__title" for="name">Имя:</label>
+            <input class="form-filter__text" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
+            <label class="form-filter__title" for="soname">Фамилия:</label>
+            <input class="form-filter__text" type="text" name="soname" placeholder="Укажите фамилию" id="soname">
+            <label class="form-filter__title" for="second-name">Отчество:</label>
+            <input class="form-filter__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
+          </fieldset>
+          <fieldset class="form-filter">
+            <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</legend>
+            <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
+            <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
+            <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
+            <label class="form-filter__item" for="beach">Обгорел на пляже</label>
+            <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
+            <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
+            <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+            <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
+            <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
+            <label class="form-filter__item" for="tower">Удержал башню</label>
+            <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
+            <label class="form-filter__item" for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form-filter">
+            <label class="form-filter__title" for="tel">Номер телефончика:</label>
+            <input class="form-filter__text" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" id="tel">
+            <label class="form-filter__title" for="email">Адресок почты:</label>
+            <input class="form-filter__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
+          </fieldset>
+          <fieldset class="form-filter">
+            <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
+            <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
+            <label class="form-filter__item" for="app-ios">Pink для iOS</label>
+            <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
+            <label class="form-filter__item" for="app-android">Pink на Android</label>
+            <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
+            <label class="form-filter__item" for="app-windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form-filter">
+            <label class="form-filter__title  form-filter__title--center" for="review">Опишите свои эмоции</label>
+            <textarea class="form-filter__text  form-filte__text--textarea" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="btn  btn--submit" type="submit">Отправить форму</button>
+          <div class="form-filter__hint">
+            <sup class="form-filter__hint-highlight">*</sup> - обязательные <span class="form-filter__hint-hide">для заполнения</span> поля
           </div>
-          <div class="form-checkblock">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="shark" name="shark" checked>
-              <label class="label" for="shark">Сделал селфи с акулой</label>
-            </div>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="beach" name="beach" checked>
-              <label class="label" for="beach">Обгорел на пляже</label>
-            </div>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="norris" name="norris">
-              <label class="label" for="norris">Видел Чака Норриса</label>
-            </div>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="souvenir" name="souvenir">
-              <label class="label" for="souvenir">Накупил сувениров</label>
-            </div>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="tower" name="tower" checked>
-              <label class="label" for="tower">Удержал башню</label>
-            </div>
-            <div class="check-block">
-              <input class="checkbox" type="checkbox" id="hotel" name="hotel">
-              <label class="label" for="hotel">Разгромил отель</label>
-            </div>
-          </div>
-          <div class="form-input">
-            <label class="form-group">Номерок телефончика:
-              <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста" required />
-            </label>
-            <label class="form-group">Адресок почты:
-              <input type="email" id="email" name="email" placeholder="Email, пожалуйста" required />
-            </label>
-          </div>
-          <div class="form-radio">
-            <p class="form-text__title">С каким приложением путешествовали?</p>
-            <input type="radio" name="ios" value="ios" checked>Pink для iOS
-            <input type="radio" name="android" value="android">Pink Android
-            <input type="radio" name="windows" value="windows">Windows Phone
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="comment" cols="40" rows="3" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
-            <button class="btn-getform">Отправить форму</button>
-          </div>
-        </fieldset>
+        </form>
       </div>
-      </form>
-
-      <footer class="main-footer">
-        <div class="wrapper">
-          <div class="main-footer__logo">
-            <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
-          </div>
-          <div class="main-footer__social">
-            <div class="social-links">
-              <a class="social-link social-link--twitter" href="#">Twitter</a>
-              <a class="social-link social-link--facebook" href="#">Facebook</a>
-              <a class="social-link social-link--youtube" href="#">Youtube</a>
-            </div>
-          </div>
-          <div class="main-footer__copyright">Разработано:
-            <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
+    </section>
+    <footer class="main-footer">
+      <div class="wrapper">
+        <div class="main-footer__logo">
+          <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
+        </div>
+        <div class="main-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--twitter" href="#">Twitter</a>
+            <a class="social-link social-link--facebook" href="#">Facebook</a>
+            <a class="social-link social-link--youtube" href="#">Youtube</a>
           </div>
         </div>
-      </footer>
-    </body>
-  </html>
+        <div class="main-footer__copyright">Разработано:
+          <a href="#"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo-htmlacademy"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,11 +14,11 @@
         <h1 class="main-header__title">Pink</h1>
         <div class="main-header__menu"></div>
         <button class="main-header__toggle">
-         <span class="main-header__hamburger">
-           <span class="hamburger--up"></span>
-           <span class="hamburger--middle"></span>
-           <span class="hamburger--down"></span>
-         </span>
+        <span class="main-header__hamburger">
+          <span class="hamburger hamburger--up"></span>
+          <span class="hamburger hamburger--middle"></span>
+          <span class="hamburger hamburger--down"></span>
+        </span>
         </button>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -34,7 +34,7 @@
     <section class="intro">
       <div class="wrapper">
         <div class="download-app__block">
-          <button class="btn-download" href="#">Скачать приложение</button>
+          <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-app__links">
             <a class="download-app__link  download-app__link--ios" href="#"><img src="http://placehold.it/60x60"></a>
             <a class="download-app__link  download-app__link--android" href="#"><img src="http://placehold.it/60x60"></a>
@@ -120,21 +120,21 @@
         <ul class="contacts__info">
           <li class="contacts__item">
             <div class="contacts__title">Звоните:</div>
-            <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</p>
-          </li>
-          <li class="contacts__item">
-            <div class="contacts__title">Пишите:</div>
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</p>
-          </li>
-          <li class="contacts__item">
-            <div class="contacts__title">Приезжайте в гости:</div>
-            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
-      </div>
-      <div class="map">
-        <img src="http://placehold.it/320x250" width="320" height="250" alt="Карта">
-      </div>
-    </section>
-  </body>
+          <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</p>
+        </li>
+        <li class="contacts__item">
+          <div class="contacts__title">Пишите:</div>
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</p>
+      </li>
+      <li class="contacts__item">
+        <div class="contacts__title">Приезжайте в гости:</div>
+        <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+      </li>
+    </ul>
+  </div>
+  <div class="map">
+    <img src="http://placehold.it/320x250" width="320" height="250" alt="Карта">
+  </div>
+</section>
+</body>
 </html>
