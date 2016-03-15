@@ -2,11 +2,140 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: PINK</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="wrapper">
+        <h1 class="main-header__title">Pink</h1>
+        <div class="main-header__menu"></div>
+        <button class="main-header__toggle">
+        <span class="main-header__hamburger">
+          <span class="hamburger hamburger--up"></span>
+          <span class="hamburger hamburger--middle"></span>
+          <span class="hamburger hamburger--down"></span>
+        </span>
+        </button>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a href="#">Информация</a></li>
+            <li class="main-menu__item"><a href="#">Возможности</a></li>
+            <li class="main-menu__item"><a href="#">Отзывы</a></li>
+            <li class="main-menu__item"><a href="#">Стоимость</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="main-title">Взгляните на жизнь иначе!</h1>
+    </header>
+    <section class="intro">
+      <div class="wrapper">
+        <div class="download-app__block">
+          <a class="btn btn--download" href="#">Скачать приложение</a>
+          <div class="download-app__links">
+            <a class="download-app__link  download-app__link--ios" href="#"><img src="http://placehold.it/60x60"></a>
+            <a class="download-app__link  download-app__link--android" href="#"><img src="http://placehold.it/60x60"></a>
+            <a class="download-app__link  download-app__link--windows" href="#"><img src="http://placehold.it/60x60"></a>
+          </div>
+          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="wrapper">
+        <p class="info__title">Устали от серости мегаполиса?</p>
+        <p class="info__title">Нам есть, что вам предложить!</p>
+        <ul class="info__table">
+          <li class="info__table-item">
+            <div class="info__table-title">Поднимает настроение</div>
+            <p> Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="info__table-item">
+            <div class="info__table-title">Меняет мир вокруг</div>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="info__table-item">
+            <div class="info__table-title">Заводит новых друзей</div>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="wrapper">
+        <div class="reviews__slide">
+          <div class="review">
+            <div class="review__name">Николай Петров</div>
+            <blockquote class="review__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </blockquote>
+          </div>
+        </div>
+        <div class="slider-rewiew__controls">
+          <i class="slider-rewiew__control  slider-rewiew__control--active"></i>
+          <i class="slider-rewiew__control"></i>
+          <i class="slider-rewiew__control"></i>
+        </div>
+      </div>
+    </section>
+    <section class="slider-price">
+      <div class="wrapper">
+        <div class="slider-price__slide">
+          <table class="slider-price__table">
+            <tr>
+              <th class="slider-price__hit">
+                <p class="slider-price__name">Стандарт</p>
+                <p class="slider-price__cost">3,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td><img src="http://placehold.it/30x20"></td>
+            </tr>
+          </table>
+          <div class="slider-price__controls">
+            <i class="slider-price__control"></i>
+            <i class="slider-price__control  slider-price__control--active"></i>
+            <i class="slider-price__control"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="wrapper">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__info">
+          <li class="contacts__item">
+            <div class="contacts__title">Звоните:</div>
+            <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title">Пишите:</div>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__title">Приезжайте в гости:</div>
+            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/320x250" width="320" height="250" alt="Карта">
+      </div>
+    </section>
   </body>
 </html>
