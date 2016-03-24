@@ -1,0 +1,23 @@
+/*global files*/
+@import "global/normalize";
+@import "global/fonts";
+
+/*general blocks*/
+@import "custom/wrapper";
+@import "custom/main-header";
+@import "custom/main-footer";
+@import "custom/block-intro";
+
+/*index.html*/
+@import "custom/intro";
+@import "custom/info";
+@import "custom/reviews";
+@import "custom/slider-price";
+@import "custom/contacts";
+
+/*form.html*/
+@import "custom/form-filter";
+
+/*photo.html*/
+@import "custom/post-photo";
+@import "custom/filters-photo";

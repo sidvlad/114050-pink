@@ -1,0 +1,16 @@
+body {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.main-header {
+	outline: 1px solid red;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-menu {
+	outline: 1px solid green;
+	display: flex;
+	flex-direction: column;
+}
