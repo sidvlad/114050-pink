@@ -6,12 +6,7 @@
 body {
 	width: 100%;
 	margin: 0 auto;
-	font-size: 18px;
-	line-height: 30px;
-	font-family: "OpenSans", Arial, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #283645;
+	font: normal 400 18px/30px "OpenSans", Arial, sans-serif;
 }
 .wrapper {
 	@include media;
