@@ -1,14 +1,20 @@
-*, *::before, *::after {
-  	box-sizing: border-box;
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
 }
-
 body {
 	width: 100%;
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 30px;
-	font-family: "OpenSans", sans-serif;
+	font-family: "OpenSans", Arial, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: #283645;
+}
+.wrapper {
+	@include media;
+	margin: 0 auto;
+	outline: 1px solid red;
 }

@@ -2,9 +2,17 @@
 	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
-
+	
+	&__block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;}
+	
+	&__toggle {
+	width: 60px;
+	height: 60px;}
 }
-
 .main-menu {
 	outline: 1px solid green;
 	display: flex;
