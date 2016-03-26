@@ -1,15 +1,28 @@
-*, 
-*::before, 
+*,
+*::before,
 *::after {
 	box-sizing: border-box;
 }
+
 body {
 	width: 100%;
 	margin: 0 auto;
 	font: normal 400 18px/30px "OpenSans", Arial, sans-serif;
 }
+
 .wrapper {
-	@include media;
 	margin: 0 auto;
 	outline: 1px solid red;
+
+  @include mobile {
+    width: 280px;
+  }
+
+  @include tablet {
+    width: 620px;
+  }
+
+  @include desktop {
+    width: 940px;
+  }
 }

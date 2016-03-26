@@ -2,11 +2,11 @@
 @import "global/normalize";
 @import "global/mixins";
 @import "global/fonts";
+@import "global/global";
 
 /*general blocks*/
-@import "custom/global";
 @import "custom/header";
-@import "custom/main-footer";
+@import "custom/footer";
 @import "custom/block-intro";
 
 /*index.html*/
@@ -15,6 +15,7 @@
 @import "custom/reviews";
 @import "custom/slider-price";
 @import "custom/contacts";
+@import "custom/map";
 
 /*form.html*/
 @import "custom/form-filter";

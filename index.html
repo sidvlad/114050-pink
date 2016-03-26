@@ -38,9 +38,9 @@
         <div class="download-app__block">
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-app__links">
-            <a class="download-app__link  download-app__link--ios" href="#"><img src="http://placehold.it/60x60"></a>
-            <a class="download-app__link  download-app__link--android" href="#"><img src="http://placehold.it/60x60"></a>
-            <a class="download-app__link  download-app__link--windows" href="#"><img src="http://placehold.it/60x60"></a>
+            <a class="download-app__link  download-app__link--ios" href="#"><img src="img/logo-apple.svg"></a>
+            <a class="download-app__link  download-app__link--android" href="#"><img src="img/logo-android.svg"></a>
+            <a class="download-app__link  download-app__link--windows" href="#"><img src="img/logo-microsoft.svg"></a>
           </div>
           <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows phone, OS X, Windows 8
           </p>
@@ -49,8 +49,10 @@
     </section>
     <section class="info">
       <div class="wrapper">
-        <p class="info__title">Устали от серости мегаполиса?</p>
-        <p class="info__title">Нам есть, что вам предложить!</p>
+        <div class="info__title">
+          <p class="info__title-text">Устали от серости мегаполиса?</p>
+          <p class="info__title-text">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="info__table">
           <li class="info__table-item">
             <div class="info__table-title">Поднимает настроение</div>
@@ -89,30 +91,54 @@
     <section class="slider-price">
       <div class="wrapper">
         <div class="slider-price__slide">
+          <input type="radio" class="slider-price__control" name="slider-control" id="slider-control-1">
+          <input type="radio" class="slider-price__control slider-price__control--active" name="slider-control" id="slider-control-2" checked="checked">
+          <input type="radio" class="slider-price__control" name="slider-control" id="slider-control-3">
           <table class="slider-price__table">
             <tr>
-              <th class="slider-price__hit">
+              <th class="slider-price__element"></th>
+              <th class="slider-price__element">
+                <p class="slider-price__name">База</p>
+                <p class="slider-price__cost">1,99 USD</p>
+              </th>
+              <th class="slider-price__element slider-price__element--hit">
                 <p class="slider-price__name">Стандарт</p>
                 <p class="slider-price__cost">3,99 USD</p>
+              </th>
+              <th class="slider-price__element">
+                <p class="slider-price__name">Анлим</p>
+                <p class="slider-price__cost">9,99 USD</p>
               </th>
             </tr>
             <tr>
               <td>Розовый фильтр</td>
               <td><img src="http://placehold.it/30x20"></td>
+              <td><img src="http://placehold.it/30x20"></td>
+              <td><img src="http://placehold.it/30x20"></td>
             </tr>
             <tr>
               <td>Смайлики</td>
+              <td><img src="http://placehold.it/30x20"></td>
+              <td><img src="http://placehold.it/30x20"></td>
               <td><img src="http://placehold.it/30x20"></td>
             </tr>
             <tr>
               <td>Комментарии</td>
               <td><img src="http://placehold.it/30x20"></td>
+              <td><img src="http://placehold.it/30x20"></td>
+              <td><img src="http://placehold.it/30x20"></td>
             </tr>
           </table>
           <div class="slider-price__controls">
-            <i class="slider-price__control"></i>
-            <i class="slider-price__control  slider-price__control--active"></i>
-            <i class="slider-price__control"></i>
+            <label type="radio"
+              class="slider-price__control-label"
+            for="slider-control-1"></label>
+            <label type="radio"
+              class="slider-price__control-label"
+            for="slider-control-2"></label>
+            <label type="radio"
+              class="slider-price__control-label"
+            for="slider-control-3"></label>
           </div>
         </div>
       </div>
@@ -135,9 +161,7 @@
           </li>
         </ul>
       </div>
-      <div class="map">
-        <img src="http://placehold.it/320x250" width="100%" alt="Карта">
-      </div>
+      <div class="map"></div>
     </section>
   </body>
 </html>
