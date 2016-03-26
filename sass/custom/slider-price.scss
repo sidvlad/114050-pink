@@ -1,0 +1,40 @@
+.slider-price {
+	outline: 1px solid red;
+	display: flex;
+	flex-direction: column;
+
+  &__table {
+
+    @include mobile {
+      width: 270%;
+      transition: all 0.2s ease-in-out;
+
+      th,
+      td {
+        width: 280px;
+      }
+
+      tr th:first-child,
+      tr td:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.slider-price__control {
+  @include mobile {
+    &[id="slider-control-1"]:checked ~ .slider-price__table  {
+      transform: translateX(0);
+    }
+
+    &[id="slider-control-2"]:checked ~ .slider-price__table  {
+      transform: translateX(-33.3%);
+    }
+
+    &[id="slider-control-1"]:checked ~ .slider-price__table  {
+      transform: translateX(-66.6%);
+    }
+  }
+}

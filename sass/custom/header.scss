@@ -1,0 +1,67 @@
+.main-header {
+	outline: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+  	background-size: cover;
+
+	&__block {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  }
+
+   &__block--title {
+   	color: #fff;
+   }
+
+	&__toggle {
+  	width: 60px;
+  	height: 60px;
+  }
+
+  	@include mobile {
+  	background-image: url("../img/bg-back-mobile.jpg");
+  	}
+
+  	@include tablet {
+  	}
+
+  	@include desktop {
+  	}
+}
+
+.main-menu__list {
+	outline: 1px solid green;
+	display: flex;
+	justify-content: space-between;
+	
+	@include mobile {
+    flex-direction: column;
+  	}
+
+  	@include tablet {
+    flex-direction: row;
+  	}
+
+  	@include desktop {
+    flex-direction: row;
+ 	}
+}
+
+.main-menu__item {
+	list-style:none
+}
+
+.main-menu__item a {
+	text-decoration: none;
+}
+
+.main-title {
+	color: #fff;
+
+	@include mobile {
+    dosplay: none;
+  	}
+}
