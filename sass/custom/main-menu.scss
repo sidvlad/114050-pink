@@ -1,0 +1,42 @@
+.main-menu {
+
+  @include mobile {
+    background-color: #283645;
+    text-align: center;
+    }
+}
+
+.main-menu__list {
+	outline: 1px solid green;
+	display: flex;
+	justify-content: space-between;
+
+	@include mobile {
+    flex-direction: column;
+    display: none;
+  	}
+
+  	@include tablet {
+    flex-direction: row;
+    display: inherit;
+  	}
+
+  	@include desktop {
+    flex-direction: row;
+    display: flex;
+ 	}
+}
+
+.main-menu__item {
+	list-style: none;
+  border-bottom: 1px solid #000;
+}
+
+.main-menu__item a {
+  text-transform: uppercase;
+	text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+}

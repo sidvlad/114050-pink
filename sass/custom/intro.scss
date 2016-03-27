@@ -3,6 +3,10 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #1d2631;
+
+	&__text {
+		color: #fff;
+	}
 }
 
 .btn {
@@ -18,10 +22,24 @@
 }
 
 .download-app {
+
+	&__links {
+		margin-top: 20px;
+	}
+
+	&__link img {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	&__block {
+		text-align: center;
+		margin-top: 50px;
+	}
 	
 	&__text {
 		color: #999;
 		font-style: 14px;
-		font-weight: 300;
+		font-weight: normal;
 	}
 }
