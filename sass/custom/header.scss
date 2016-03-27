@@ -21,6 +21,11 @@
   	height: 60px;
   }
 
+  &__text {
+    text-align: center;
+    color: #fff;
+  }
+
   	@include mobile {
   	background-image: url("../img/iphone-hand-mobile.png"),
     url("../img/bg-back-mobile.jpg");

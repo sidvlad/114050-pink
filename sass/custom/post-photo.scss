@@ -18,4 +18,18 @@
     		background-image: url("http://placehold.it/620x340");
   		}
 	}
+
+  &__comment-name {
+    font-style: bold;
+  }
+
+  &__comment-time {
+    font-style: normal;
+    color: #888;
+  }
+
+  &__comment-like {
+    color: #ff0000;
+    text-decoration: none;
+  }
 }
