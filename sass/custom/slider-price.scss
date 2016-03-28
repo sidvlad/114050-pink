@@ -40,20 +40,38 @@
       }
     }
   }
+
+  & input {
+    // display: none;
+  }
+
+  &__controls label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #fff;
+  }
 }
 
 .slider-price__control {
-  @include mobile {
-    &[id="slider-control-1"]:checked ~ .slider-price__table  {
-      transform: translateX(0);
-    }
+  &[id="slider-control-1"]:checked ~ .slider-price__table  {
+    transform: translateX(0);
+  }
 
-    &[id="slider-control-2"]:checked ~ .slider-price__table  {
-      transform: translateX(-33.3%);
-    }
+  &[id="slider-control-2"]:checked ~ .slider-price__table  {
+    transform: translateX(-33.3%);
+  }
 
-    &[id="slider-control-1"]:checked ~ .slider-price__table  {
-      transform: translateX(-66.6%);
-    }
+  &[id="slider-control-1"]:checked ~ .slider-price__table  {
+    transform: translateX(-66.6%);
+  }
+
+  &[id="slider-control-1"]:checked ~ .slider-price__controls &-label[for~="slider-control-1"],
+  &[id="slider-control-2"]:checked ~ .slider-price__controls &-label[for~="slider-control-2"],
+  &[id="slider-control-3"]:checked ~ .slider-price__controls &-label[for~="slider-control-3"] {
+    background-color: red;
   }
 }
+
+

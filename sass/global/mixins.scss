@@ -7,13 +7,13 @@
 }
 
 @mixin mobile {
-  @media screen and (min-width: 320px){
+  @media screen and (max-width: 699px){
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 700px) and (max-width: 1199px) {
     @content;
   }
 }
