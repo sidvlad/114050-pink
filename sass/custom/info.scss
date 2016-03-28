@@ -15,6 +15,7 @@
 	&-text {
 		font-size: 24px;
 		text-align: center;
+		font-weight: lighter;
 	}
 }
 
@@ -26,7 +27,7 @@
 	@include mobile {
 		background: #f2f2f2 url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
-  		background-position: center 460px;
+  		background-position: center 570px;
   	}
 
   	@include tablet {
@@ -42,12 +43,10 @@
 		text-align: center;
 	}
 
-	&-title p {
+	&-item {
 		font-size: 14px;
-	}
-
-	&-title p {
-		font-size: 14px;
+		text-align: center;
+		margin-bottom: 35px;
 	}
 }
 

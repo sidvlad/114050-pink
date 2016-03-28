@@ -5,17 +5,18 @@
 
   &__name {
     font-weight: bold;
-    font-style: 18px;
+    font-size: 18px;
   }
 
   &__text {
     font-weight: normal;
+    font-size: 14px;
   }
 
   &__table {
 
     @include mobile {
-      width: 280%;
+      width: 300%;
       transition: all 0.2s ease-in-out;
 
       &__element {
@@ -32,11 +33,11 @@
     }
 
     &[id="slider-review-control-2"]:checked ~ .slider-review__table  {
-      transform: translateX(-33.3%);
+      transform: translateX(-280px);
     }
 
     &[id="slider-review-control-3"]:checked ~ .slider-review__table  {
-      transform: translateX(-66.6%);
+      transform: translateX(-560px);
     }
   }
 }

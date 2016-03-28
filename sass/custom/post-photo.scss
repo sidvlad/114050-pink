@@ -1,21 +1,25 @@
 .post-photo {
 	outline: 1px solid red;
 
+  & > .wrapper {
+    background-color: #f2f2f2;
+  }
+
 	&__photo--panorama {
 		width: 100%;
     	height: 500px;
-  		background-image: url("http://placehold.it/940x500");
+  		background-image: url("../img/panorama-mobile.jpg");
   		background-repeat: no-repeat;
   		background-size: cover;
 
   		@include mobile {
     		height: 200px;
-    		background-image: url("http://placehold.it/320x140");
+    		background-image: url("../img/panorama-mobile.jpg");
   		}
 
   		@include tablet {
    			height: 340px;
-    		background-image: url("http://placehold.it/620x340");
+    		background-image: url("../img/panorama-mobile.jpg");
   		}
 	}
 

@@ -1,18 +1,18 @@
 .map {
   width: 100%;
 	height: 500px;
-  background-image: url("http://placehold.it/940x500");
+  background-image: url("../img/bg-map.png");
   background-repeat: no-repeat;
   background-size: cover;
   outline: 1px solid red;
 
   @include mobile {
     height: 200px;
-    background-image: url("http://placehold.it/320x200");
+    background-image: url("../img/bg-map.png");
   }
 
   @include tablet {
     height: 340px;
-    background-image: url("http://placehold.it/620x340");
+    background-image: url("../img/bg-map.png");
   }
 }
