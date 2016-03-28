@@ -21,8 +21,18 @@
   	height: 60px;
   }
 
+  &__text {
+    text-align: center;
+    color: #fff;
+  }
+
   	@include mobile {
-  	background-image: url("../img/bg-back-mobile.jpg");
+  	background-image: url("../img/iphone-hand-mobile.png"),
+    url("../img/bg-back-mobile.jpg");
+    background-position: center bottom, center bottom; 
+    background-size: 288px 280px, cover;
+    width: 100%;
+    height: 457px;
   	}
 
   	@include tablet {
@@ -32,36 +42,33 @@
   	}
 }
 
-.main-menu__list {
-	outline: 1px solid green;
-	display: flex;
-	justify-content: space-between;
-	
-	@include mobile {
-    flex-direction: column;
-  	}
+.hamburger {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
 
-  	@include tablet {
-    flex-direction: row;
-  	}
+  &--up {
+    position: relative;
+    top: 0;
+  }
 
-  	@include desktop {
-    flex-direction: row;
- 	}
-}
+  &--middle {
+    position: relative;
+    top: -5;
+  }
 
-.main-menu__item {
-	list-style:none
-}
+  &--down {
+    position: relative;
+    bottom: 0;
+  }
 
-.main-menu__item a {
-	text-decoration: none;
 }
 
 .main-title {
 	color: #fff;
 
 	@include mobile {
-    dosplay: none;
+    display: none;
   	}
 }

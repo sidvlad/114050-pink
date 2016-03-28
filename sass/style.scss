@@ -7,12 +7,13 @@
 /*general blocks*/
 @import "custom/header";
 @import "custom/footer";
-@import "custom/block-intro";
+@import "custom/main-menu";
+@import "custom/slogan";
 
 /*index.html*/
 @import "custom/intro";
 @import "custom/info";
-@import "custom/reviews";
+@import "custom/slider-reviews";
 @import "custom/slider-price";
 @import "custom/contacts";
 @import "custom/map";

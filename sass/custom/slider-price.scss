@@ -2,11 +2,12 @@
 	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
+  background-color: #f2f2f2;
 
   &__table {
 
     @include mobile {
-      width: 270%;
+      width: 280%;
       transition: all 0.2s ease-in-out;
 
       th,
