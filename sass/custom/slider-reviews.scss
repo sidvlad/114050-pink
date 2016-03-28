@@ -4,12 +4,12 @@
   flex-direction: column;
 
   &__name {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
   }
 
   &__text {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
   }
 
@@ -33,11 +33,11 @@
     }
 
     &[id="slider-review-control-2"]:checked ~ .slider-review__table  {
-      transform: translateX(-280px);
+      transform: translateX(-33.3%);
     }
 
     &[id="slider-review-control-3"]:checked ~ .slider-review__table  {
-      transform: translateX(-560px);
+      transform: translateX(-66.6%);
     }
   }
 }
