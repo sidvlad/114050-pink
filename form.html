@@ -43,36 +43,40 @@
             <label class="form-filter__title" for="second-name">Отчество:</label>
             <input class="form-filter__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
           </fieldset>
-          <fieldset class="form-filter">
-            <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
-            <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
-            <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
-            <label class="form-filter__item" for="beach">Обгорел на пляже</label>
-            <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
-            <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
-            <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-            <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
-            <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
-            <label class="form-filter__item" for="tower">Удержал башню</label>
-            <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
-            <label class="form-filter__item" for="hotel">Разгромил отель</label>
-          </fieldset>
+          <div class="travel-fon">
+            <fieldset class="form-filter">
+              <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</legend>
+              <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
+              <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
+              <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="form-filter__item" for="beach">Обгорел на пляже</label>
+              <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
+              <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
+              <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
+              <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="form-filter__item" for="tower">Удержал башню</label>
+              <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="form-filter__item" for="hotel">Разгромил отель</label>
+            </fieldset>
+          </div>
           <fieldset class="form-filter">
             <label class="form-filter__title" for="tel">Номер телефончика:</label>
             <input class="form-filter__text" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" id="tel">
             <label class="form-filter__title" for="email">Адресок почты:</label>
             <input class="form-filter__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
           </fieldset>
-          <fieldset class="form-filter">
-            <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
-            <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
-            <label class="form-filter__item" for="app-ios">Pink для iOS</label>
-            <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
-            <label class="form-filter__item" for="app-android">Pink на Android</label>
-            <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
-            <label class="form-filter__item" for="app-windows">Windows Phone</label>
-          </fieldset>
+          <div class="travel-fon">
+            <fieldset class="form-filter">
+              <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
+              <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
+              <label class="form-filter__item" for="app-ios">Pink для iOS</label>
+              <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
+              <label class="form-filter__item" for="app-android">Pink на Android</label>
+              <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
+              <label class="form-filter__item" for="app-windows">Windows Phone</label>
+            </fieldset>
+          </div>
           <fieldset class="form-filter">
             <label class="form-filter__title  form-filter__title--center" for="review">Опишите свои эмоции</label>
             <textarea class="form-filter__text  form-filte__text--textarea" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

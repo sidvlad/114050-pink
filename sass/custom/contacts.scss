@@ -1,5 +1,4 @@
 .contacts {
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -25,7 +24,7 @@
 		text-decoration: none;
 		font-size: 24px;
 		font-weight: 300;
-		color: #ff0000;
+		color: $red;
 		margin: 0;
 	}
 }

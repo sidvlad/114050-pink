@@ -123,35 +123,37 @@
     </section>
     <section class="slogan">
       <div class="wrapper">
-        <div class="slogan__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
+        <div class="slogan__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</div>
       </div>
     </section>
     <section class="filters-photo">
-      <div class="wrapper">
-        <form action="get">
-          <img src="http://placehold.it/280x375" width="280" height="375" alt="">
+      <form action="get">
+        <div class="wrapper">
+          <img src="img/photo-7-mobile.jpg" width="280" height="375" alt="">
           <div class="filters-photo__actions">
-            <div class="filters-photo__actions-resize">
-              <img src="http://placehold.it/45x45" width="45" height="45" alt="">
+            <div class="filters-photo__actions-crop">
+              <img src="img/icon-editor-crop.svg" width="45" height="45" alt="">
             </div>
             <div class="filters-photo__actions-fill">
-              <img src="http://placehold.it/45x45" width="45" height="45" alt="">
+              <img src="img/icon-editor-fill.svg" width="45" height="45" alt="">
             </div>
             <div class="filters-photo__actions-contrast">
-              <img src="http://placehold.it/45x45" width="45" height="45" alt="">
+              <img src="img/icon-editor-contrast.svg" width="45" height="45" alt="">
             </div>
           </div>
-          <div class="filters-photo__range">
+        </div>
+        <div class="filters-photo__range">
+          <div class="wrapper">
             <div class="filters-photo__range-range"></div>
             <a class="filters-photo__range-toggle" href="#"></a>
             <a class="rfilters-photo__range-toggle" href="#" style="left: 80%"></a>
+            <div class="filters-photo__btn">
+              <button type="submit" class="btn btn--show">Запостить</button>
+              <button class="btn btn--cancel">Отмена</button>
+            </div>
           </div>
-          <div class="filters-photo__btn">
-            <button type="submit" class="btn btn--show">Запостить</button>
-            <button type="submit" class="btn btn--cancel">Отмена</button>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
     <footer class="main-footer">
       <div class="wrapper">

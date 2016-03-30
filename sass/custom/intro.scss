@@ -1,18 +1,18 @@
 .intro {
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	background-color: #1d2631;
+	margin-bottom: 45px;
 }
 
 .btn {
 	&--download {
-		color: #fff;
+		color: $white;
 		font-weight: 700;
 		font-size: 18px;
 		text-decoration: none;
-		border: 2px solid #fff;
-		padding: 10px 35px;
+		border: 2px solid $white;
+		padding: 14px 35px;
 		border-radius: 50px;
 	}
 }
@@ -24,7 +24,7 @@
 	}
 
 	&__link img {
-		margin: 0px 15px;
+		margin: 10px 15px;
 	}
 
 	&__block {
@@ -33,8 +33,11 @@
 	}
 	
 	&__text {
-		color: #f2f2f2;
+		color: $grey;
 		font-size: 14px;
 		font-weight: 300;
+		line-height: 24px;
+		margin-top: 9px;
+		margin-bottom: 46px;
 	}
 }

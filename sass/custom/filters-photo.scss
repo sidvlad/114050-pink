@@ -1,8 +1,15 @@
 .filters-photo {
-	outline: 1px solid red;
+	background-color: $grey;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	
 	&__actions {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	}
+
+	&__range {
+		border-top: 1px solid $darkgrey;
 	}
 }
