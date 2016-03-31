@@ -4,13 +4,17 @@
 	text-align: center;
 
 	&__item {
-		margin-bottom: 30px;
+		margin-bottom: 18px;
 	}
-
+	
 	&__title {
 		font-size: 24px;
 		font-weight: 300;
+		padding-top: 16px;
 		
+		@include tablet {
+    		font-size: $fortypx;
+  		}
 	}
 
 	&__data {
@@ -37,16 +41,16 @@
 	text-align: center;
 
 	@include mobile {
-    flex-direction: column;
+    	flex-direction: column;
   	}
 
   	@include tablet {
-    flex-direction: row;
-    justify-content: space-around;
+    	flex-direction: row;
+    	justify-content: space-around;
   	}
 
   	@include desktop {
-    flex-direction: row;
-    justify-content: space-around;
+    	flex-direction: row;
+    	justify-content: space-around;
  	}
 }

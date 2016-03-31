@@ -88,4 +88,14 @@
 	@include mobile {
     display: none;
   	}
+
+    @include tablet {
+    font-weight: 300;
+    font-size: $fortypx;
+    }
+
+    @include desktop {
+      font-weight: 300;
+      font-size: $fiftypx;
+    }
 }

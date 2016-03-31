@@ -2,13 +2,17 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #1d2631;
-	margin-bottom: 45px;
 }
 
 .btn {
 	&--download {
 		color: $white;
-		border: 2px solid $white;
+		border: 3px solid $white;
+
+		@include tablet {
+    		width: 300px;
+    		padding: 14px 45px;
+  		}
 	}
 }
 
@@ -34,5 +38,9 @@
 		line-height: 24px;
 		margin-top: 9px;
 		margin-bottom: 46px;
+
+		@include tablet {
+    		font-size: 18px;
+  		}
 	}
 }

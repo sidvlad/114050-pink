@@ -2,7 +2,7 @@
 	background-color: $grey;
 	display: flex;
 	flex-direction: column;
-	padding-top: 55px;
+	padding-top: 77px;
 	
 	&__table {
 	display: flex;
@@ -18,7 +18,7 @@
 	@include mobile {
 		background: url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
-  		background-position: center 570px;
+  		background-position: center 429px;
   	}
 
   	@include tablet {
@@ -34,6 +34,11 @@
 		text-align: center;
 	}
 
+	&-item p {
+		margin: 0;
+		line-height: 26px;
+	}
+
 	&-item {
 		font-size: 14px;
 		text-align: center;
@@ -42,5 +47,5 @@
 }
 
 .info__table:last-child {
-	padding-bottom: 300px;
+	padding-bottom: 280px;
 }

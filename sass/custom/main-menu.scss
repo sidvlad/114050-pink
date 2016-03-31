@@ -3,11 +3,17 @@
   @include mobile {
     background-color: #283645;
     text-align: center;
-    }
+    display: none;
+  }
+
+  @include tablet {
+    background-color: #283645;
+    text-align: center;
+    display: none;
+  }
 }
 
 .main-menu__list {
-	outline: 1px solid green;
 	display: flex;
 	justify-content: space-between;
 
@@ -16,12 +22,12 @@
     display: none;
   	}
 
-  	@include tablet {
+  @include tablet {
     flex-direction: row;
     display: inherit;
   	}
 
-  	@include desktop {
+  @include desktop {
     flex-direction: row;
     display: flex;
  	}
@@ -39,4 +45,9 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 50px;
+
+  @include desktop {
+    font-weight: 400;
+    text-transform: none;
+  }
 }

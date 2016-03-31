@@ -21,6 +21,8 @@
 		border: 2px solid $grey;
 		width: 280px;
 		height: 60px;
+		margin-bottom: 15px;
+		margin-top: 5px;
 
 		&::-webkit-input-placeholder {
 			padding-left: 20px;
@@ -31,6 +33,12 @@
 		}
 	}
 
+	&__hint-hide {
+		@include mobile {
+   			display: none;
+  		}
+	}
+
 	textarea {
 		width: 280px;
 		height: 200px;
@@ -39,4 +47,22 @@
 
 .travel-fon {
 	background-color: $grey;
+}
+
+.btn {
+	&--submit {
+		background-color: #2aab6d;
+		border-radius: 0;
+		border: none;
+		color: $white;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: #1c9b5e;
+		}
+	}
+}
+
+fieldset {
+border: none;
 }
