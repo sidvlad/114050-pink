@@ -1,13 +1,13 @@
 .post-photo {
-	outline: 1px solid red;
   font-size: 14px;
   font-weight: 400;
 
   & > .wrapper {
-    background-color: #f2f2f2;
+    background-color: $grey;
   }
 
 	&__photo--panorama {
+   
 		width: 100%;
     height: 500px;
   	background-image: url("../img/panorama-mobile.jpg");
@@ -25,17 +25,29 @@
   	}
 	}
 
+  &__comment {
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+
+    & p {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+
   &__comment-name {
     font-weight: 700;
   }
 
   &__comment-time {
     font-weight: 300;
-    color: #888;
+    color: $lightgrey;
   }
 
   &__comment-like {
-    color: #ff0000;
+    color: $red;
     text-decoration: none;
   }
 }

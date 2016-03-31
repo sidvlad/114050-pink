@@ -1,5 +1,4 @@
 .main-header {
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	background-repeat: no-repeat;
@@ -10,24 +9,26 @@
   	flex-direction: row;
   	align-items: center;
   	justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &__block--logo {
-    width: 100px;
-    height: 30px;
+    width: 75px;
+    height: 23px;
     background-image: url("../img/logo-pink-white-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include mobile {
-      width: 100px;
-      height: 30px;
+      width: 75px;
+      height: 23px;
       background-image: url("../img/logo-pink-white-mobile.svg");
     }
 
     @include tablet {
-      width: 100px;
-      height: 30px;
+      width: 75px;
+      height: 23px;
       background-image: url("../img/logo-pink-white-mobile.svg");
     }
   }
@@ -48,7 +49,7 @@
 
   &__text {
     text-align: center;
-    color: #fff;
+    color: $white;
     font-weight: 300;
     font-size: 24px;
   }
@@ -82,7 +83,7 @@
 }
 
 .main-title {
-	color: #fff;
+	color: $white;
 
 	@include mobile {
     display: none;

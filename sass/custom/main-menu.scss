@@ -29,13 +29,13 @@
 
 .main-menu__item {
 	list-style: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $black;
 }
 
 .main-menu__item a {
   text-transform: uppercase;
 	text-decoration: none;
-  color: #fff;
+  color: $white;
   font-size: 18px;
   font-weight: 700;
   line-height: 50px;

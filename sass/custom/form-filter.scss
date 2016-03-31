@@ -1,5 +1,42 @@
 .form-filter {
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 14px;
+		color: $red;
+		margin-left: 10px;
+
+		&--center {
+			margin-left: 0px;
+			text-align: center;
+		}
+	}
+
+	&__text {
+		border: 2px solid $grey;
+		width: 280px;
+		height: 60px;
+
+		&::-webkit-input-placeholder {
+			padding-left: 20px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 26px;
+			color: $black;
+		}
+	}
+
+	textarea {
+		width: 280px;
+		height: 200px;
+	}
+}
+
+.travel-fon {
+	background-color: $grey;
 }
