@@ -2,14 +2,40 @@
 	background-color: $grey;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 	
 	&__actions {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	}
 
 	&__range {
 		border-top: 1px solid $darkgrey;
+	}
+
+	&__btn {
+		display: flex;
+		flex-direction: column;
+		padding-top: 38px;
+	}
+}
+
+.btn {
+
+	&--show {
+		color: $red;
+		border: 3px solid $red;
+		background-color: $grey;
+		margin-bottom: 10px;
+	}
+
+	&--cancel {
+		color: $darkgrey;
+		border: 3px solid $darkgrey;
+		background-color: $grey;
+		margin-bottom: 20px;
 	}
 }
