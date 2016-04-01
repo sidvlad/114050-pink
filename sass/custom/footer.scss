@@ -1,9 +1,14 @@
 .main-footer {
 	display: flex;
 
+	&__index-hidden {
+		@include mobile {
+			display: none;
+    	}
+	}
+
 	@include mobile {
 		flex-direction: column;
-      	display: none;
     }
 
     @include tablet {
