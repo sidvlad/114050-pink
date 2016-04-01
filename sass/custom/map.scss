@@ -34,5 +34,10 @@
       height: 72px;
       background-size: 100% 72px;
     } 
+
+    @include desktop {
+      height: 105px;
+      background-size: 100% 105px;
+    } 
   }
 }

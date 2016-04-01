@@ -14,10 +14,18 @@
       		font-size: $fortypx;
             line-height: 50px;
     	}
+
+        @include desktop {
+            font-size: $fortypx;
+            line-height: 50px;
+        }
 	}
 
     &__text:last-child {
         @include tablet {
+            padding-top: 0; 
+        }
+        @include desktop {
             padding-top: 0; 
         }
     }

@@ -38,13 +38,8 @@
   }
 
   &__table {
-
-    @include mobile {
-      width: 300%;
-      transition: all 0.2s ease-in-out;
-
-      th,
-      td {
+    th,
+    td {
         position: relative;
         width: 280px;
         height: 60px;
@@ -57,18 +52,26 @@
         & span {
           padding-left: 20px;
         }
-
-        & img {
-          position: absolute;
-          top: 11px;
-          right: 17px;
-        }
       }
+
+    @include mobile {
+      width: 300%;
+      transition: all 0.2s ease-in-out;
 
       tr th:first-child,
       tr td:first-child {
         display: none;
       }
+
+      & img {
+          position: absolute;
+          top: 11px;
+          right: 17px;
+        }
+    }
+
+    @include tablet {
+      width: 100%;
     }
   }
 

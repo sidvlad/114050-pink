@@ -1,6 +1,18 @@
 .main-footer {
 	display: flex;
-	flex-direction: column;
+
+	@include mobile {
+		flex-direction: column;
+      	display: none;
+    }
+
+    @include tablet {
+      	flex-direction: row;
+    }
+
+    @include desktop {
+    	flex-direction: row;
+    }
 
 	&__logo {
 		display: flex;
