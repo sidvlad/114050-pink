@@ -1,28 +1,39 @@
 .main-footer {
 	display: flex;
 
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 35px;
+		padding-bottom: 35px;
+
+
+		@include mobile {
+		flex-direction: column;
+   	 	}
+
+    	@include tablet {
+      	flex-direction: row;
+   	 	}
+
+    	@include desktop {
+    	flex-direction: row;
+    	}
+	}
+
 	&__index-hidden {
 		@include mobile {
 			display: none;
     	}
 	}
 
-	@include mobile {
-		flex-direction: column;
-    }
-
-    @include tablet {
-      	flex-direction: row;
-    }
-
-    @include desktop {
-    	flex-direction: row;
-    }
-
 	&__logo {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 30px;
+		width: 150px;
+		height: 50px;
+		background-image: url(/img/logo-pink-blue-mobile.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
 	}
 
 	&__copyright {
@@ -49,4 +60,41 @@
 	height: 50px;
 	border-radius: 100%;
 	border: 2px solid #grey;
+		
+		&--twitter {
+			border: 3px solid $grey;
+			border-radius: 100%;
+			background-image: url(/img/icon-twitter.svg);
+			background-repeat: no-repeat;
+    		background-size: 20px 20px;
+			background-position: center center;
+			margin-right: 12px;
+		}
+
+		&--facebook {
+			border: 3px solid $grey;
+			border-radius: 100%;
+			background-image: url(/img/icon-facebook.svg);
+			background-repeat: no-repeat;
+    		background-size: 20px 20px;
+			background-position: center center;
+			margin-right: 12px;
+		}
+
+		&--youtube {
+			border: 3px solid $grey;
+			border-radius: 100%;
+			background-image: url(/img/icon-youtube.svg);
+			background-repeat: no-repeat;
+    		background-size: 20px 20px;
+			background-position: center center;
+		}
+
 }
+
+
+
+
+
+
+
