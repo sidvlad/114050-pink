@@ -40,19 +40,40 @@
   &__table {
     th,
     td {
-        position: relative;
-        width: 280px;
-        height: 60px;
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-        border: 2px solid #e5e5e5;
-        background-color: #fff;
+      position: relative;
+      width: 280px;
+      height: 60px;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      border: 2px solid #e5e5e5;
+      background-color: #fff;
 
-        & span {
-          padding-left: 20px;
-        }
+      & span {
+        padding-left: 20px;
       }
+    }
+
+    td {
+      @include tablet {
+      min-width: 152px;
+      text-transform: none;
+      }
+      @include desktop {
+      min-width: 235px;
+      text-transform: none;
+      }
+    }
+
+    tr:nth-of-type(n+2) td:nth-of-type(n+2) {
+      @include tablet {
+      text-align: center;
+    }
+
+      @include desktop {
+      text-align: center;
+      }
+    }
 
     @include mobile {
       width: 300%;
@@ -65,13 +86,25 @@
 
       & img {
           position: absolute;
-          top: 11px;
+          top: 15px;
           right: 17px;
         }
     }
 
     @include tablet {
       width: 100%;
+
+      & img {
+        vertical-align: middle;
+      }
+    }
+
+    @include desktop {
+      width: 100%;
+
+      & img {
+        vertical-align: middle;
+      }
     }
   }
 
@@ -100,28 +133,43 @@
     &__controls label:last-child {
     margin-right: 0px;
   }
+
+  &__element:first-child {
+    @include tablet {
+      background-color: $grey;
+      border-left: none;
+      border-top: none;
+    }
+    @include desktop {
+      background-color: $grey;
+      border-left: none;
+      border-top: none;
+    }
+  }
 }
 
-.slider-price__control {
-  &[id="slider-control-1"]:checked ~ .slider-price__table  {
-    transform: translateX(0);
-  }
+@include mobile {
+  .slider-price__control {
+    &[id="slider-control-1"]:checked ~ .slider-price__table  {
+      transform: translateX(0);
+    }
 
-  &[id="slider-control-2"]:checked ~ .slider-price__table  {
-    transform: translateX(-33.3%);
-  }
+    &[id="slider-control-2"]:checked ~ .slider-price__table  {
+      transform: translateX(-33.3%);
+    }
 
-  &[id="slider-control-3"]:checked ~ .slider-price__table  {
-    transform: translateX(-66.6%);
-  }
+    &[id="slider-control-3"]:checked ~ .slider-price__table  {
+      transform: translateX(-66.6%);
+    }
 
-  &[id="slider-control-1"]:checked ~ .slider-price__controls &-label[for~="slider-control-1"],
-  &[id="slider-control-2"]:checked ~ .slider-price__controls &-label[for~="slider-control-2"],
-  &[id="slider-control-3"]:checked ~ .slider-price__controls &-label[for~="slider-control-3"] {
-    width: 12px;
-    height: 12px;
-    background-color: $white;
-    border: #283645 solid 3px;
-    margin-bottom: 0;
+    &[id="slider-control-1"]:checked ~ .slider-price__controls &-label[for~="slider-control-1"],
+    &[id="slider-control-2"]:checked ~ .slider-price__controls &-label[for~="slider-control-2"],
+    &[id="slider-control-3"]:checked ~ .slider-price__controls &-label[for~="slider-control-3"] {
+      width: 12px;
+      height: 12px;
+      background-color: $white;
+      border: #283645 solid 3px;
+      margin-bottom: 0;
+    }
   }
 }

@@ -6,32 +6,49 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    margin: 0;
   }
 
   &__text {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
+
+    @include tablet {
+    font-size: 18px;
+    }
   }
 
   &__element {
-        @include mobile {
-          width: 280px;
-        }
+    display: flex;
+    flex-direction: column;
 
-        @include tablet {
-          width: 620px;
-          display: flex;
-          flex-wrap: wrap-reverse;
-          justify-content: center;
-        }
+    @include mobile {
+      width: 280px;
+    }
 
-        @include desktop {
-          width: 960px;
-          display: flex;
-          flex-wrap: wrap-reverse;
-          justify-content: center;
-        }
+    @include tablet {
+      width: 620px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    @include desktop {
+      width: 960px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    text-align: center;
+    @include mobile {
+    display: none;
+    margin: 0;
+    }
   }
 
   &__block {
@@ -99,6 +116,30 @@
 
 .slider-review__control {
   @include mobile {
+    &[id="slider-review-control-1"]:checked ~ .slider-review__block  {
+      transform: translateX(0%);
+    }
+
+    &[id="slider-review-control-2"]:checked ~ .slider-review__block  {
+      transform: translateX(-33.3%);
+    }
+
+    &[id="slider-review-control-3"]:checked ~ .slider-review__block  {
+      transform: translateX(-66.6%);
+    }
+  }
+
+  &[id="slider-review-control-1"]:checked ~ .slider-review__controls &-label[for~="slider-review-control-1"],
+  &[id="slider-review-control-2"]:checked ~ .slider-review__controls &-label[for~="slider-review-control-2"],
+  &[id="slider-review-control-3"]:checked ~ .slider-review__controls &-label[for~="slider-review-control-3"] {
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border: #283645 solid 3px;
+    margin-bottom: 0;
+  }
+
+  @include tablet {
     &[id="slider-review-control-1"]:checked ~ .slider-review__block  {
       transform: translateX(0%);
     }

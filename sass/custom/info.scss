@@ -15,6 +15,13 @@
 	margin: 0;
 	padding: 0;
 
+	&-wrapper {
+		@include tablet {
+			display: flex;
+  			justify-content: flex-end;
+  		}
+	}
+
 	@include mobile {
 		background: url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
@@ -22,8 +29,6 @@
   	}
 
   	@include tablet {
-  		width: 310px;
-  		justify-content: flex-end;
   	}
 
   	@include desktop {
@@ -40,6 +45,7 @@
 		@include desktop {
   			font-size: 26px;
   			font-weight: bold;
+  			margin-bottom: 15px;
   		}
 	}
 
@@ -53,6 +59,10 @@
 		text-align: center;
 		margin-bottom: 35px;
 
+		@include tablet {
+  			width: 310px;
+  		}
+
 		@include desktop {
   			width: 250px;
   		}
@@ -61,4 +71,12 @@
 
 .info__table:last-child {
 	padding-bottom: 280px;
+
+	@include tablet {
+  		padding-bottom: 45px;
+  	}
+
+	@include desktop {
+  		padding-bottom: 50px;
+  	}
 }

@@ -1,0 +1,137 @@
+.disquisition {
+
+    @include  mobile {
+        display: none;
+    }
+    
+
+    @include tablet {
+        display: block;
+        background-color: #fff;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 57px;
+            padding-bottom: 30px;
+        }
+
+        &__logo {
+            position: relative;
+            width: 240px;
+            min-height: 280px;
+            background-image: url(/img/icon-timer.svg);
+            background-size: 238px 277px;
+            background-repeat: no-repeat;
+            
+            &::after {
+                content: "24";
+                position: absolute;
+                top: 59px;
+                left: 18px;
+                width: 203px;
+                height: 203px;
+                font-size: 96px;
+                line-height: 164px;
+                font-weight: 700;
+                text-align: center;
+                color: $red;
+                background-color: #fff;
+                border: 14px solid $red;
+                border-radius: 50%;
+            }
+        }
+        
+        &__content {
+            width: 50%;
+            padding-top: 40px;
+        }
+
+        &__title {
+            margin: 0 40% 10px 0;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        &__text {
+            margin-bottom: 7px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__link {
+            color: $red;
+        }
+    }
+
+    @include desktop {
+        display: block;
+        background-color: $grey;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            padding: 23px 0px 67px;
+        }
+
+        &__logo {
+            position: relative;
+            width: 32%;
+            height: 345px;
+            margin-right: 65px;
+            background-image: url(/img/icon-timer.svg);
+            background-size: 238px 277px;
+            background-repeat: no-repeat;
+            
+            &::after {
+                content: "24";
+                position: absolute;
+                top: 68px;
+                left: 23px;
+                width: 253px;
+                height: 253px;
+                font-size: 120px;
+                line-height: 205px;
+                border-width: 17px;
+                font-weight: 700;
+                text-align: center;
+                color: $red;
+                background-color: $grey;
+                border: 14px solid $red;
+                border-radius: 50%;
+            }
+        }
+        
+        &__content {
+            width: 50%;
+            padding-top: 90px;
+        }
+
+        &__title {
+            margin: 0 40% 10px 0;
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        &__link {
+            color: $red;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
