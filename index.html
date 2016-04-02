@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -14,22 +13,22 @@
         <div class="main-header__block">
           <div class="main-header__block--logo"></div>
           <div class="main-header__block--menu"></div>
-          <button class="main-header__toggle"></button>
+          <button class="main-header__block--toggle"></button>
         </div>
-        <nav class="main-menu">
+        <div class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item"><a href="photo.html">Информация</a></li>
             <li class="main-menu__item"><a href="#">Возможности</a></li>
             <li class="main-menu__item"><a href="#">Отзывы</a></li>
             <li class="main-menu__item"><a href="#">Стоимость</a></li>
           </ul>
-        </nav>
-        <h1 class="main-title">Взгляните на жизнь иначе!</h1>
+        </div>
       </div>
     </header>
     <section class="intro">
       <div class="wrapper">
         <div class="download-app__block">
+          <h1 class="intro__title">Взгляните <br>на жизнь иначе!</h1>
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-app__links">
             <a class="download-app__link  download-app__link--ios" href="#"><img src="img/logo-apple.svg"></a>
@@ -43,8 +42,8 @@
     </section>
     <section class="title">
       <div class="wrapper">
-          <p class="title__text">Устали от серости мегаполиса?</p>
-          <p class="title__text">Нам есть, что вам предложить!</p>
+        <p class="title__text">Устали от серости мегаполиса?</p>
+        <p class="title__text">Нам есть, что вам <br>предложить!</p>
       </div>
     </section>
     <section class="info">
@@ -73,22 +72,20 @@
           <input type="radio" class="slider-review__control slider-review__control--active" name="slider-review-control" id="slider-review-control-1" checked="checked">
           <input type="radio" class="slider-review__control" name="slider-review-control" id="slider-review-control-2">
           <input type="radio" class="slider-review__control" name="slider-review-control" id="slider-review-control-3">
-          <table class="slider-review__table">
-            <tr>
-              <th class="slider-review__element">
-                <p class="slider-review__name">Николай Петров</p>
-                <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-              </th>
-              <th class="slider-review__element">
-                <p class="slider-review__name">Николай Петров</p>
-                <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-              </th>
-              <th class="slider-review__element">
-                <p class="slider-review__name">Николай Петров</p>
-                <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-              </th>
-            </tr>
-          </table>
+          <div class="slider-review__block">
+            <div class="slider-review__element">
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+            <div class="slider-review__element">
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+            <div class="slider-review__element">
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+          </div>
           <div class="slider-review__controls">
             <label type="radio" class="slider-review__control-label" for="slider-review-control-1"></label>
             <label type="radio" class="slider-review__control-label" for="slider-review-control-2"></label>
@@ -121,21 +118,21 @@
             </tr>
             <tr>
               <td><span>Розовый фильтр</span></td>
-              <td><span>Розовый фильтр</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Розовый фильтр</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Розовый фильтр</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="30" height="30"></td>
             </tr>
             <tr>
               <td><span>Смайлики</span></td>
-              <td><span>Смайлики</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Смайлики</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Смайлики</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-yes.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-yes.svg" width="30" height="30"></td>
             </tr>
             <tr>
               <td><span>Комментарии</span></td>
-              <td><span>Комментарии</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Комментарии</span><img src="img/icon-no.svg" width="30" height="30"></td>
-              <td><span>Комментарии</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-no.svg" width="30" height="30"></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-yes.svg" width="30" height="30"></td>
             </tr>
           </table>
           <div class="slider-price__controls">
@@ -148,7 +145,7 @@
     </section>
     <section class="contacts">
       <div class="wrapper">
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</p>
         <ul class="contacts__info">
           <li class="contacts__item">
             <div class="contacts__data">Звоните:</div>
@@ -166,5 +163,22 @@
       </div>
       <div class="map"></div>
     </section>
+    <footer class="main-footer main-footer__index-hidden">
+      <div class="wrapper">
+        <div class="main-footer__block">
+        <a href="#" class="main-footer__logo"></a>
+        <div class="main-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--twitter" href="#"></a>
+            <a class="social-link social-link--facebook" href="#"></a>
+            <a class="social-link social-link--youtube" href="#"></a>
+          </div>
+        </div>
+        <div class="main-footer__copyright">Разработано
+          <a href="#"><img src="img/logo-htmlacademy.svg" width="36" height="36" alt="logo-htmlacademy"></a>
+        </div>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

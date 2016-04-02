@@ -1,8 +1,11 @@
 .main-header {
+  position: absolute;
+  width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0,0,0,0.3);
 
 	&__block {
   	display: flex;
@@ -11,6 +14,24 @@
   	justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    @include tablet {
+      min-height: 109px;
+    }
+  }
+
+  &__block--toggle {
+    width: 50px;
+    height: 25px;
+    background: none;
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+
+    @include desktop {
+      display: none;
+    }
   }
 
   &__block--logo {
@@ -31,16 +52,6 @@
       height: 23px;
       background-image: url("../img/logo-pink-white-mobile.svg");
     }
-  }
-
-	&__toggle {
-  	width: 50px;
-  	height: 25px;
-    background: none;
-    background-image: url("../img/icon-menu-burger.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
 
     @include desktop {
       display: none;
@@ -53,39 +64,58 @@
     font-weight: 300;
     font-size: 24px;
   }
-
-  	@include mobile {
-      background-image: url("../img/iphone-hand-mobile.png"),
-      url("../img/bg-back-mobile.jpg");
-      background-position: center bottom, center bottom; 
-      background-size: 288px 280px, cover;
-      width: 100%;
-      height: 457px;
-  	}
-
-  	@include tablet {
-      background-image: url("../img/iphone-hand-mobile.png"),
-      url("../img/bg-back-mobile.jpg");
-      background-position: center bottom, center bottom; 
-      background-size: 288px 280px, cover;
-      width: 100%;
-      height: 729px;
-  	}
-
-  	@include desktop {
-      background-image: url("../img/iphone-hand-mobile.png"),
-      url("../img/bg-back-mobile.jpg");
-      background-position: center bottom, center bottom; 
-      background-size: 288px 280px, cover;
-      width: 100%;
-      height: 853px;
-  	}
 }
 
-.main-title {
-	color: $white;
+.main-menu {
 
-	@include mobile {
+  @include mobile {
+    background-color: #283645;
+    text-align: center;
     display: none;
-  	}
+  }
+
+  @include tablet {
+    background-color: #283645;
+    text-align: center;
+    display: none;
+  }
 }
+
+.main-menu__list {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    display: none;
+    }
+
+  @include tablet {
+    flex-direction: column;
+    display: inherit;
+    }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.main-menu__item {
+  list-style: none;
+  border-bottom: 1px solid $black;
+}
+
+.main-menu__item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+
+  @include desktop {
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+

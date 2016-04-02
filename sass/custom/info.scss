@@ -2,7 +2,7 @@
 	background-color: $grey;
 	display: flex;
 	flex-direction: column;
-	padding-top: 55px;
+	padding-top: 77px;
 	
 	&__table {
 	display: flex;
@@ -18,13 +18,17 @@
 	@include mobile {
 		background: url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
-  		background-position: center 570px;
+  		background-position: center 429px;
   	}
 
   	@include tablet {
+  		width: 310px;
+  		justify-content: flex-end;
   	}
 
   	@include desktop {
+  		flex-direction: row;
+  		justify-content: space-around;
   	}
 
 	&-title {
@@ -32,15 +36,29 @@
 		font-size: 18px;
 		font-weight: 700;
 		text-align: center;
+
+		@include desktop {
+  			font-size: 26px;
+  			font-weight: bold;
+  		}
+	}
+
+	&-item p {
+		margin: 0;
+		line-height: 26px;
 	}
 
 	&-item {
 		font-size: 14px;
 		text-align: center;
 		margin-bottom: 35px;
+
+		@include desktop {
+  			width: 250px;
+  		}
 	}
 }
 
 .info__table:last-child {
-	padding-bottom: 300px;
+	padding-bottom: 280px;
 }

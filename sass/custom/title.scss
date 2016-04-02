@@ -1,15 +1,36 @@
 .title {
-  position: relative;
+	position: relative;
 	flex-direction: row;
-	padding-bottom: 65px;
+	padding-bottom: 32px;
 
 	&__text {
 		font-size: 24px;
 		text-align: center;
 		font-weight: 300;
+        margin: 0;
+        padding-top: 32px;
+
+		@include tablet {
+      		font-size: $fortypx;
+            line-height: 50px;
+    	}
+
+        @include desktop {
+            font-size: $fortypx;
+            line-height: 50px;
+        }
 	}
 
-  &:after {
+    &__text:last-child {
+        @include tablet {
+            padding-top: 0; 
+        }
+        @include desktop {
+            padding-top: 0; 
+        }
+    }
+
+	&:after {
     position: absolute;
     top: 100%;
     left: 0;
