@@ -2,8 +2,24 @@
   font-size: 14px;
   font-weight: 400;
 
-  & > .wrapper {
+  &__wrapper {
     background-color: $grey;
+
+    @include mobile {
+      width: 280px;
+    }
+    @include tablet {
+      width: 300px;
+      height: 455px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__photo {
+    @include tablet {
+      width: 300px;
+    }
   }
 
 	&__photo--panorama {
@@ -50,4 +66,16 @@
     color: $red;
     text-decoration: none;
   }
+}
+
+.photo-tape {
+    display: flex;
+  flex-wrap: wrap;
+  @include mobile {
+      width: 280px;
+    }
+    @include tablet {
+      width: 700px;
+      flex-direction: row;
+    }
 }

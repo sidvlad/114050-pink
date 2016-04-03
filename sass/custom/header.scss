@@ -83,14 +83,10 @@
   align-items: center;
 
   @include mobile {
-    background-color: #283645;
-    text-align: center;
-    display: none;
+      
   }
 
   @include tablet {
-    background-color: #283645;
-    text-align: center;
     display: none;
   }
 }
@@ -99,13 +95,15 @@
   display: flex;
 
   @include mobile {
+    width: 100%;
     flex-direction: column;
-    display: none;
-    }
+    background-color: #283645;
+  }
 
   @include tablet {
+    width: 100%;
     flex-direction: column;
-    display: inherit;
+    background-color: #283645;
     }
 
   @include desktop {
@@ -117,8 +115,20 @@
 
 .main-menu__item {
   list-style: none;
-  border-bottom: 1px solid $black;
-  margin-right: 15px;
+
+    @include mobile {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid #495461;
+      margin-right: 15px;
+      text-align: center;
+      
+    }
+
+    @include desktop {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid #495461;
+      margin-right: 15px;
+    }
 
     @include desktop {
       border-bottom: 3px solid transparent;
