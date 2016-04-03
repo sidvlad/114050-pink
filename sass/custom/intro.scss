@@ -1,27 +1,120 @@
 .intro {
-	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	background-color: #1d2631;
+
+	@include mobile {
+      background-image: url("../img/iphone-hand-mobile.png"),
+      url("../img/bg-back-mobile.jpg");
+      background-position: 20px 178px, top; 
+      background-repeat: no-repeat;
+      background-size: 288px 280px, 100% 458px;
+      width: 100%;
+      height: 730px;
+      padding-top: 447px;
+  	}
+
+  	@include tablet {
+      background-image: url("../img/iphone-hand-mobile.png"),
+      url("../img/bg-back-mobile.jpg");
+      background-position: center bottom, center bottom; 
+      background-size: 288px 280px, cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 729px;
+  	}
+
+  	@include desktop {
+      background-image: url("../img/iphone-hand-mobile.png"),
+      url("../img/bg-back-mobile.jpg");
+      background-position: center bottom, center bottom; 
+      background-size: 288px 280px, cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 853px;
+  	}
+
+  	&__title {
+	color: $white;
+
+		@include mobile {
+    		display: none;
+  		}
+
+    	@include tablet {
+   			font-weight: 300;
+    		font-size: $fortypx;
+    		line-height: 50px;
+    	}
+
+    	@include desktop {
+     		font-weight: 300;
+      	font-size: $fiftypx;
+        line-height: 60px;
+        margin-bottom: 60px;
+    	}
+  	}
 }
 
 .btn {
 	&--download {
-		color: #fff;
-		font-weight: bold;
-		font-size: 18px;
-		text-decoration: none;
-		border: 2px solid #fff;
-		padding: 10px;
-		border-radius: 50px;
+		color: $white;
+		border: 3px solid $white;
+
+		@include tablet {
+    		width: 300px;
+    		padding: 14px 45px;
+  		}
 	}
+  &--download:hover {
+    color: $red;
+    background-color: $white;
+  }
 }
 
 .download-app {
+
+	&__links {
+		margin-top: 34px;
+
+    @include desktop {
+      margin-top: 60px;
+    }
+	}
+
+	&__link img {
+		margin: 10px 15px;
+	}
+
+	&__block {
+		text-align: center;
+		margin-top: 50px;
+
+  		@include tablet {
+  			padding-top: 100px;
+  			width: 300px;
+  			margin-left: 0;
+		  }
+      @include desktop {
+        padding-top: 100px;
+        width: 300px;
+        margin-left: 0;
+    }
+	}
 	
 	&__text {
-		color: #999;
-		font-style: 14px;
+		color: $grey;
+		font-size: 14px;
 		font-weight: 300;
+		line-height: 24px;
+		margin: 0;
+		margin-top: 5px;
+
+		@include tablet {
+    		font-size: 18px;
+  		}
+    @include desktop {
+        margin-top: 50px;
+      }
 	}
 }

@@ -1,7 +1,76 @@
 .filters-photo {
-	outline: 1px solid red;
+	background-color: $grey;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 	
 	&__actions {
 	display: flex;
-	flex-direction: row;}
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+
+	&__range {
+		border-top: 1px solid $darkgrey;
+	}
+
+	&__btn {
+		display: flex;
+		flex-direction: column;
+		padding-top: 38px;
+	}
+}
+
+.btn {
+
+	&--show {
+		color: $red;
+		border: 3px solid $red;
+		background-color: $grey;
+		margin-bottom: 10px;
+
+		&:hover {
+			color: $white;
+			background-color: $red;
+		}
+
+		&:active {
+			color: #e06989;
+		}
+	}
+
+	&--cancel {
+		color: $darkgrey;
+		border: 3px solid $darkgrey;
+		background-color: $grey;
+		margin-bottom: 20px;
+
+		&:hover {
+			color: #b5b9be;
+			border: 3px solid #b5b9be;
+		}
+
+		&:active {
+			color: #cbced2;
+			background-color: #b5b9be;
+		}
+	}
+}
+
+.icon-crop,
+.icon-fill,
+.icon-contrast {
+  fill: #b5b9be;
+
+  &:hover {
+  	cursor: pointer;
+    fill: #8d949b;
+  }
+
+  &:active {
+  	cursor: pointer;
+    fill: $red;
+  }
 }

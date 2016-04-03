@@ -5,37 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="wrapper">
-        <div class="main-header__block">
-          <h1 class="main-header__block--title">Pink</h1>
-          <div class="main-header__block--menu"></div>
-          <button class="main-header__toggle">
-          <span class="main-header__hamburger">
-            <span class="hamburger hamburger--up"></span>
-            <span class="hamburger hamburger--middle"></span>
-            <span class="hamburger hamburger--down"></span>
-          </span>
-          </button>
+        <div class="main-header__wrapper">
+          <div class="main-header__block">
+            <div class="main-header__block--logo"></div>
+            <div class="main-header__block--menu"></div>
+            <button class="main-header__block--toggle"></button>
+          </div>
+          <div class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a href="photo.html">Информация</a></li>
+              <li class="main-menu__item"><a href="#">Возможности</a></li>
+              <li class="main-menu__item"><a href="#">Отзывы</a></li>
+              <li class="main-menu__item"><a href="#">Стоимость</a></li>
+            </ul>
+          </div>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="photo.html">Информация</a></li>
-            <li class="main-menu__item"><a href="#">Возможности</a></li>
-            <li class="main-menu__item"><a href="#">Отзывы</a></li>
-            <li class="main-menu__item"><a href="#">Стоимость</a></li>
-          </ul>
-        </nav>
-        <h1 class="main-title">Взгляните на жизнь иначе!</h1>
       </div>
     </header>
     <section class="intro">
       <div class="wrapper">
         <div class="download-app__block">
+          <h1 class="intro__title">Взгляните <br>на жизнь иначе!</h1>
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="download-app__links">
             <a class="download-app__link  download-app__link--ios" href="#"><img src="img/logo-apple.svg"></a>
@@ -47,44 +42,76 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section class="title">
       <div class="wrapper">
-        <div class="info__title">
-          <p class="info__title-text">Устали от серости мегаполиса?</p>
-          <p class="info__title-text">Нам есть, что вам предложить!</p>
-        </div>
-        <ul class="info__table">
-          <li class="info__table-item">
-            <div class="info__table-title">Поднимает настроение</div>
-            <p> Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="info__table-item">
-            <div class="info__table-title">Меняет мир вокруг</div>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="info__table-item">
-            <div class="info__table-title">Заводит новых друзей</div>
-            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <p class="title__text">Устали от серости мегаполиса?</p>
+        <p class="title__text">Нам есть, что вам <br>предложить!</p>
       </div>
     </section>
-    <section class="reviews">
+    <section class="info">
       <div class="wrapper">
-        <div class="reviews__slide">
-          <div class="review">
-            <div class="review__name">Николай Петров</div>
-            <blockquote class="review__text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-            </blockquote>
+        <div class="info__table-wrapper">
+          <ul class="info__table">
+            <li class="info__table-item">
+              <div class="info__table-title">Поднимает настроение</div>
+              <p> Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="info__table-item">
+              <div class="info__table-title">Меняет мир вокруг</div>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="info__table-item">
+              <div class="info__table-title">Заводит новых друзей</div>
+              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="disquisition">
+      <div class="wrapper">
+        <div class="disquisition__wrapper">
+          <div class="disquisition__logo"></div>
+          <div class="disquisition__content">
+            <p class="disquisition__title">Эффект на 24 часа!</p>
+            <p class="disquisition__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="disquisition__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
-        <div class="slider-rewiew__controls">
-          <i class="slider-rewiew__control  slider-rewiew__control--active"></i>
-          <i class="slider-rewiew__control"></i>
-          <i class="slider-rewiew__control"></i>
+      </div>
+    </section>
+    <section class="slider-review">
+      <div class="wrapper">
+        <div class="slider-review__slide">
+          <input type="radio" class="slider-review__control slider-review__control--active" name="slider-review-control" id="slider-review-control-1" checked="checked">
+          <input type="radio" class="slider-review__control" name="slider-review-control" id="slider-review-control-2">
+          <input type="radio" class="slider-review__control" name="slider-review-control" id="slider-review-control-3">
+          <div class="slider-review__block">
+            <div class="slider-review__element">
+              <p class="slider-review__description">25 лет, водитель трамвая</p>
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+            <div class="slider-review__element">
+              <p class="slider-review__description">25 лет, водитель трамвая</p>
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+            <div class="slider-review__element">
+              <p class="slider-review__description">25 лет, водитель трамвая</p>
+              <p class="slider-review__name">Николай Петров</p>
+              <p class="slider-review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </div>
+          </div>
+          <div class="slider-review__controls">
+            <label type="radio" class="slider-review__control-label" for="slider-review-control-1"></label>
+            <label type="radio" class="slider-review__control-label" for="slider-review-control-2"></label>
+            <label type="radio" class="slider-review__control-label" for="slider-review-control-3"></label>
+          </div>
         </div>
       </div>
     </section>
@@ -111,57 +138,68 @@
               </th>
             </tr>
             <tr>
-              <td>Розовый фильтр</td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
+              <td><span>Розовый фильтр</span></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="22" height="17"></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="22" height="17"></td>
+              <td><span class="slider-price__row">Розовый фильтр</span><img src="img/icon-yes.svg" width="22" height="17"></td>
             </tr>
             <tr>
-              <td>Смайлики</td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
+              <td><span>Смайлики</span></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-no.svg" width="27" height="27"></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-yes.svg" width="22" height="17"></td>
+              <td><span class="slider-price__row">Смайлики</span><img src="img/icon-yes.svg" width="22" height="17"></td>
             </tr>
             <tr>
-              <td>Комментарии</td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
-              <td><img src="http://placehold.it/30x20"></td>
+              <td><span>Комментарии</span></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-no.svg" width="27" height="27"></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-no.svg" width="27" height="27"></td>
+              <td><span class="slider-price__row">Комментарии</span><img src="img/icon-yes.svg" width="22" height="17"></td>
             </tr>
           </table>
           <div class="slider-price__controls">
-            <label type="radio"
-              class="slider-price__control-label"
-            for="slider-control-1"></label>
-            <label type="radio"
-              class="slider-price__control-label"
-            for="slider-control-2"></label>
-            <label type="radio"
-              class="slider-price__control-label"
-            for="slider-control-3"></label>
+            <label type="radio" class="slider-price__control-label" for="slider-control-1"></label>
+            <label type="radio" class="slider-price__control-label" for="slider-control-2"></label>
+            <label type="radio" class="slider-price__control-label" for="slider-control-3"></label>
           </div>
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="wrapper">
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</p>
         <ul class="contacts__info">
           <li class="contacts__item">
-            <div class="contacts__title">Звоните:</div>
+            <div class="contacts__data">Звоните:</div>
             <a class="contacts__phone" href="tel:78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <div class="contacts__title">Пишите:</div>
+            <div class="contacts__data">Пишите:</div>
             <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <div class="contacts__title">Приезжайте в гости:</div>
+            <div class="contacts__data">Приезжайте в гости:</div>
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
       <div class="map"></div>
     </section>
+    <footer class="main-footer main-footer__index-hidden">
+      <div class="wrapper">
+        <div class="main-footer__block">
+          <a href="#" class="main-footer__logo"></a>
+          <div class="main-footer__social">
+            <div class="social-links">
+              <a class="social-link social-link--twitter" href="#"></a>
+              <a class="social-link social-link--facebook" href="#"></a>
+              <a class="social-link social-link--youtube" href="#"></a>
+            </div>
+          </div>
+          <div class="main-footer__copyright">Разработано
+            <a href="#"><img src="img/logo-htmlacademy.svg" width="36" height="36" alt="logo-htmlacademy"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -11,32 +11,27 @@
   <body>
     <header class="main-header">
       <div class="wrapper">
-        <div class="main-header__block">
-          <h1 class="main-header__block--title">Pink</h1>
-          <div class="main-header__block--menu"></div>
-          <button class="main-header__toggle">
-          <span class="main-header__hamburger">
-            <span class="hamburger hamburger--up"></span>
-            <span class="hamburger hamburger--middle"></span>
-            <span class="hamburger hamburger--down"></span>
-          </span>
-          </button>
+        <div class="main-header__wrapper">
+          <div class="main-header__block">
+            <div class="main-header__block--logo"></div>
+            <div class="main-header__block--menu"></div>
+            <button class="main-header__block--toggle"></button>
+          </div>
+          <div class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a href="index.html">Главная</a></li>
+              <li class="main-menu__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-menu__item"><a href="#">Конкурс</a></li>
+              <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+          <div class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</div>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="#">Главная</a></li>
-            <li class="main-menu__item"><a href="#">Фотографии</a></li>
-            <li class="main-menu__item"><a href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </nav>
-        <div class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</div>
       </div>
     </header>
-    <section class="block-intro">
+    <section class="intro">
       <div class="wrapper">
-        <div class="block-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-        </div>
+        <div class="intro__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</div>
       </div>
     </section>
     <section class="form">
@@ -50,36 +45,40 @@
             <label class="form-filter__title" for="second-name">Отчество:</label>
             <input class="form-filter__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
           </fieldset>
-          <fieldset class="form-filter">
-            <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
-            <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
-            <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
-            <label class="form-filter__item" for="beach">Обгорел на пляже</label>
-            <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
-            <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
-            <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-            <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
-            <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
-            <label class="form-filter__item" for="tower">Удержал башню</label>
-            <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
-            <label class="form-filter__item" for="hotel">Разгромил отель</label>
-          </fieldset>
+          <div class="travel-fon">
+            <fieldset class="form-filter">
+              <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные <br> достижения в путешествии</legend>
+              <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
+              <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
+              <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="form-filter__item" for="beach">Обгорел на пляже</label>
+              <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
+              <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
+              <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
+              <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="form-filter__item" for="tower">Удержал башню</label>
+              <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="form-filter__item" for="hotel">Разгромил отель</label>
+            </fieldset>
+          </div>
           <fieldset class="form-filter">
             <label class="form-filter__title" for="tel">Номер телефончика:</label>
             <input class="form-filter__text" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" id="tel">
             <label class="form-filter__title" for="email">Адресок почты:</label>
             <input class="form-filter__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
           </fieldset>
-          <fieldset class="form-filter">
-            <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
-            <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
-            <label class="form-filter__item" for="app-ios">Pink для iOS</label>
-            <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
-            <label class="form-filter__item" for="app-android">Pink на Android</label>
-            <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
-            <label class="form-filter__item" for="app-windows">Windows Phone</label>
-          </fieldset>
+          <div class="travel-fon">
+            <fieldset class="form-filter">
+              <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
+              <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
+              <label class="form-filter__item" for="app-ios">Pink для iOS</label>
+              <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
+              <label class="form-filter__item" for="app-android">Pink на Android</label>
+              <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
+              <label class="form-filter__item" for="app-windows">Windows Phone</label>
+            </fieldset>
+          </div>
           <fieldset class="form-filter">
             <label class="form-filter__title  form-filter__title--center" for="review">Опишите свои эмоции</label>
             <textarea class="form-filter__text  form-filte__text--textarea" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -91,18 +90,20 @@
         </form>
       </div>
     </section>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer__index-hidden">
       <div class="wrapper">
-        <a href="#" class="main-footer__logo"><img src="http://placehold.it/100x30"  width="100" height="30" alt="logo"></a>
-        <div class="main-footer__social">
-          <div class="social-links">
-            <a class="social-link social-link--twitter" href="#">Twitter</a>
-            <a class="social-link social-link--facebook" href="#">Facebook</a>
-            <a class="social-link social-link--youtube" href="#">Youtube</a>
+        <div class="main-footer__block">
+          <a href="#" class="main-footer__logo"></a>
+          <div class="main-footer__social">
+            <div class="social-links">
+              <a class="social-link social-link--twitter" href="#"></a>
+              <a class="social-link social-link--facebook" href="#"></a>
+              <a class="social-link social-link--youtube" href="#"></a>
+            </div>
           </div>
-        </div>
-        <div class="main-footer__copyright">Разработано:
-          <a href="#"><img src="http://placehold.it/100x30"  width="100%" alt="logo-htmlacademy"></a>
+          <div class="main-footer__copyright">Разработано
+            <a href="#"><img src="img/logo-htmlacademy.svg" width="36" height="36" alt="logo-htmlacademy"></a>
+          </div>
         </div>
       </div>
     </footer>

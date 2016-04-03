@@ -1,7 +1,8 @@
 .info {
-	outline: 1px solid red;
+	background-color: $grey;
 	display: flex;
 	flex-direction: column;
+	padding-top: 77px;
 	
 	&__table {
 	display: flex;
@@ -9,41 +10,73 @@
 	}
 }
 
-.info__title {
-	flex-direction: row;
-
-	&-text {
-		font-size: 24px;
-		text-align: center;
-	}
-}
-
 .info__table {
-	background: #f2f2f2 url("../img/iphone-screen-mobile.png");
-	background-repeat: no-repeat;
-  	background-position: center bottom;
-	list-style:none;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 
+	&-wrapper {
+		@include tablet {
+			display: flex;
+  			justify-content: flex-end;
+  		}
+	}
+
+	@include mobile {
+		background: url("../img/iphone-screen-mobile.png");
+		background-repeat: no-repeat;
+  		background-position: center 429px;
+  	}
+
+  	@include tablet {
+  	}
+
+  	@include desktop {
+  		flex-direction: row;
+  		justify-content: space-around;
+  	}
+
 	&-title {
-		color: #000;
+		color: $black;
 		font-size: 18px;
-		font-weight: 900;
+		font-weight: 700;
 		text-align: center;
+
+		@include desktop {
+  			font-size: 26px;
+  			font-weight: bold;
+  			margin-bottom: 15px;
+  		}
 	}
 
-	&-title p {
-		font-size: 14px;
-		font-weight: 300;
+	&-item p {
+		margin: 0;
+		line-height: 26px;
 	}
 
-	&-title p {
+	&-item {
 		font-size: 14px;
-		font-weight: 300;
+		text-align: center;
+		margin-bottom: 35px;
+
+		@include tablet {
+  			width: 310px;
+  		}
+
+		@include desktop {
+  			width: 250px;
+  		}
 	}
 }
 
 .info__table:last-child {
-	padding-bottom: 300px;
+	padding-bottom: 280px;
+
+	@include tablet {
+  		padding-bottom: 45px;
+  	}
+
+	@include desktop {
+  		padding-bottom: 50px;
+  	}
 }

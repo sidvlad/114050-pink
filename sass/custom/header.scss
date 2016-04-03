@@ -1,67 +1,160 @@
 .main-header {
-	outline: 1px solid red;
+  position: absolute;
+  width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	background-repeat: no-repeat;
-  	background-size: cover;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.3);
+
+  &__wrapper {
+    @include desktop {
+      width: 900px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
 
 	&__block {
   	display: flex;
   	flex-direction: row;
   	align-items: center;
   	justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include tablet {
+      height: 110px;
+    }
+    @include desktop {
+      height: 110px;
+    }
   }
 
-   &__block--title {
-   	color: #fff;
-   }
+  &__block--toggle {
+    width: 50px;
+    height: 25px;
+    background: none;
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 
-	&__toggle {
-  	width: 60px;
-  	height: 60px;
+    @include desktop {
+      display: none;
+    }
   }
 
-  	@include mobile {
-  	background-image: url("../img/bg-back-mobile.jpg");
-  	}
+  &__block--logo {
+    width: 75px;
+    height: 23px;
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  	@include tablet {
-  	}
+    @include mobile {
+      width: 75px;
+      height: 23px;
+      background-image: url("../img/logo-pink-white-mobile.svg");
+    }
 
-  	@include desktop {
-  	}
+    @include tablet {
+      width: 75px;
+      height: 23px;
+      background-image: url("../img/logo-pink-white-mobile.svg");
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: $white;
+    font-weight: 300;
+    font-size: 24px;
+  }
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+      
+  }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .main-menu__list {
-	outline: 1px solid green;
-	display: flex;
-	justify-content: space-between;
-	
-	@include mobile {
+  display: flex;
+
+  @include mobile {
+    width: 100%;
     flex-direction: column;
-  	}
+    background-color: #283645;
+  }
 
-  	@include tablet {
-    flex-direction: row;
-  	}
+  @include tablet {
+    width: 100%;
+    flex-direction: column;
+    background-color: #283645;
+    }
 
-  	@include desktop {
+  @include desktop {
+    width: 620px;
     flex-direction: row;
- 	}
+    justify-content: space-between;
+  }
 }
 
 .main-menu__item {
-	list-style:none
+  list-style: none;
+
+    @include mobile {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid #495461;
+      margin-right: 15px;
+      text-align: center;
+      
+    }
+
+    @include desktop {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid #495461;
+      margin-right: 15px;
+    }
+
+    @include desktop {
+      border-bottom: 3px solid transparent;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+    @include desktop {
+      border-bottom: 3px solid $white;
+    }
+  }
 }
 
 .main-menu__item a {
-	text-decoration: none;
-}
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
 
-.main-title {
-	color: #fff;
-
-	@include mobile {
-    dosplay: none;
-  	}
+  @include desktop {
+    font-weight: 400;
+    text-transform: none;
+  }
 }

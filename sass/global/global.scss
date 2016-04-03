@@ -1,3 +1,13 @@
+$red: #d22856;
+$grey: #f2f2f2;
+$lightgrey: #888;
+$darkgrey: #dddfe0;
+$white: #fff;
+$black: #000;
+
+$fortypx: 40px;
+$fiftypx: 50px;
+
 *,
 *::before,
 *::after {
@@ -7,12 +17,11 @@
 body {
 	width: 100%;
 	margin: 0 auto;
-	font: normal 400 18px/30px "OpenSans", Arial, sans-serif;
+	font: normal 400 18px/30px "Open Sans", Arial, sans-serif;
 }
 
 .wrapper {
 	margin: 0 auto;
-	outline: 1px solid red;
 
   @include mobile {
     width: 280px;
@@ -25,4 +34,13 @@ body {
   @include desktop {
     width: 940px;
   }
+}
+
+.btn {
+  width: 280px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 50px;
 }
