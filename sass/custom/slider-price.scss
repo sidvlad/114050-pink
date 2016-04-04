@@ -10,7 +10,8 @@
     padding-top: 80px;
   }
   @include desktop {
-    min-height: 445px;
+    min-height: 500px;
+    padding-top: 120px;
   }
 
   &__name {
@@ -78,12 +79,13 @@
     td {
       @include tablet {
         height: 47px;
-      min-width: 152px;
-      text-transform: none;
+        min-width: 152px;
+        text-transform: none;
       }
       @include desktop {
-      min-width: 235px;
-      text-transform: none;
+        min-width: 235px;
+        text-transform: none;
+        font-size: 18px;
       }
     }
 

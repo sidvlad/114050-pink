@@ -68,8 +68,9 @@
   		}
 
   		@include desktop {
-    		font-size: $fiftypx;
+    		font-size: 48px;
     		line-height: 60px;
+    		padding-top: 15px;
   		}
 	}
 

@@ -27,14 +27,15 @@
         }
 
 		@include tablet {
-      		font-size: $fortypx;
-            line-height: 50px;
-            padding-top: 45px;
-    	}
-
-        @include desktop {
             font-size: $fortypx;
             line-height: 50px;
+            padding-top: 45px;
+        }
+
+        @include desktop {
+            font-size: 48px;
+            padding-top: 85px;
+            line-height: 55px;
         }
 	}
 
