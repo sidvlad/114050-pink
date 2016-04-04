@@ -1,62 +1,122 @@
 .filters-photo {
-	background-color: $grey;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	
-	&__actions {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	}
+    background-color: $grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+    &__actions {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
 
-	&__range {
-		border-top: 1px solid $darkgrey;
-	}
+        @include tablet {
+            flex-direction: column;
+        }
+        @include desktop {
+            flex-direction: column;
+        }
+    }
 
-	&__btn {
-		display: flex;
-		flex-direction: column;
-		padding-top: 38px;
-	}
+    &__actions-crop--active &__range{
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &__range {
+        background: rgba(0,0,0, 0.3);
+        height: 2px;
+        margin: 19px 0;
+        margin-bottom: 30px;
+        position: absolute;
+        width: 100%;
+
+        &-range {
+            width: 100%;
+            background: #fff;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+        &-toggle {
+            border-radius: 50%;
+            border: 9px solid #000;
+            background-color: #ababab;
+            height: 4px;
+            display: block;
+            left: 0;
+            margin-top: -11px;
+            position: absolute;
+            top: 50%;
+            width: 4px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            margin-left: 50px;
+
+        }
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        padding-top: 38px;
+
+        @include desktop {
+        flex-direction: row;
+        padding-top: 38px;
+        }
+    }
+
+    @include desktop {
+        width: 940px;
+        margin: 0 auto;
+    }
 }
 
 .btn {
 
-	&--show {
-		color: $red;
-		border: 3px solid $red;
-		background-color: $grey;
-		margin-bottom: 10px;
+    &--show {
+        color: $red;
+        border: 3px solid $red;
+        background-color: $grey;
+        margin-bottom: 20px;
 
-		&:hover {
-			color: $white;
-			background-color: $red;
-		}
+        &:hover {
+            color: $white;
+            background-color: $red;
+        }
 
-		&:active {
-			color: #e06989;
-		}
-	}
+        &:active {
+            color: #e06989;
+        }
+    }
 
-	&--cancel {
-		color: $darkgrey;
-		border: 3px solid $darkgrey;
-		background-color: $grey;
-		margin-bottom: 20px;
+    &--cancel {
+        color: $darkgrey;
+        border: 3px solid $darkgrey;
+        background-color: $grey;
+        margin-bottom: 20px;
 
-		&:hover {
-			color: #b5b9be;
-			border: 3px solid #b5b9be;
-		}
+        &:hover {
+            color: #b5b9be;
+            border: 3px solid #b5b9be;
+        }
 
-		&:active {
-			color: #cbced2;
-			background-color: #b5b9be;
-		}
-	}
+        &:active {
+            color: #cbced2;
+            background-color: #b5b9be;
+        }
+    }
 }
 
 .icon-crop,
@@ -65,12 +125,12 @@
   fill: #b5b9be;
 
   &:hover {
-  	cursor: pointer;
+    cursor: pointer;
     fill: #8d949b;
   }
 
   &:active {
-  	cursor: pointer;
+    cursor: pointer;
     fill: $red;
   }
 }

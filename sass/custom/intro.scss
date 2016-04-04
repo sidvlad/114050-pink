@@ -12,6 +12,13 @@
       width: 100%;
       height: 730px;
       padding-top: 447px;
+
+      @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+      }
   	}
 
   	@include tablet {

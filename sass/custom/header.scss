@@ -12,7 +12,7 @@
       width: 900px;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: space-between;
     }
   }
 
@@ -21,8 +21,10 @@
   	flex-direction: row;
   	align-items: center;
   	justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+    @include mobile {
+      height: 65px;
+    }
 
     @include tablet {
       height: 110px;
@@ -47,11 +49,7 @@
   }
 
   &__block--logo {
-    width: 75px;
-    height: 23px;
-    background-image: url("../img/logo-pink-white-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
 
     @include mobile {
       width: 75px;
@@ -60,13 +58,17 @@
     }
 
     @include tablet {
-      width: 75px;
-      height: 23px;
-      background-image: url("../img/logo-pink-white-mobile.svg");
+      width: 150px;
+      height: 41px;
+      background-image: url("../img/logo-pink-white-tablet.svg");
+      margin-bottom: 10px;
     }
 
     @include desktop {
-      display: none;
+      width: 150px;
+      height: 41px;
+      background-image: url("../img/logo-pink-white-desktop.svg");
+      margin-bottom: 18px;
     }
   }
 
@@ -83,7 +85,7 @@
   align-items: center;
 
   @include mobile {
-      
+    display: none;
   }
 
   @include tablet {
@@ -132,6 +134,7 @@
 
     @include desktop {
       border-bottom: 3px solid transparent;
+      border-top: none;
     }
 
     &:last-child {

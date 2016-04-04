@@ -1,66 +1,66 @@
 .form-filter {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 
-	&__title {
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 14px;
-		color: $red;
-		margin-left: 10px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        color: $red;
+        margin-left: 10px;
 
-		&--center {
-			margin-left: 0px;
-			text-align: center;
-		}
-	}
+        &--center {
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
 
-	&__text {
-		border: 2px solid $grey;
-		width: 280px;
-		height: 60px;
-		margin-bottom: 15px;
-		margin-top: 5px;
+    &__text {
+        border: 2px solid $grey;
+        width: 280px;
+        height: 60px;
+        margin-bottom: 15px;
+        margin-top: 5px;
 
-		&::-webkit-input-placeholder {
-			padding-left: 20px;
-			font-weight: 400;
-			font-size: 18px;
-			line-height: 26px;
-			color: $black;
-		}
-	}
+        &::-webkit-input-placeholder {
+            padding-left: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black;
+        }
+    }
 
-	&__hint-hide {
-		@include mobile {
-   			display: none;
-  		}
-	}
+    &__hint-hide {
+        @include mobile {
+            display: none;
+        }
+    }
 
-	textarea {
-		width: 280px;
-		height: 200px;
-	}
+    textarea {
+        width: 280px;
+        height: 200px;
+    }
 }
 
 .travel-fon {
-	background-color: $grey;
+    background-color: $grey;
 }
 
 .btn {
-	&--submit {
-		background-color: #2aab6d;
-		border-radius: 0;
-		border: none;
-		color: $white;
-		text-transform: uppercase;
+    &--submit {
+        background-color: #2aab6d;
+        border-radius: 0;
+        border: none;
+        color: $white;
+        text-transform: uppercase;
 
-		&:hover {
-			background-color: #1c9b5e;
-		}
-	}
+        &:hover {
+            background-color: #1c9b5e;
+        }
+    }
 }
 
 fieldset {

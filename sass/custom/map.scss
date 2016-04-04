@@ -9,6 +9,7 @@
   @include mobile {
     height: 200px;
     background-image: url("../img/bg-map.png");
+    background-size: 100%;
   }
 
   @include tablet {

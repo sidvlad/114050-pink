@@ -12,7 +12,7 @@
       <div class="wrapper">
         <div class="main-header__wrapper">
           <div class="main-header__block">
-            <div class="main-header__block--logo"></div>
+            <a href="#" class="main-header__block--logo"></a>
             <div class="main-header__block--menu"></div>
             <button class="main-header__block--toggle"></button>
           </div>
@@ -40,139 +40,180 @@
     <section class="post-photo post-photo--panorama">
       <div class="post-photo__photo post-photo__photo--panorama"></div>
       <div class="wrapper">
-        <div class="post-photo__comment">
+        <div class="post-photo__comment post-photo__comment--panorama">
           <span class="post-photo__comment-name">Анна</span>
           <span class="post-photo__comment-time">(5 минут назад)</span>
-          <p class="post-photo__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <a href="#" class="post-photo__comment-like">Нравится: 215</a>
-        </div>
-      </section>
-      <div class="wrapper">
-        <div class="photo-tape">
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-1-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Левон</span>
-                <span class="post-photo__comment-time">(5 часов назад)</span>
-                <p class="post-photo__comment-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 356</a>
-              </div>
-            </div>
-          </section>
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-2-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Антон</span>
-                <span class="post-photo__comment-time">(12 часов назад)</span>
-                <p class="post-photo__comment-text">Соседи будут рады</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 666</a>
-              </div>
-            </div>
-          </section>
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-3-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Борис</span>
-                <span class="post-photo__comment-time">(20 часов назад)</span>
-                <p class="post-photo__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 356</a>
-              </div>
-            </div>
-          </section>
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-4-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Сергей</span>
-                <span class="post-photo__comment-time">(25 часов назад)</span>
-                <p class="post-photo__comment-text">Самая кубанская в мире</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 4</a>
-              </div>
-            </div>
-          </section>
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-5-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Максим</span>
-                <span class="post-photo__comment-time">(40 часов назад)</span>
-                <p class="post-photo__comment-text">Где снег-то?</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 150</a>
-              </div>
-            </div>
-          </section>
-          <section class="post-photo">
-            <div class="post-photo__wrapper">
-              <div class="post-photo__photo">
-                <img src="img/photo-6-mobile.jpg"  width="280" height="180" alt="logo">
-              </div>
-              <div class="post-photo__comment">
-                <span class="post-photo__comment-name">Надежда</span>
-                <span class="post-photo__comment-time">(5 часов назад)</span>
-                <p class="post-photo__comment-text">Всем GM и взаимные лайки</p>
-                <a href="#" class="post-photo__comment-like">Нравится: 2560</a>
-              </div>
-            </div>
-          </section>
+          <p class="post-photo__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="post-photo__comment-like">Нравится: 215</span>
+          <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
         </div>
       </div>
-      <section class="slogan">
+    </section>
+    <div class="wrapper">
+      <div class="photo-tape">
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Левон</span>
+              <span class="post-photo__comment-time">(5 часов назад)</span>
+              <p class="post-photo__comment-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+              <span class="post-photo__comment-like">Нравится: 356</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Антон</span>
+              <span class="post-photo__comment-time">(12 часов назад)</span>
+              <p class="post-photo__comment-text">Соседи будут рады</p>
+              <span class="post-photo__comment-like">Нравится: 666</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Борис</span>
+              <span class="post-photo__comment-time">(20 часов назад)</span>
+              <p class="post-photo__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="post-photo__comment-like">Нравится: 356</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Сергей</span>
+              <span class="post-photo__comment-time">(25 часов назад)</span>
+              <p class="post-photo__comment-text">Самая кубанская в мире</p>
+              <span class="post-photo__comment-like">Нравится: 4</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Максим</span>
+              <span class="post-photo__comment-time">(40 часов назад)</span>
+              <p class="post-photo__comment-text">Где снег-то?</p>
+              <span class="post-photo__comment-like">Нравится: 150</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <div class="post-photo__photo">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="logo">
+              </picture>
+            </div>
+            <div class="post-photo__comment">
+              <span class="post-photo__comment-name">Надежда</span>
+              <span class="post-photo__comment-time">(5 часов назад)</span>
+              <p class="post-photo__comment-text">Всем GM и взаимные лайки</p>
+              <span class="post-photo__comment-like">Нравится: 2560</span>
+              <a class="post-photo__comment-heart" href="#"><img src="../img/icon-heart.svg"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="slogan">
+      <div class="wrapper">
+        <div class="slogan__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</div>
+      </div>
+    </section>
+    <section class="filters-photo">
+      <form action="get">
         <div class="wrapper">
-          <div class="slogan__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</div>
-        </div>
-      </section>
-      <section class="filters-photo">
-        <form action="get">
-          <div class="wrapper">
+          <div class="get-wrapper">
             <img src="img/photo-7-mobile.jpg" width="280" height="375" alt="">
-            <div class="filters-photo__actions">
-              <div class="filters-photo__actions-crop">
-                <svg class="icon-crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-              </div>
-              <div class="filters-photo__actions-fill">
-                <svg class="icon-fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
-                    s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
-                    c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                    <rect y="40" width="48" height="3"/>
+            <div class="filters-photo__block">
+              <div class="filters-photo__actions">
+                <div class="filters-photo__actions-crop filters-photo__actions-crop--active">
+                  <svg class="icon-crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                   </svg>
-                </div>
-                <div class="filters-photo__actions-contrast">
-                  <svg class="icon-contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="40px" height="40px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
-                    xml:space="preserve">
-                    <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
-                      S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
-                      C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                    </svg>
+                  <div class="filters-photo__range">
+                    <div class="filters-photo__range-range"></div>
+                    <a class="filters-photo__range-toggle" href="#"></a>
                   </div>
                 </div>
-              </div>
-              <div class="filters-photo__range">
-                <div class="wrapper">
-                  <div class="filters-photo__range-range"></div>
-                  <a class="filters-photo__range-toggle" href="#"></a>
-                  <a class="rfilters-photo__range-toggle" href="#" style="left: 80%"></a>
+                <div class="filters-photo__actions-fill">
+                  <svg class="icon-fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+                      s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+                      c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect y="40" width="48" height="3"/>
+                    </svg>
+                    <div class="filters-photo__range">
+                      <div class="filters-photo__range-range"></div>
+                      <a class="filters-photo__range-toggle" href="#"></a>
+                    </div>
+                  </div>
+                  <div class="filters-photo__actions-contrast">
+                    <svg class="icon-contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="40px" height="40px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                      xml:space="preserve">
+                      <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+                        S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+                        C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                        <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                      </svg>
+                      <div class="filters-photo__range">
+                        <div class="filters-photo__range-range"></div>
+                        <a class="filters-photo__range-toggle" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                  
                   <div class="filters-photo__btn">
                     <button type="submit" class="btn btn--show">Запостить</button>
                     <button class="btn btn--cancel">Отмена</button>

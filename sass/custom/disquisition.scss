@@ -20,10 +20,10 @@
 
         &__logo {
             position: relative;
-            width: 240px;
-            min-height: 280px;
+            width: 239px;
+            height: 280px;
             background-image: url(/img/icon-timer.svg);
-            background-size: 238px 277px;
+            background-size: 239px 280px;
             background-repeat: no-repeat;
             
             &::after {
@@ -82,11 +82,11 @@
 
         &__logo {
             position: relative;
-            width: 32%;
+            width: 298px;
             height: 345px;
             margin-right: 65px;
             background-image: url(/img/icon-timer.svg);
-            background-size: 238px 277px;
+            background-size: 298px 345px;
             background-repeat: no-repeat;
             
             &::after {

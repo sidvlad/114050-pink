@@ -23,9 +23,16 @@
 	}
 
 	@include mobile {
-		background: url("../img/iphone-screen-mobile.png");
+		background-image: url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
+		background-size: 157px 320px;
   		background-position: center 429px;
+
+  		@media
+	    (min-resolution: 144dpi),
+	    (min-resolution: 1.5dppx) {
+	      background-image: url("../img/iphone-screen-mobile@2x.png");
+      	}
   	}
 
   	@include tablet {

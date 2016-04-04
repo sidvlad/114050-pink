@@ -4,15 +4,17 @@
 
   &__wrapper {
     background-color: $grey;
+    margin-right: 20px;
+    margin-bottom: 15px;
 
     @include mobile {
       width: 280px;
     }
     @include tablet {
       width: 300px;
-      height: 455px;
-      margin-right: 15px;
-      margin-bottom: 15px;
+    }
+    @include desktop {
+      width: 300px;
     }
   }
 
@@ -23,38 +25,63 @@
   }
 
 	&__photo--panorama {
-   
 		width: 100%;
-    height: 500px;
-  	background-image: url("../img/panorama-mobile.jpg");
 		background-repeat: no-repeat;
   	background-size: cover;
 
 		@include mobile {
    		height: 200px;
   		background-image: url("../img/panorama-mobile.jpg");
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-mobile@2x.jpg");
+      }
   	}
 
 		@include tablet {
-			height: 340px;
-  		background-image: url("../img/panorama-mobile.jpg");
+			height: 510px;
+  		background-image: url("../img/panorama-tablet.jpg");
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-tablet@2x.jpg");
+      }
   	}
+
+    @include desktop {
+      height: 505px;
+      background-image: url("../img/panorama-desktop.jpg");
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/panorama-desktop@2x.jpg");
+      }
+    }
 	}
 
   &__comment {
-    padding-left: 18px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
     margin-bottom: 20px;
+    background-color: $grey;
 
     & p {
+      flex-basis: 100%;
       margin: 0;
-      margin-bottom: 15px;
+      line-height: 26px;
+      min-height: 52px;
+      @include mobile {
+        min-height: 0px;
+    }
     }
   }
 
   &__comment-name {
     font-weight: 700;
+    padding-right: 8px;
   }
 
   &__comment-time {
@@ -64,8 +91,42 @@
 
   &__comment-like {
     color: $red;
-    text-decoration: none;
+
+    @include mobile {
+      order: 1;
+    }
+
+  @include tablet {
+      flex-grow: 1;
+    }
+
+  @include desktop {
+      flex-grow: 1;
+    }
   }
+
+  &__comment-heart {
+    color: $red;
+    @include mobile {
+      padding-right: 15px;
+    }
+  }
+}
+
+.get-wrapper {
+  display: flex;
+
+  @include mobile {
+      flex-direction: column;
+    }
+
+  @include tablet {
+      flex-direction: row;
+    }
+
+  @include desktop {
+      flex-direction: row;
+    }
 }
 
 .photo-tape {
@@ -78,4 +139,56 @@
       width: 700px;
       flex-direction: row;
     }
+    @include desktop {
+      width: 1200px;
+      flex-direction: row;
+    }
 }
+
+.post-photo__comment--panorama .post-photo__comment-name {
+    @include tablet {
+      order: 1;
+    }
+    @include desktop {
+      order: 1;
+    }
+  }
+
+.post-photo__comment--panorama .post-photo__comment-time {
+    @include tablet {
+      flex-grow: 1;
+      order: 2;
+    }
+    @include desktop {
+      flex-grow: 1;
+      order: 2;
+    }
+  }
+.post-photo__comment--panorama .post-photo__comment-text {
+    @include tablet {
+      order: 5;
+    }
+    @include desktop {
+      order: 5;
+    }
+  }
+.post-photo__comment--panorama .post-photo__comment-like {
+    @include tablet {
+      flex-grow: 0;
+      order: 3;
+    }
+    @include desktop {
+      flex-grow: 0;
+      order: 3;
+    }
+  }
+.post-photo__comment--panorama .post-photo__comment-heart {
+    @include tablet {
+      padding-left: 20px;
+      order: 4;
+    }
+    @include desktop {
+      padding-left: 20px;
+      order: 4;
+    }
+  }
