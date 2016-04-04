@@ -85,6 +85,10 @@
       </div>
     </section>
     <section class="slider-review">
+      <div class="slider-review__arrows">
+        <a class="slider-review__arrow  slider-review__arrow--left" href="#"></a>
+        <a class="slider-review__arrow  slider-review__arrow--right" href="#"></a>
+      </div>
       <div class="wrapper">
         <div class="slider-review__slide">
           <input type="radio" class="slider-review__control slider-review__control--active" name="slider-review-control" id="slider-review-control-1" checked="checked">
@@ -182,7 +186,9 @@
           </li>
         </ul>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <div class="map__inner" id="map"></div>
+      </div>
     </section>
     <footer class="main-footer main-footer__index-hidden">
       <div class="wrapper">
@@ -201,5 +207,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjAv5gP1fSUNUZ2Xtxg-_mzW7AZS2fOQE&callback=initMap">
+    </script>
   </body>
 </html>

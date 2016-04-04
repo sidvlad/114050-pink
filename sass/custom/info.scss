@@ -2,7 +2,19 @@
 	background-color: $grey;
 	display: flex;
 	flex-direction: column;
-	padding-top: 170px;
+	
+	@include mobile {
+		padding-top: 70px;
+	}
+
+	@include tablet {
+		padding-top: 50px;
+	}
+
+	@include desktop {
+		padding-top: 170px;
+	}
+	
 }
 
 .info__table {
@@ -42,7 +54,7 @@
 		background-image: url("../img/iphone-screen-mobile.png");
 		background-repeat: no-repeat;
 		background-size: 157px 320px;
-		background-position: center 380px;
+		background-position: center 440px;
 
 		@media
 		(min-resolution: 144dpi),
@@ -66,7 +78,7 @@
 		text-align: center;
 
 		@include desktop {
-			font-size: 26px;
+			font-size: 30px;
 			font-weight: bold;
 			margin-bottom: 15px;
 		}
@@ -74,13 +86,12 @@
 
 	&-item p {
 		margin: 0;
-		line-height: 26px;
+		font-size: 14px;
 	}
 
 	&-item {
-		font-size: 14px;
 		text-align: center;
-		margin-bottom: 15px;
+		margin-bottom: 19px;
 		position: relative;
 
 		@include tablet {
@@ -94,7 +105,7 @@
 }
 
 .info__table:last-child {
-	padding-bottom: 280px;
+	padding-bottom: 300px;
 
 	@include tablet {
 		padding-bottom: 45px;

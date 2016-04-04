@@ -1,8 +1,6 @@
 .map {
   width: 100%;
-	height: 500px;
   position: relative;
-  background-image: url("../img/bg-map.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -13,8 +11,15 @@
   }
 
   @include tablet {
-    height: 340px;
-    background-image: url("../img/bg-map.png");
+    height: 373px;
+  }
+
+  @include desktop {
+    height: 495px;
+  }
+
+  &__inner {
+    height: 100%;
   }
 
   &:after {
@@ -42,3 +47,5 @@
     } 
   }
 }
+
+

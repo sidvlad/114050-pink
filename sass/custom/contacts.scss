@@ -27,11 +27,12 @@
 	}
 
 	&__item {
-		margin-bottom: 18px;
+		margin-bottom: 25px;
 		flex-direction: column;
 
 		@include tablet {
     		width: 300px;
+    		margin-bottom: 50px;
   		}
 
   		@include desktop {
@@ -58,11 +59,12 @@
 	&__title {
 		font-size: 24px;
 		font-weight: 300;
-		padding-top: 16px;
+		padding-top: 20px;
 		
 		@include tablet {
-    		font-size: $fortypx;
+    		font-size: 38px;
     		line-height: $fiftypx;
+    		padding-top: 10px;
   		}
 
   		@include desktop {
