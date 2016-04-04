@@ -88,4 +88,14 @@
 		color: $red;
 		margin: 0;
 	}
+
+	&__email:hover {
+		color: #283645;
+		text-decoration: underline;
+	}
+
+	&__email:active {
+		color: #bec2c7;
+		text-decoration: none;
+	}
 }

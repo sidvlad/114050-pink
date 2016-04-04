@@ -80,6 +80,7 @@
 	&--download {
 		color: $white;
 		border: 3px solid $white;
+    transition: all 0.2s ease-in-out;
 
 		@include tablet {
     		width: 300px;
@@ -89,6 +90,9 @@
   &--download:hover {
     color: $red;
     background-color: $white;
+  }
+  &--download:active {
+    color: rgba(210,40,86,0.7);
   }
 }
 
