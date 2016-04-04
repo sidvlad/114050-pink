@@ -60,6 +60,14 @@
         &:hover {
             background-color: #1c9b5e;
         }
+        &:active {
+            background-color: #1c9b5e;
+            color: #5cb78b;
+        }
+        &[disabled] {
+            background-color: #e5e5e5;
+            color: $white;
+        }
     }
 }
 

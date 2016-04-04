@@ -145,6 +145,12 @@
     @include desktop {
       border-bottom: 3px solid $white;
     }
+    &:active {
+    @include desktop {
+      opacity: 0.3;
+      border-bottom: 3px solid transparent;
+    }
+  }
   }
 }
 
