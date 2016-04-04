@@ -4,6 +4,8 @@
 
   @include desktop {
     padding-bottom: 40px;
+    padding-top: 180px;
+    background: url("../img/icon-quotes.svg") no-repeat 50% 70px;
   }
 
   &__name {
