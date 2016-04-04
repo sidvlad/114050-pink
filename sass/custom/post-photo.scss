@@ -74,7 +74,7 @@
       line-height: 26px;
       min-height: 52px;
       @include mobile {
-        min-height: 0px;
+        min-height: 52px;
     }
     }
   }
@@ -145,50 +145,35 @@
     }
 }
 
-.post-photo__comment--panorama .post-photo__comment-name {
-    @include tablet {
-      order: 1;
-    }
-    @include desktop {
-      order: 1;
-    }
-  }
-
 .post-photo__comment--panorama .post-photo__comment-time {
     @include tablet {
       flex-grow: 1;
-      order: 2;
     }
     @include desktop {
       flex-grow: 1;
-      order: 2;
     }
   }
 .post-photo__comment--panorama .post-photo__comment-text {
     @include tablet {
-      order: 5;
+      order: 1;
     }
     @include desktop {
-      order: 5;
+      order: 1;
     }
   }
 .post-photo__comment--panorama .post-photo__comment-like {
     @include tablet {
       flex-grow: 0;
-      order: 3;
     }
     @include desktop {
       flex-grow: 0;
-      order: 3;
     }
   }
 .post-photo__comment--panorama .post-photo__comment-heart {
     @include tablet {
       padding-left: 20px;
-      order: 4;
     }
     @include desktop {
       padding-left: 20px;
-      order: 4;
     }
   }
