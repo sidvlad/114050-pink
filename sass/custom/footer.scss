@@ -126,5 +126,31 @@
 	}
 }
 
+.main-footer__logo {
 
+	&--stars {
+		@include mobile {
+			display: none;
+   	 	}
+   	 	@include tablet {
+			display: none;
+   	 	}
+	}
+
+	&--glasses-full {
+		@include desktop {
+			display: none;
+   	 	}
+
+	}
+	&--glasses-stars {
+		@include mobile {
+			display: none;
+   	 	}
+   	 	@include tablet {
+			display: none;
+   	 	}
+		
+	}
+}
 
