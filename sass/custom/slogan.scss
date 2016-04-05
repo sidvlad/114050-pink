@@ -4,4 +4,24 @@
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	
+	&__text {
+	@include tablet {
+		font-size: 18px;
+		padding-top: 40px;
+    	padding-bottom: 30px;
+	}
+	@include desktop {
+		font-size: 18px;
+		padding-top: 40px;
+    	padding-bottom: 30px;
+    	width: 640px;
+    	margin: 0 auto;
+	}
+	
+	&-get-photo {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	}
 }

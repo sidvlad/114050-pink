@@ -117,6 +117,7 @@
 
 .main-menu__item {
   list-style: none;
+  transition: all 0.2s ease-in-out;
 
     @include mobile {
       border-bottom: 1px solid $black;

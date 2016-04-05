@@ -10,6 +10,7 @@
 
 		@include mobile {
 		flex-direction: column;
+		align-items: center;
    	 	}
 
     	@include tablet {
@@ -30,13 +31,21 @@
 	}
 
 	&__logo {
-		width: 150px;
-		height: 50px;
-		background-image: url(../img/logo-pink-blue-desktop.svg);
-		background-repeat: no-repeat;
+
+		&:hover {
+		fill: $red;
+		}
+
+		&:active {
+			fill: #D22856;
+			opacity: 0.3;
+		}
+
 		@include mobile {
 			margin-bottom: 35px;
+			align-self: center;
    	 	}
+   	 	transition: all 0.2s ease-in-out;
 	}
 
 	&__copyright {
@@ -48,8 +57,26 @@
 		font-weight: 400;
 		margin-top: 8px;
 
+		@include mobile {
+			align-self: center;
+   	 	}
+
 		& a {
 			margin-left: 15px;
+		}
+
+		&-logo {
+		    width: 27px;
+			fill: $red;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				fill: #283645;
+			}
+			&:active {
+				opacity: 0.3;
+			}
+
 		}
 	}
 }
@@ -59,8 +86,8 @@
 	flex-direction: row;
 	justify-content: center;
 	@include mobile {
-			margin-bottom: 35px;
-   	 	}
+	margin-bottom: 35px;
+    }
 }
 
 .social-link {
@@ -98,10 +125,6 @@
 		opacity: 0.3;
 	}
 }
-
-
-
-
 
 
 
