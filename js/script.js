@@ -15,3 +15,17 @@ function initMap() {
     icon: image
   });
 }
+
+var burger = document.querySelector("#burger")
+var menu = document.querySelector(".main-header")
+
+function toggle(e){
+    e.preventDefault();
+    menu.classList.toggle('main-header__expanded');
+}
+
+if (burger) {
+    burger.addEventListener('click',toggle);
+}
+
+menu.classList.remove("main-header__flow");

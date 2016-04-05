@@ -1,11 +1,31 @@
+.main-header.main-header__flow {
+  position: static;
+  background-color: $darkblue;
+}
+
+.main-header__expanded .main-menu, 
+.main-header__flow .main-menu{
+   @include mobile {
+      display: block;
+    }
+    @include tablet {
+      display: block;
+    }
+}
+
+.main-header.main-header__expanded{
+  background-color: $darkblue;
+}
+
 .main-header {
   position: absolute;
   width: 100%;
-	display: flex;
+	display: flex; 
 	flex-direction: row;
 	background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0,0,0,0.3);
+
 
   &__wrapper {
     @include desktop {
@@ -49,25 +69,22 @@
   }
 
   &__block--logo {
-    background-repeat: no-repeat;
 
     @include mobile {
       width: 75px;
       height: 23px;
-      background-image: url("../img/logo-pink-white-mobile.svg");
+      margin-bottom: 31px;
     }
 
     @include tablet {
       width: 150px;
       height: 41px;
-      background-image: url("../img/logo-pink-white-tablet.svg");
       margin-bottom: 10px;
     }
 
     @include desktop {
       width: 150px;
       height: 41px;
-      background-image: url("../img/logo-pink-white-desktop.svg");
       margin-bottom: 18px;
     }
   }
@@ -83,14 +100,12 @@
 .main-menu {
   display: flex;
   align-items: center;
-
   @include mobile {
-    display: none;
-  }
-
+      display: none;
+    }
   @include tablet {
-    display: none;
-  }
+      display: none;
+    }
 }
 
 .main-menu__list {
@@ -99,13 +114,13 @@
   @include mobile {
     width: 100%;
     flex-direction: column;
-    background-color: #283645;
+    background-color: $darkblue;
   }
 
   @include tablet {
     width: 100%;
     flex-direction: column;
-    background-color: #283645;
+    background-color: $darkblue;
     }
 
   @include desktop {
@@ -168,3 +183,56 @@
     text-transform: none;
   }
 }
+
+.logo-svg {
+  fill: $white;
+
+  &__text {
+  }
+
+  &__glasses {
+    @include tablet {
+        display: none;
+      }
+
+    &-full {
+
+      @include mobile {
+        display: none;
+      }
+      @include desktop {
+        display: none;
+      }
+
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__star {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &:hover {
+    fill: $red;
+  }
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+
+  @include mobile {
+    margin-left: -50px;
+  }
+}
+
+
+
+
+
