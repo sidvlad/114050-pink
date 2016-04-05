@@ -113,22 +113,6 @@
   }
 }
 
-.get-wrapper {
-  display: flex;
-
-  @include mobile {
-      flex-direction: column;
-    }
-
-  @include tablet {
-      flex-direction: row;
-    }
-
-  @include desktop {
-      flex-direction: row;
-    }
-}
-
 .photo-tape {
     display: flex;
   flex-wrap: wrap;

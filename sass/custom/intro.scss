@@ -145,11 +145,19 @@
 		color: $white;
 		border: 3px solid $white;
     transition: all 0.2s ease-in-out;
+    
+    @include mobile {
+        padding: 14px 35px;
+    }
 
 		@include tablet {
     		width: 300px;
     		padding: 14px 45px;
   	}
+
+    @include desktop {
+        padding: 14px 35px;
+    }
 	}
   &--download:hover {
     color: $red;
