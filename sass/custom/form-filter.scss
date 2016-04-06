@@ -68,8 +68,22 @@
         }
 
         &__item {
+            position: relative;
             padding-left: 59px;
             min-height: 30px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: -5px;
+                width: 35px;
+                height: 35px;
+                background-color: $white;
+                border: 2px solid #e5e5e5;
+                border-radius: 2px;
+            }
+           
         }
     }
 
@@ -112,6 +126,18 @@
     }
     &__item {
         display: block;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -5px;
+            width: 35px;
+            height: 35px;
+            background-color: $white;
+            border: 2px solid #e5e5e5;
+            border-radius: 50%;
+        }
     }
     &__radio {
         display: none;
@@ -128,6 +154,15 @@
     @include desktop {
         order: 5;
         flex-basis: 100%;
+    }
+
+    &__text {
+        border: 2px solid #e5e5e5;
+        border-radius: 2px;
+        font-size: 18px;
+        line-height: 30px;
+        outline: none;
+        overflow: auto;
     }
     }
 
@@ -148,10 +183,34 @@
             flex-direction: row;
             justify-content: space-between;
         }
-    }
-    
+    }   
 }
 
+.form-achievements__checkbox:checked+.form-achievements__item:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    display: block;
+    width: 20px;
+    height: 8px;
+    border-left: 3px solid $red;
+    border-bottom: 3px solid $red;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+
+.form-app__radio:checked+.form-app__item:after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: $red;
+    border: 2px solid $red;
+    border-radius: 50%;
+}
 
 .form-contacts__block *:nth-child(1) {
     @include tablet {
@@ -208,6 +267,8 @@
         border: none;
         color: $white;
         text-transform: uppercase;
+        width: 300px;
+        height: 65px;
 
         &:hover {
             background-color: #1c9b5e;
