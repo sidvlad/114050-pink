@@ -62,7 +62,6 @@
   &__table {
     th,
     td {
-      position: relative;
       width: 280px;
       height: 60px;
       font-size: 14px;
@@ -186,6 +185,7 @@
   }
   
   &__element--hit {
+    position: relative;
       overflow: hidden;
       &:before {
         position: absolute;

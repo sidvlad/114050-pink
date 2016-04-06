@@ -25,10 +25,10 @@
        flex-direction: column;
     }
     @include tablet {
-        flex-direction: row;
+        flex-direction: column;
     }
     @include desktop {
-        flex-direction: row;
+        flex-direction: column;
         order: 1;
         flex-basis: 48%;
     }
@@ -53,6 +53,7 @@
         font-size: 18px;
         line-height: 30px;
         outline: none;
+        color: $black;
 
         @include mobile {
         width: 280px;
@@ -95,7 +96,6 @@
 
     @include tablet {
         order: 4;
-        flex-basis: 100%;
         padding: 50px 60px 10px 60px;
     }
     
@@ -214,9 +214,15 @@
 
         &-phone {
             background: url("../img/icon-phone.svg") no-repeat 95% 50%;
+            @include mobile {
+                background: none;
+            }
         }
         &-mail {
             background: url("../img/icon-mail.svg") no-repeat 95% 50%;
+            @include mobile {
+                background: none;
+            }
         }
     }
 
@@ -296,7 +302,6 @@
 
     @include tablet {
         order: 5;
-        flex-basis: 100%;
         margin-top: 50px;
         padding: 40px 60px;
     }
@@ -334,7 +339,6 @@
 
     &-submit {
         display: flex;
-        flex-basis: 100%;
 
         @include mobile { 
             flex-direction: column;
