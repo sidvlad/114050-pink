@@ -35,6 +35,9 @@
             font-size: 14px;
             line-height: 30px;
             color: #d22856;
+            @include tablet {
+                padding-bottom: 50px;
+            }
             @include desktop {
                 padding-bottom: 50px;
             }
@@ -46,6 +49,13 @@
         line-height: 30px;
         outline: none;
 
+        @include tablet {
+        width: 515px;
+        height: 65px;
+        padding: 16px 70px 13px 22px;
+        margin-left: 20px;
+        }
+
         @include desktop {
         width: 340px;
         height: 60px;
@@ -54,6 +64,9 @@
         }
 
         &-name {
+            @include tablet {
+                width: 555px;
+            }
             @include desktop {
                 width: 380px;
             }
@@ -63,6 +76,12 @@
 
     &-achievements {
         margin-top: 50px;
+
+    @include tablet {
+        order: 4;
+        flex-basis: 100%;
+        padding: 50px 60px 10px 60px;
+    }
     
     @include desktop {
         order: 4;
@@ -93,6 +112,9 @@
             position: relative;
             padding-left: 59px;
             min-height: 30px;
+            @include tablet {
+                margin-bottom: 40px;
+            }
             @include desktop {
                 margin-bottom: 40px;
             }
@@ -113,6 +135,11 @@
     }
 
     &-contacts {
+
+    @include tablet {
+        margin-top: 50px;
+        padding: 40px 58px;
+    }
     
     @include desktop {
         order: 3;
@@ -126,9 +153,13 @@
         font-size: 14px;
         line-height: 30px;
         color: $red;
+
+        @include tablet {
+            padding-left: 15px;
+        }
         @include desktop {
-        padding-left: 15px;
-        padding-top: 5px;
+            padding-left: 15px;
+            padding-top: 5px;
         }
     }
 
@@ -136,6 +167,12 @@
         display: block;
         border: 2px solid #e5e5e5;
         border-radius: 2px;
+        @include tablet {
+            width: 500px;
+            height: 60px;
+            padding: 16px 70px 13px 22px;
+            margin-bottom: 10px;
+        }
         @include desktop {
             width: 370px;
             height: 60px;
@@ -143,10 +180,10 @@
         }
 
         &-phone {
-            background: url("../img/icon-phone.svg") no-repeat 90% 50%;
+            background: url("../img/icon-phone.svg") no-repeat 95% 50%;
         }
         &-mail {
-            background: url("../img/icon-mail.svg") no-repeat 90% 50%;
+            background: url("../img/icon-mail.svg") no-repeat 95% 50%;
         }
     }
 
@@ -168,7 +205,8 @@
        
     }
     @include tablet {
-        
+        order: 2;
+        margin-top: 50px;
     }
     @include desktop {
         order: 2;
@@ -177,6 +215,11 @@
     &__item {
         display: block;
         position: relative;
+
+        @include tablet {
+            margin: 40px 60px;
+            padding-left: 50px;
+        }
 
         @include desktop {
             margin: 40px 70px;
@@ -206,9 +249,18 @@
         height: 200px;
     }
 
+    @include tablet {
+        order: 5;
+        flex-basis: 100%;
+        margin-top: 50px;
+        padding: 40px 60px;
+    }
+
     @include desktop {
         order: 5;
         flex-basis: 100%;
+        margin-top: 50px;
+        padding: 40px 60px;
     }
 
     &__text {
@@ -218,6 +270,15 @@
         line-height: 30px;
         outline: none;
         overflow: auto;
+        padding: 16px 70px 13px 22px;
+        @include tablet {
+            width: 500px;
+            height: 190px;
+        }
+        @include desktop {
+            width: 810px;
+            height: 125px;
+        }
         }
     }
 
@@ -230,18 +291,44 @@
         }
 
         @include tablet {
+            order: 6;
             flex-direction: row;
             justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 30px;
         }
         @include desktop {
             order: 6;
             flex-direction: row;
             justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        &__hint {
+            align-self: center;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        &__hint-highlight {
+            color: $red;
+        }
+
+        &__hint-hide {
+            @include mobile { 
+                display: none;
+            }
+            @include tablet {
+            display: none;
+            }
         }
     }   
 }
 
 .form-name__name:last-child{padding-bottom:0px;};
+.form-contacts__data:first-child{
+    @include tablet {
+    padding-bottom:30px;}};
 
 .form-achievements__checkbox:checked+.form-achievements__item:after {
     content: "";
@@ -273,7 +360,7 @@
     @include tablet {
         order:2;
         }
-        @include desktop {
+    @include desktop {
         order:2;
         }
 }
@@ -281,7 +368,7 @@
     @include tablet {
         order:1;
         }
-        @include desktop {
+    @include desktop {
         order:1;
     }
 }
@@ -289,7 +376,7 @@
     @include tablet {
         order:4;
         }
-        @include desktop {
+    @include desktop {
         order:4;
         }
 }
@@ -297,7 +384,7 @@
     @include tablet {
         order:3;
         }
-        @include desktop {
+    @include desktop {
         order:3;
         }
 }
@@ -312,6 +399,9 @@
     line-height: 30px;
     color: $red;
     text-align: center;
+    @include tablet {
+        padding: 0 30px;
+    }
     @include desktop {
         padding: 0 30px;
     }
