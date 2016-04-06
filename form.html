@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -112,56 +111,63 @@
     </section>
     <section class="form">
       <div class="wrapper">
-        <form action="https://htmlacademy.ru/echo" method="post">
-          <fieldset class="form-filter">
-            <label class="form-filter__title" for="name">Имя:</label>
-            <input class="form-filter__text" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
-            <label class="form-filter__title" for="soname">Фамилия:</label>
-            <input class="form-filter__text" type="text" name="soname" placeholder="Укажите фамилию" id="soname">
-            <label class="form-filter__title" for="second-name">Отчество:</label>
-            <input class="form-filter__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
+        <form class="form-fields" action="https://htmlacademy.ru/echo" method="post">
+
+          <fieldset class="form-name">
+            <label class="form-name__name" for="name">Имя:
+              <input class="form-name__text" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
+            </label>
+            <label class="form-name__name" for="soname">Фамилия:
+              <input class="form-name__text" type="text" name="soname" placeholder="Укажите фамилию" id="soname">
+            </label>
+            <label class="form-name__name" for="second-name">Отчество:
+              <input class="form-name__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
+            </label>
           </fieldset>
-          <div class="travel-fon">
-            <fieldset class="form-filter">
-              <legend class="form-filter__title  form-filter__title--center">Ваши безбашенные <br> достижения в путешествии</legend>
-              <input class="form-filter__checkbox" type="checkbox" name="shark" id="shark" checked>
-              <label class="form-filter__item" for="shark">Сделал селфи с акулой</label>
-              <input class="form-filter__checkbox" type="checkbox" name="beach" id="beach" checked>
-              <label class="form-filter__item" for="beach">Обгорел на пляже</label>
-              <input class="form-filter__checkbox" type="checkbox" name="norris" id="norris">
-              <label class="form-filter__item" for="norris">Видел Чака Норриса</label>
-              <input class="form-filter__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <label class="form-filter__item" for="souvenirs">Накупил сувениров</label>
-              <input class="form-filter__checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="form-filter__item" for="tower">Удержал башню</label>
-              <input class="form-filter__checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="form-filter__item" for="hotel">Разгромил отель</label>
+            <fieldset class="form-achievements">
+              <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+              <div class="form-achievements__block">
+              <input class="form-achievements__checkbox" type="checkbox" name="shark" id="shark" checked>
+              <label class="form-achievements__item" for="shark">Сделал селфи с акулой</label>
+              <input class="form-achievements__checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="form-achievements__item" for="beach">Обгорел на пляже</label>
+              <input class="form-achievements__checkbox" type="checkbox" name="norris" id="norris">
+              <label class="form-achievements__item" for="norris">Видел Чака Норриса</label>
+              <input class="form-achievements__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="form-achievements__item" for="souvenirs">Накупил сувениров</label>
+              <input class="form-achievements__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="form-achievements__item" for="tower">Удержал башню</label>
+              <input class="form-achievements__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="form-achievements__item" for="hotel">Разгромил отель</label>
+            </div>
             </fieldset>
-          </div>
-          <fieldset class="form-filter">
-            <label class="form-filter__title" for="tel">Номер телефончика:</label>
-            <input class="form-filter__text" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" id="tel">
-            <label class="form-filter__title" for="email">Адресок почты:</label>
-            <input class="form-filter__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
+          <fieldset class="form-contacts">
+            <legend class="form-contacts__title">Контактная информация</legend>
+            <div class="form-contacts__block">
+            <label class="form-contacts__data" for="tel">Номер телефончика:</label>
+            <input class="form-contacts__text" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" id="tel">
+            <label class="form-contacts__data" for="email">Адресок почты:</label>
+            <input class="form-contacts__text" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
+            </div>
           </fieldset>
-          <div class="travel-fon">
-            <fieldset class="form-filter">
-              <legend class="form-filter__title  form-filter__title--center">С каким приложением путешествовали?</legend>
-              <input class="form-filter__radio" type="radio" name="app-ios" id="app-ios" checked>
-              <label class="form-filter__item" for="app-ios">Pink для iOS</label>
-              <input class="form-filter__radio" type="radio" name="app-android" id="app-android">
-              <label class="form-filter__item" for="app-android">Pink на Android</label>
-              <input class="form-filter__radio" type="radio" name="app-windows" id="app-windows">
-              <label class="form-filter__item" for="app-windows">Windows Phone</label>
+            <fieldset class="form-app">
+              <legend class="form-app__title">С каким приложением путешествовали?</legend>
+              <input class="form-app__radio" type="radio" name="app-ios" id="app-ios" checked>
+              <label class="form-app__item" for="app-ios">Pink для iOS</label>
+              <input class="form-app__radio" type="radio" name="app-android" id="app-android">
+              <label class="form-app__item" for="app-android">Pink на Android</label>
+              <input class="form-app__radio" type="radio" name="app-windows" id="app-windows">
+              <label class="form-app__item" for="app-windows">Windows Phone</label>
             </fieldset>
-          </div>
-          <fieldset class="form-filter">
-            <label class="form-filter__title  form-filter__title--center" for="review">Опишите свои эмоции</label>
-            <textarea class="form-filter__text  form-filte__text--textarea" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form-textarea">
+            <legend class="form-textarea__title">С каким приложением путешествовали?</legend>
+            <textarea class="form-textarea__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
+          <div class="form-submit">
           <button class="btn  btn--submit" type="submit">Отправить форму</button>
-          <div class="form-filter__hint">
-            <sup class="form-filter__hint-highlight">*</sup> - обязательные <span class="form-filter__hint-hide">для заполнения</span> поля
+          <div class="form-submit__hint">
+            <sup class="form-submit__hint-highlight">*</sup> - обязательные <span class="form-submit__hint-hide">для заполнения</span> поля
+          </div>
           </div>
         </form>
       </div>
