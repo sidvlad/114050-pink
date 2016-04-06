@@ -30,26 +30,29 @@
         order: 1;
         flex-basis: 48%;
     }
-    &__name {
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 30px;
-        color: #d22856;
-    }
-    &__text {
-        border: 2px solid #e5e5e5;
-        border-radius: 2px;
-        font-size: 18px;
-        line-height: 30px;
-        outline: none;
-        @include mobile {
-            padding: 16px 20px 13px 22px; 
+        &__name {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 30px;
+            color: #d22856;
+            @include desktop {
+                padding-bottom: 50px;
+            }
         }
-        @include desktop {
-        padding: 16px 20px 13px 22px;
-        margin-left: 20px;
+        &__text {
+            border: 2px solid #e5e5e5;
+            border-radius: 2px;
+            font-size: 18px;
+            line-height: 30px;
+            outline: none;
+            @include mobile {
+                padding: 16px 20px 13px 22px; 
+            }
+            @include desktop {
+            padding: 16px 20px 13px 22px;
+            margin-left: 20px;
+            }
         }
-    }
     }
 
     &-achievements {
@@ -202,6 +205,8 @@
     }   
 }
 
+.form-name__name:last-child{padding-bottom:0px;};
+
 .form-achievements__checkbox:checked+.form-achievements__item:after {
     content: "";
     position: absolute;
@@ -309,6 +314,7 @@
 }
 
 fieldset {
+    padding: 0;
     border: 2px solid #e5e5e5;
     border-radius: 2px;
 
