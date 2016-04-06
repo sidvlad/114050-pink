@@ -67,6 +67,10 @@
             color: $red;
             font-size: 14px;
         }
+
+        &__link:hover {
+            text-decoration: none;
+        }
     }
 
     @include desktop {
@@ -133,6 +137,9 @@
             color: $red;
             font-size: 18px;
             line-height: 30px;
+        }
+        &__link:hover {
+            text-decoration: none;
         }
     }
 }

@@ -184,6 +184,28 @@
       border-top: none;
     }
   }
+  
+  &__element--hit {
+      overflow: hidden;
+      &:before {
+        position: absolute;
+        content: "хит";
+        text-transform: uppercase;
+        color: $white;
+        top: 10px;
+        left: -25px;
+        width: 103px;
+        height: 31px;
+        background-color: #d22856;
+        transform: rotate(-45deg);
+        @include tablet {
+          top: 8px;
+          left: -25px;
+          width: 90px;
+          height: 30px;
+        }
+      }
+  }
 }
 
 @include mobile {

@@ -4,7 +4,7 @@
 }
 
 .main-header__expanded .main-menu, 
-.main-header__flow .main-menu{
+.main-header__flow .main-menu {
    @include mobile {
       display: block;
     }
@@ -13,8 +13,13 @@
     }
 }
 
-.main-header.main-header__expanded{
-  background-color: $darkblue;
+.main-header.main-header__expanded {
+  @include mobile {
+      background-color: $darkblue;
+    }
+    @include tablet {
+      background-color: $darkblue;
+    }
 }
 
 .main-header {
@@ -150,6 +155,11 @@
     @include desktop {
       border-bottom: 3px solid transparent;
       border-top: none;
+    }
+
+    &--active {
+      opacity: 0.3;
+      border-bottom: 3px solid transparent;
     }
 
     &:last-child {

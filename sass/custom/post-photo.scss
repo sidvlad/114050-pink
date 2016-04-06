@@ -124,7 +124,7 @@
       flex-direction: row;
     }
     @include desktop {
-      width: 1200px;
+      width: 960px;
       flex-direction: row;
     }
 }
@@ -133,6 +133,26 @@
    @include mobile {
       margin-bottom: 20px;
     }
+    position: relative;
+      &:before {
+        position: absolute;
+        content: "панорама дня";
+        text-transform: uppercase;
+        color: $white;
+        top: -200px;
+        right: 0;
+        width: 140px;
+        height: 38px;
+        text-align: center;
+        line-height: 34px;
+        background-color: #d22856;
+        @include tablet {
+          top: -440px;
+        }
+        @include desktop {
+          top: -420px;
+        }
+  }
 }
 
 .post-photo__comment--panorama .post-photo__comment-time {
