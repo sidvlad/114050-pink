@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: PINK</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -110,10 +109,8 @@
       </div>
     </section>
     <section class="form">
-      <div class="wrapper">
         <form class="form-fields" action="https://htmlacademy.ru/echo" method="post">
-
-          <fieldset class="form-name">
+          <fieldset class="form-name wrapper">
             <label class="form-name__name" for="name">Имя:
               <input class="form-name__text form-name__text-name" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
             </label>
@@ -124,7 +121,7 @@
               <input class="form-name__text" type="text" name="second-name" placeholder="Ну и отчество тоже" id="second-name">
             </label>
           </fieldset>
-            <fieldset class="form-achievements">
+            <fieldset class="form-achievements wrapper wrapper-form">
               <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
               <div class="form-achievements__block">
               <input class="form-achievements__checkbox" type="checkbox" name="shark" id="shark" checked>
@@ -141,7 +138,7 @@
               <label class="form-achievements__item" for="hotel">Разгромил отель</label>
             </div>
             </fieldset>
-          <fieldset class="form-contacts">
+          <fieldset class="form-contacts wrapper">
             <legend class="form-contacts__title">Контактная информация</legend>
             <div class="form-contacts__block">
             <label class="form-contacts__data" for="tel">Номер телефончика:</label>
@@ -150,7 +147,7 @@
             <input class="form-contacts__text form-contacts__text-mail" type="email" name="email" placeholder="E-mail, пожалуйста" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
             </div>
           </fieldset>
-            <fieldset class="form-app">
+            <fieldset class="form-app wrapper wrapper-form">
               <legend class="form-app__title">С каким приложением путешествовали?</legend>
               <input class="form-app__radio" type="radio" name="app" id="app-ios" checked>
               <label class="form-app__item" for="app-ios">Pink для iOS</label>
@@ -159,18 +156,17 @@
               <input class="form-app__radio" type="radio" name="app" id="app-windows">
               <label class="form-app__item" for="app-windows">Windows Phone</label>
             </fieldset>
-          <fieldset class="form-textarea">
+          <fieldset class="form-textarea wrapper">
             <legend class="form-textarea__title">Опишите свои эмоции</legend>
             <textarea class="form-textarea__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <div class="form-submit">
+          <div class="form-submit wrapper">
           <button class="btn  btn--submit" type="submit">Отправить форму</button>
           <div class="form-submit__hint">
             <sup class="form-submit__hint-highlight">*</sup> - обязательные <span class="form-submit__hint-hide">для заполнения</span> поля
           </div>
           </div>
         </form>
-      </div>
     </section>
     <footer class="main-footer">
       <div class="wrapper">
