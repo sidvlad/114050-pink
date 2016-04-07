@@ -33,6 +33,7 @@
         flex-basis: 48%;
     }
         &__name {
+            display: block;
             text-transform: uppercase;
             font-size: 14px;
             line-height: 30px;

@@ -18,12 +18,6 @@
     }
   }
 
-  &__photo {
-    @include tablet {
-      width: 300px;
-    }
-  }
-
 	&__photo--panorama {
 		width: 100%;
 		background-repeat: no-repeat;
@@ -120,7 +114,7 @@
       width: 280px;
     }
     @include tablet {
-      width: 700px;
+      width: 640px;
       flex-direction: row;
     }
     @include desktop {
