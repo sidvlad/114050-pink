@@ -143,7 +143,7 @@
                 position: absolute;
                 content: "";
                 left: 0;
-                top: -5px;
+                top: -6px;
                 width: 35px;
                 height: 35px;
                 background-color: $white;
@@ -271,11 +271,13 @@
         @include tablet {
             margin: 40px 60px;
             padding-left: 50px;
+            line-height: 26px;
         }
 
         @include desktop {
             margin: 40px 70px;
             padding-left: 60px;
+            line-height: 26px;
         }
         &:before {
             position: absolute;
@@ -383,10 +385,14 @@
     }   
 }
 
-.form-name__name:last-child{padding-bottom:0px;};
-.form-contacts__data:first-child{
+.form-name__name:last-child {
+    padding-bottom:0px;
+}
+
+.form-contacts__data:first-child {
     @include tablet {
-    padding-bottom:30px;}};
+    padding-bottom:30px;}
+}
 
 .form-achievements__checkbox:checked+.form-achievements__item:after {
     content: "";
@@ -451,7 +457,7 @@
 .form-achievements__title, 
 .form-name__title,
 .form-contacts__title, 
-.form-textarea__title{
+.form-textarea__title {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
@@ -505,4 +511,28 @@ fieldset {
     @include mobile {
         border: none;
     }
+}
+
+input {
+    outline: 0;
+    &:hover {
+        border-color: #283645;
+    }
+    &:active {
+        border-color: $red;
+    }
+}
+
+.form-app__item:hover:before,
+.form-achievements__item:hover:before {
+    outline: 0;
+    border-color: #283645;
+    cursor: pointer;
+}
+
+.form-app__item:active:before,
+.form-achievements__item:active:before {
+    outline: 0;
+    border-color: $red;
+    cursor: pointer;
 }

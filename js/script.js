@@ -29,3 +29,21 @@ if (burger) {
 }
 
 menu.classList.remove("main-header__flow");
+
+$('.btn__modal').click(function() {
+  $('.modal-submitted').addClass('modal-hide');
+});
+
+$('.btn__modal').click(function() {
+  $('.modal-wrong').addClass('modal-hide');
+});
+
+$('.btn--submit').click(function() {
+  $('.modal-submitted').removeClass('modal-hide');
+   return false;
+});
+
+$('.btn--submit').click(function() {
+  $('.modal-wrong').removeClass('modal-hide');
+   return false;
+});
