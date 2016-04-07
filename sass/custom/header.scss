@@ -170,6 +170,15 @@
   }
 }
 
+.main-menu__item:last-child {
+  @include mobile {
+    border-bottom: none;
+  }
+   @include tablet {
+    border-bottom: none;
+  }
+}
+
 .main-menu__item {
   list-style: none;
   transition: all 0.2s ease-in-out;
@@ -199,15 +208,15 @@
     }
 
     &:hover {
-    @include desktop {
-      border-bottom: 3px solid $white;
-    }
+      @include desktop {
+        border-bottom: 3px solid $white;
+      }
     &:active {
-    @include desktop {
-      opacity: 0.3;
-      border-bottom: 3px solid transparent;
+      @include desktop {
+        opacity: 0.3;
+        border-bottom: 3px solid transparent;
+      }
     }
-  }
   }
 }
 
@@ -222,6 +231,25 @@
   @include desktop {
     font-weight: 400;
     text-transform: none;
+  }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+  @include mobile {
+        color: $red;
+      }
+      @include tablet {
+        color: $red;
+      }
+  }
+  &:active {
+  @include mobile {
+        color: $red;
+        opacity: 0.3;
+      }
+      @include tablet {
+        color: $red;
+        opacity: 0.3;
+      }
   }
 }
 
