@@ -30,20 +30,21 @@ if (burger) {
 
 menu.classList.remove("main-header__flow");
 
-$('.btn__modal').click(function() {
-  $('.modal-submitted').addClass('modal-hide');
-});
+var form = document.querySelector(".form-fields")
+form.onsubmit=function(){
+  var modalList = ['.modal-submitted', '.modal-wrong'];
+  var modalElement = modalList[Math.floor(Math.random()*(modalList.length))];
+  var modalWnd = document.querySelector(modalElement);
 
-$('.btn__modal').click(function() {
-  $('.modal-wrong').addClass('modal-hide');
-});
+  modalWnd.classList.remove("modal-hide");
 
-$('.btn--submit').click(function() {
-  $('.modal-submitted').removeClass('modal-hide');
-   return false;
-});
+  closeModal(modalWnd);
+  return false;
+};
 
-$('.btn--submit').click(function() {
-  $('.modal-wrong').removeClass('modal-hide');
-   return false;
-});
+function closeModal(wnd){
+    var btnClose = wnd.querySelector(".btn__modal");
+
+    btnClose.addEventListener('click',function(){wnd.classList.add("modal-hide")});
+
+}
