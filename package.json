@@ -31,7 +31,8 @@
   "scripts": {
     "test": "editorconfig-tools check *",
     "build": "gulp build",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "debug": "gulp debug"
   },
   "engines": {
     "node": "^5.0.0"

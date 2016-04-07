@@ -37,6 +37,29 @@ gulp.task('style', function() {
     .pipe(server.reload({stream: true}));
 });
 
+gulp.task('styledebug', function() {
+  gulp.src('sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer({browsers: [
+        'last 1 version',
+        'last 2 Chrome versions',
+        'last 2 Firefox versions',
+        'last 2 Opera versions',
+        'last 2 Edge versions'
+      ]}),
+      mqpacker({
+        sort: true
+      })
+    ]))
+    .pipe(gulp.dest('css'))
+    .pipe(minify())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('css'))
+    .pipe(server.reload({stream: true}));
+});
+
 gulp.task('images', function() {
   gulp.src('img/**/*.{png,jpg,gif}')
   .pipe(imagemin({
@@ -105,4 +128,16 @@ gulp.task('serve', ['style'], function() {
   gulp.watch('js/**/*.js', ['script']).on("change", server.reload);
   gulp.watch('img/!**!/!*.{png,jpg,gif,svg}', ['images']).on("change", server.reload);
   gulp.watch('fonts/!**/!*.{woff,woff2}', ['fonts']).on("change", server.reload);
+});
+
+gulp.task("debug", ["styledebug"], function() {
+  server.init({
+    server: ".",
+    notify: false,
+    open: true,
+    ui: false
+  });
+
+  gulp.watch("sass/**/*.{scss,sass}", ["styledebug"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
