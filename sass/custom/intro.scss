@@ -13,7 +13,6 @@
       (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
       background-size: cover;
-      background-position: center;
       }
     }
 
@@ -47,8 +46,8 @@
   @include mobile {
       background-image: url("../img/iphone-hand-mobile.png"),
       url("../img/bg-back-mobile.jpg");
-      background-position: 20% 178px, top; 
       background-repeat: no-repeat;
+      background-position: 20% 176px, top; 
       height: 735px;
       padding-top: 447px;
       @media
@@ -56,6 +55,7 @@
       (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png"),
       url("../img/bg-back-mobile@2x.jpg");
+      background-position: 20% 174px, top; 
       background-size: 258px 286px, auto 460px;
       }
     }

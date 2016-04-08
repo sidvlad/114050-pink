@@ -514,12 +514,13 @@ fieldset {
     }
 }
 
-input {
+input, textarea {
     outline: 0;
+    vertical-align: middle;
     &:hover {
         border-color: #283645;
     }
-    &:active {
+    &:focus {
         border-color: $red;
     }
 }
