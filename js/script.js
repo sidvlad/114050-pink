@@ -30,21 +30,20 @@ if (burger) {
 
 menu.classList.remove("main-header__flow");
 
-var form = document.querySelector(".form-fields")
-form.onsubmit=function(){
-  var modalList = ['.modal-submitted', '.modal-wrong'];
-  var modalElement = modalList[Math.floor(Math.random()*(modalList.length))];
-  var modalWnd = document.querySelector(modalElement);
+var form = document.querySelector(".form-fields");
 
-  modalWnd.classList.remove("modal-hide");
-
-  closeModal(modalWnd);
-  return false;
-};
+if (form){
+    form.onsubmit=function(){
+    var modalList = ['.modal-submitted', '.modal-wrong'];
+    var modalElement = modalList[Math.floor(Math.random()*(modalList.length))];
+    var modalWnd = document.querySelector(modalElement);
+    modalWnd.classList.remove("modal-hide");
+    closeModal(modalWnd);
+    return false;
+  };
+}
 
 function closeModal(wnd){
     var btnClose = wnd.querySelector(".btn__modal");
-
     btnClose.addEventListener('click',function(){wnd.classList.add("modal-hide")});
-
 }
