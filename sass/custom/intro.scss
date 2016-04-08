@@ -146,7 +146,7 @@
         transition: all 0.2s ease-in-out;
 
         @include mobile {
-            padding: 14px 35px;
+            padding: 10px 35px;
         }
 
 
@@ -173,7 +173,7 @@
 
 .download-app {
     &__links {
-        margin-top: 34px;
+        margin-top: 15px;
         font-size: 0px;
 
         @include tablet {
@@ -195,7 +195,7 @@
         text-align: center;
 
         @include mobile {
-            margin-top: 60px;
+            margin-top: 40px;
         }
 
 

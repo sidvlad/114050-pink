@@ -39,7 +39,8 @@
         @include desktop {
             flex-direction: column;
             order: 1;
-            flex-basis: 48%;
+            flex-basis: 47%;
+            margin: 0;
         }
 
 
@@ -87,7 +88,7 @@
 
 
             @include tablet {
-                width: 515px;
+                width: 519px;
                 height: 65px;
                 padding: 16px 70px 13px 22px;
                 margin-left: 20px;
@@ -104,7 +105,7 @@
 
             &-name {
                 @include tablet {
-                    width: 555px;
+                    width: 560px;
                 }
 
 
@@ -257,7 +258,7 @@
 
 
             @include desktop {
-                width: 370px;
+                width: 375px;
                 height: 60px;
                 padding: 16px 70px 13px 22px;
             }
@@ -308,7 +309,8 @@
 
         @include desktop {
             order: 2;
-            flex-basis: 48%;
+            flex-basis: 47%;
+            margin: 0;
         }
 
 
@@ -405,7 +407,7 @@
 
 
             @include desktop {
-                width: 810px;
+                width: 820px;
                 height: 125px;
             }
         }
