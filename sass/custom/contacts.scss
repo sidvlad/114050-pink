@@ -1,103 +1,109 @@
 .contacts {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
-	&__info {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	flex-wrap: wrap;
-	justify-content: center;
+    &__info {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
-	@include mobile {
-    	flex-direction: column;
-  	}
+        @include mobile {
+            flex-direction: column;
+        }
 
-  	@include tablet {
-    	flex-direction: row;
-  	}
 
-  	@include desktop {
-    	flex-direction: row;
-    	justify-content: space-around;
- 	}
-	}
+        @include tablet {
+            flex-direction: row;
+        }
 
-	&__item {
-		margin-bottom: 25px;
-		flex-direction: column;
 
-		@include tablet {
-    		width: 300px;
-    		margin-bottom: 50px;
-  		}
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 
-  		@include desktop {
-    		width: 280px;
-  		}
-	}
+    &__item {
+        margin-bottom: 25px;
+        flex-direction: column;
 
-	&__item:first-child {
-		@include desktop {
-    		order: 3;
-  		}
-	}
-	&__item:nth-child(2) {
-		@include desktop {
-    		order: 1;
-  		}
-	}
-	&__item:last-child {
-		@include desktop {
-    		order: 2;
-  		}
-	}
-	
-	&__title {
-		font-size: 24px;
-		font-weight: 300;
-		padding-top: 20px;
-		
-		@include tablet {
-    		font-size: 38px;
-    		line-height: $fiftypx;
-    		padding-top: 10px;
-  		}
+        @include tablet {
+            width: 300px;
+            margin-bottom: 50px;
+        }
 
-  		@include desktop {
-    		font-size: 48px;
-    		line-height: 60px;
-    		padding-top: 15px;
-  		}
-	}
 
-	&__data {
-		font-size: 18px;
-		font-weight: 700;
-	}
+        @include desktop {
+            width: 280px;
+        }
+    }
 
-	&__phone,
-	&__email,
-	&__address {
-		text-decoration: none;
-		font-size: 24px;
-		font-weight: 300;
-		color: $red;
-		margin: 0;
-	}
+    &__item:first-child {
+        @include desktop {
+            order: 3;
+        }
+    }
 
-	&__email:hover,
-	&__phone:hover {
-		color: #283645;
-		text-decoration: underline;
-	}
+    &__item:nth-child(2) {
+        @include desktop {
+            order: 1;
+        }
+    }
 
-	&__email:active,
-	&__phone:active {
-		opacity: 0.3;
-		text-decoration: none;
-	}
+    &__item:last-child {
+        @include desktop {
+            order: 2;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 300;
+        padding-top: 20px;
+
+        @include tablet {
+            font-size: 38px;
+            line-height: $fiftypx;
+            padding-top: 10px;
+        }
+
+
+        @include desktop {
+            font-size: 48px;
+            line-height: 60px;
+            padding-top: 15px;
+        }
+    }
+
+    &__data {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__phone,
+    &__email,
+    &__address {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 300;
+        color: $red;
+        margin: 0;
+    }
+
+    &__email:hover,
+    &__phone:hover {
+        color: #283645;
+        text-decoration: underline;
+    }
+
+    &__email:active,
+    &__phone:active {
+        opacity: 0.3;
+        text-decoration: none;
+    }
 }

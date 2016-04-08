@@ -1,134 +1,151 @@
 .post-photo {
-  font-size: 14px;
-  font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
 
-  &__wrapper {
-    background-color: $grey;
-    margin-right: 20px;
-    margin-bottom: 15px;
+    &__wrapper {
+        background-color: $grey;
+        margin-right: 20px;
+        margin-bottom: 15px;
 
-    @include mobile {
-      width: 280px;
-    }
-    @include tablet {
-      width: 300px;
-    }
-    @include desktop {
-      width: 300px;
-    }
-  }
+        @include mobile {
+            width: 280px;
+        }
 
-	&__photo--panorama {
-		width: 100%;
-		background-repeat: no-repeat;
-  	background-size: cover;
 
-		@include mobile {
-   		height: 200px;
-  		background-image: url("../img/panorama-mobile.jpg");
-      @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-mobile@2x.jpg");
-      }
-  	}
+        @include tablet {
+            width: 300px;
+        }
 
-		@include tablet {
-			height: 510px;
-  		background-image: url("../img/panorama-tablet.jpg");
-      @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-tablet@2x.jpg");
-      }
-  	}
 
-    @include desktop {
-      height: 505px;
-      background-image: url("../img/panorama-desktop.jpg");
-      @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-        background-image: url("../img/panorama-desktop@2x.jpg");
-      }
-    }
-	}
-
-  &__comment {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px 25px;
-    margin-bottom: 20px;
-    background-color: $grey;
-
-    & p {
-      flex-basis: 100%;
-      margin: 0;
-      line-height: 26px;
-      min-height: 52px;
-      @include mobile {
-        min-height: 52px;
-    }
-    }
-  }
-
-  &__comment-name {
-    font-weight: 700;
-    padding-right: 8px;
-  }
-
-  &__comment-time {
-    font-weight: 300;
-    color: $lightgrey;
-  }
-
-  &__comment-like {
-    color: $red;
-
-    @include mobile {
-      order: 1;
+        @include desktop {
+            width: 300px;
+        }
     }
 
-  @include tablet {
-      flex-grow: 1;
+    &__photo--panorama {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include mobile {
+            height: 200px;
+            background-image: url("../img/panorama-mobile.jpg");
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/panorama-mobile@2x.jpg");
+            }
+        }
+
+
+        @include tablet {
+            height: 510px;
+            background-image: url("../img/panorama-tablet.jpg");
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/panorama-tablet@2x.jpg");
+            }
+        }
+
+
+        @include desktop {
+            height: 505px;
+            background-image: url("../img/panorama-desktop.jpg");
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/panorama-desktop@2x.jpg");
+            }
+        }
     }
 
-  @include desktop {
-      flex-grow: 1;
-    }
-  }
+    &__comment {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 15px 25px;
+        margin-bottom: 20px;
+        background-color: $grey;
 
-  &__comment-heart {
-    color: $red;
-    @include mobile {
-      padding-right: 15px;
+        & p {
+            flex-basis: 100%;
+            margin: 0;
+            line-height: 26px;
+            min-height: 52px;
+
+            @include mobile {
+                min-height: 52px;
+            }
+        }
     }
-  }
+
+    &__comment-name {
+        font-weight: 700;
+        padding-right: 8px;
+    }
+
+    &__comment-time {
+        font-weight: 300;
+        color: $lightgrey;
+    }
+
+    &__comment-like {
+        color: $red;
+
+        @include mobile {
+            order: 1;
+        }
+
+
+        @include tablet {
+            flex-grow: 1;
+        }
+
+
+        @include desktop {
+            flex-grow: 1;
+        }
+    }
+
+    &__comment-heart {
+        color: $red;
+
+        @include mobile {
+            padding-right: 15px;
+        }
+    }
 }
 
 .photo-tape {
     display: flex;
-  flex-wrap: wrap;
-  @include mobile {
-      width: 280px;
+    flex-wrap: wrap;
+
+    @include mobile {
+        width: 280px;
     }
+
+
     @include tablet {
-      width: 640px;
-      flex-direction: row;
+        width: 640px;
+        flex-direction: row;
     }
+
+
     @include desktop {
-      width: 960px;
-      flex-direction: row;
+        width: 960px;
+        flex-direction: row;
     }
 }
+
 .post-photo__comment--panorama {
-   margin-bottom: 50px;
-   @include mobile {
-      margin-bottom: 20px;
+    margin-bottom: 50px;
+
+    @include mobile {
+        margin-bottom: 20px;
     }
+
+
     position: relative;
-      &:before {
+
+    &:before {
         position: absolute;
         content: "панорама дня";
         text-transform: uppercase;
@@ -140,44 +157,58 @@
         text-align: center;
         line-height: 34px;
         background-color: #d22856;
+
         @include tablet {
-          top: -440px;
+            top: -440px;
         }
+
+
         @include desktop {
-          top: -420px;
+            top: -420px;
         }
-  }
+    }
 }
 
 .post-photo__comment--panorama .post-photo__comment-time {
     @include tablet {
-      flex-grow: 1;
+        flex-grow: 1;
     }
+
+
     @include desktop {
-      flex-grow: 1;
+        flex-grow: 1;
     }
-  }
+}
+
 .post-photo__comment--panorama .post-photo__comment-text {
     @include tablet {
-      order: 1;
+        order: 1;
     }
+
+
     @include desktop {
-      order: 1;
+        order: 1;
     }
-  }
+}
+
 .post-photo__comment--panorama .post-photo__comment-like {
     @include tablet {
-      flex-grow: 0;
+        flex-grow: 0;
     }
+
+
     @include desktop {
-      flex-grow: 0;
+        flex-grow: 0;
     }
-  }
+}
+
 .post-photo__comment--panorama .post-photo__comment-heart {
     @include tablet {
-      padding-left: 20px;
+        padding-left: 20px;
     }
+
+
     @include desktop {
-      padding-left: 20px;
+        padding-left: 20px;
     }
-  }
+}

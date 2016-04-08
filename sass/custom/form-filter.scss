@@ -1,132 +1,169 @@
 .form {
-
     &-fields {
-    display: flex;
+        display: flex;
 
-    @include mobile {
-        flex-direction: column;
-    }
-    @include tablet {
-        flex-direction: column;
-    }
-    @include desktop {
-        width: 940px;
-        margin: 0 auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+        @include mobile {
+            flex-direction: column;
+        }
+
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+
+        @include desktop {
+            width: 940px;
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &-name {
         display: flex;
         border: 0;
-    @include mobile {
-       flex-direction: column;
-    }
-    @include tablet {
-        flex-direction: column;
-    }
-    @include desktop {
-        flex-direction: column;
-        order: 1;
-        flex-basis: 48%;
-    }
+
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+
+        @include desktop {
+            flex-direction: column;
+            order: 1;
+            flex-basis: 48%;
+        }
+
+
         &__name {
             display: block;
             text-transform: uppercase;
             font-size: 14px;
             line-height: 30px;
             color: #d22856;
+
             @include mobile {
                 padding-bottom: 20px;
             }
+
+
             @include tablet {
                 padding-bottom: 50px;
             }
+
+
             @include desktop {
-                padding-bottom: 50px;
+                padding-bottom: 60px;
             }
         }
-    &__text {
-        border: 2px solid #e5e5e5;
-        border-radius: 2px;
-        font-size: 18px;
-        line-height: 30px;
-        outline: none;
-        color: $black;
 
-        @include mobile {
-        width: 280px;
-        height: 65px;
-        padding: 16px 70px 13px 22px;
+        &__name:first-child {
+            @include desktop {
+                margin-top: 15px;
+            }
         }
 
-        @include tablet {
-        width: 515px;
-        height: 65px;
-        padding: 16px 70px 13px 22px;
-        margin-left: 20px;
-        }
+        &__text {
+            border: 2px solid #e5e5e5;
+            border-radius: 2px;
+            font-size: 18px;
+            line-height: 30px;
+            outline: none;
+            color: $black;
 
-        @include desktop {
-        width: 340px;
-        height: 60px;
-        padding: 16px 70px 13px 22px;
-        margin-left: 20px;
-        }
+            @include mobile {
+                width: 280px;
+                height: 65px;
+                padding: 16px 70px 13px 22px;
+            }
 
-        &-name {
+
             @include tablet {
-                width: 555px;
+                width: 515px;
+                height: 65px;
+                padding: 16px 70px 13px 22px;
+                margin-left: 20px;
             }
+
+
             @include desktop {
-                width: 380px;
+                width: 340px;
+                height: 60px;
+                padding: 16px 70px 15px 22px;
+                margin-left: 20px;
+            }
+
+
+            &-name {
+                @include tablet {
+                    width: 555px;
+                }
+
+
+                @include desktop {
+                    width: 380px;
+                }
             }
         }
-    }
     }
 
     &-achievements {
         margin-top: 50px;
 
-    @include mobile {
-        background-color: $grey;
-        margin-top: 30px;
-    }
-
-    @include tablet {
-        order: 4;
-        padding: 50px 60px 10px 60px;
-    }
-    
-    @include desktop {
-        order: 4;
-        flex-basis: 100%;
-        padding: 40px 60px 10px 60px;
-    }
-        &__title {
-         @include mobile {
-            width: 100%;
-            padding: 20px 20px;
+        @include mobile {
             background-color: $grey;
-            padding: 20px 20%;
+            margin-top: 30px;
         }
+
+
+        @include tablet {
+            order: 4;
+            padding: 50px 60px 10px 60px;
+        }
+
+
+        @include desktop {
+            order: 4;
+            flex-basis: 100%;
+            padding: 45px 60px 10px 60px;
+        }
+
+
+        &__title {
+            @include mobile {
+                width: 100%;
+                padding: 20px 20px;
+                background-color: $grey;
+                padding: 20px 20%;
+            }
         }
 
         &__block {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+
             @include mobile {
                 flex-direction: column;
             }
+
+
             @include tablet {
                 flex-direction: column;
             }
+
+
             @include desktop {
                 flex-direction: column;
-                height: 140px;
+                height: 160px;
             }
         }
 
@@ -138,7 +175,12 @@
             position: relative;
             padding-left: 59px;
             min-height: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+
+            @include desktop {
+                margin-bottom: 46px;
+            }
+
 
             &:before {
                 position: absolute;
@@ -151,221 +193,256 @@
                 border: 2px solid #e5e5e5;
                 border-radius: 2px;
             }
-           
         }
     }
 
     &-contacts {
+        @include mobile {
+            margin-top: 30px;
+        }
 
-    @include mobile {
-        margin-top: 30px;
-    }
 
-    @include tablet {
-        margin-top: 50px;
-        padding: 40px 58px;
-    }
-    
-    @include desktop {
-        order: 3;
-        flex-basis: 100%;
-        margin-top: 50px;
-    }
+        @include tablet {
+            order: 3;
+            margin-top: 50px;
+            padding: 35px 58px;
+        }
 
-    &__data {
-        display: block;
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 30px;
-        color: $red;
-        padding-left: 15px;
+
         @include desktop {
-            padding-top: 5px;
+            order: 3;
+            flex-basis: 100%;
+            margin-top: 50px;
+        }
+
+
+        &__data {
+            display: block;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 30px;
+            color: $red;
+            padding-left: 15px;
+
+            @include desktop {
+                padding-top: 10px;
+            }
+        }
+
+        &__title {
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &__text {
+            display: block;
+            border: 2px solid #e5e5e5;
+            border-radius: 2px;
+
+            @include mobile {
+                width: 280px;
+                height: 60px;
+                padding: 16px 70px 16px 22px;
+                margin-bottom: 27px;
+            }
+
+
+            @include tablet {
+                width: 500px;
+                height: 60px;
+                padding: 16px 70px 13px 22px;
+                margin-bottom: 10px;
+            }
+
+
+            @include desktop {
+                width: 370px;
+                height: 60px;
+                padding: 16px 70px 13px 22px;
+            }
+
+
+            &-phone {
+                background: url("../img/icon-phone.svg") no-repeat 95% 50%;
+
+                @include mobile {
+                    background: none;
+                }
+            }
+
+            &-mail {
+                background: url("../img/icon-mail.svg") no-repeat 95% 50%;
+
+                @include mobile {
+                    background: none;
+                }
+            }
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @include desktop {
+                height: 140px;
+                padding-left: 60px;
+                padding-top: 28px;
+            }
         }
     }
 
-    &__title {
+    &-app {
         @include mobile {
+            background-color: $grey;
+            margin-top: 30px;
+        }
+
+
+        @include tablet {
+            order: 2;
+            margin-top: 50px;
+        }
+
+
+        @include desktop {
+            order: 2;
+            flex-basis: 48%;
+        }
+
+
+        &__title {
+            @include mobile {
+                width: 100%;
+                background-color: $grey;
+                padding: 20px 20%;
+            }
+        }
+
+        &__item {
+            display: block;
+            position: relative;
+
+            @include mobile {
+                margin-bottom: 48px;
+                padding-left: 50px;
+            }
+
+
+            @include tablet {
+                margin: 50px 60px;
+                padding-left: 50px;
+                line-height: 26px;
+            }
+
+
+            @include desktop {
+                margin: 50px 70px;
+                padding-left: 60px;
+                line-height: 26px;
+            }
+
+
+            &:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: -5px;
+                width: 40px;
+                height: 40px;
+                background-color: $white;
+                border: 2px solid #e5e5e5;
+                border-radius: 50%;
+            }
+        }
+
+        &__radio {
             display: none;
         }
     }
 
-    &__text {
-        display: block;
-        border: 2px solid #e5e5e5;
-        border-radius: 2px;
-
-        @include mobile {
-           width: 280px;
-            height: 60px;
-            padding: 16px 70px 13px 22px;
-            margin-bottom: 10px;
-        }
-        @include tablet {
-            width: 500px;
-            height: 60px;
-            padding: 16px 70px 13px 22px;
-            margin-bottom: 10px;
-        }
-        @include desktop {
-            width: 370px;
-            height: 60px;
-            padding: 16px 70px 13px 22px;
-        }
-
-        &-phone {
-            background: url("../img/icon-phone.svg") no-repeat 95% 50%;
-            @include mobile {
-                background: none;
-            }
-        }
-        &-mail {
-            background: url("../img/icon-mail.svg") no-repeat 95% 50%;
-            @include mobile {
-                background: none;
-            }
-        }
-    }
-
-    &__block {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        @include desktop {
-            height: 140px;
-            padding-left: 60px;
-            padding-top: 28px;
-        }
-    }
-    }
-
-    &-app {
-    @include mobile {
-       background-color: $grey;
-       margin-top: 30px;
-    }
-    @include tablet {
-        order: 2;
-        margin-top: 50px;
-    }
-    @include desktop {
-        order: 2;
-        flex-basis: 48%;
-    }
-    &__title {
-        @include mobile {
-            width: 100%;
-            background-color: $grey;
-            padding: 20px 20%;
-        }
-    }
-    &__item {
-        display: block;
-        position: relative;
-
-        @include mobile {
-            margin-bottom: 35px;
-            padding-left: 50px;
-        }
-
-        @include tablet {
-            margin: 40px 60px;
-            padding-left: 50px;
-            line-height: 26px;
-        }
-
-        @include desktop {
-            margin: 40px 70px;
-            padding-left: 60px;
-            line-height: 26px;
-        }
-        &:before {
-            position: absolute;
-            content: "";
-            left: 0;
-            top: -5px;
-            width: 35px;
-            height: 35px;
-            background-color: $white;
-            border: 2px solid #e5e5e5;
-            border-radius: 50%;
-        }
-    }
-    &__radio {
-        display: none;
-    }
-    }
-
     &-textarea {
-    
-    @include mobile {
-        margin-top: 30px;
-    }
-
-    @include tablet {
-        order: 5;
         margin-top: 50px;
-        padding: 40px 60px;
-    }
 
-    @include desktop {
-        order: 5;
-        flex-basis: 100%;
-        margin-top: 50px;
-        padding: 40px 60px;
-    }
+        @include mobile {}
 
-    &__text {
-        border: 2px solid #e5e5e5;
-        border-radius: 2px;
-        font-size: 18px;
-        line-height: 30px;
-        outline: none;
-        overflow: auto;
-        padding: 16px 70px 13px 22px;
-        @include mobile {
-            width: 280px;
-            height: 200px;
-            padding-right: 20px;
-        }
+
         @include tablet {
-            width: 500px;
-            height: 190px;
+            order: 5;
+            padding: 30px 60px 50px;
         }
+
+
         @include desktop {
-            width: 810px;
-            height: 125px;
+            order: 5;
+            flex-basis: 100%;
+            padding: 27px 60px 45px;
         }
+
+
+        &__text {
+            border: 2px solid #e5e5e5;
+            border-radius: 2px;
+            font-size: 18px;
+            line-height: 30px;
+            outline: none;
+            overflow: auto;
+            padding: 16px 22px 13px 22px;
+
+            @include mobile {
+                width: 280px;
+                height: 200px;
+                padding-right: 20px;
+                margin-top: 10px;
+            }
+
+
+            @include tablet {
+                width: 500px;
+                height: 190px;
+            }
+
+
+            @include desktop {
+                width: 810px;
+                height: 125px;
+            }
         }
     }
 
     &-submit {
         display: flex;
 
-        @include mobile { 
+        @include mobile {
             flex-direction: column;
-            margin-top: 40px;
+            margin-top: 45px;
+            margin-bottom: 20px;
         }
+
 
         @include tablet {
             order: 6;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 50px;
-            margin-bottom: 30px;
+            margin-top: 70px;
+            margin-bottom: 50px;
         }
+
+
         @include desktop {
             order: 6;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 50px;
+            margin-top: 62px;
         }
+
 
         &__hint {
             align-self: center;
             text-transform: uppercase;
             font-size: 14px;
+
             @include mobile {
                 margin-top: 30px;
             }
@@ -376,26 +453,29 @@
         }
 
         &__hint-hide {
-            @include mobile { 
+            @include mobile {
                 display: none;
             }
+
+
             @include tablet {
-            display: none;
+                display: none;
             }
         }
-    }   
+    }
 }
 
 .form-name__name:last-child {
-    padding-bottom:0px;
+    padding-bottom: 0px;
 }
 
 .form-contacts__data:first-child {
     @include tablet {
-    padding-bottom:30px;}
+        padding-bottom: 30px;
+    }
 }
 
-.form-achievements__checkbox:checked+.form-achievements__item:after {
+.form-achievements__checkbox:checked + .form-achievements__item:after {
     content: "";
     position: absolute;
     top: 5px;
@@ -409,11 +489,11 @@
     transform: rotate(-45deg);
 }
 
-.form-app__radio:checked+.form-app__item:after {
+.form-app__radio:checked + .form-app__item:after {
     position: absolute;
     content: "";
-    left: 10px;
-    top: 5px;
+    left: 12px;
+    top: 8px;
     width: 15px;
     height: 15px;
     background-color: $red;
@@ -423,50 +503,64 @@
 
 .form-contacts__block *:nth-child(1) {
     @include tablet {
-        order:2;
-        }
+        order: 2;
+    }
+
+
     @include desktop {
-        order:2;
-        }
-}
-.form-contacts__block *:nth-child(2) {
-    @include tablet {
-        order:1;
-        }
-    @include desktop {
-        order:1;
+        order: 2;
     }
 }
+
+.form-contacts__block *:nth-child(2) {
+    @include tablet {
+        order: 1;
+    }
+
+
+    @include desktop {
+        order: 1;
+    }
+}
+
 .form-contacts__block *:nth-child(3) {
     @include tablet {
-        order:4;
-        }
+        order: 4;
+    }
+
+
     @include desktop {
-        order:4;
-        }
+        order: 4;
+    }
 }
+
 .form-contacts__block *:nth-child(4) {
     @include tablet {
-        order:3;
-        }
+        order: 3;
+    }
+
+
     @include desktop {
-        order:3;
-        }
+        order: 3;
+    }
 }
 
 .form-app__title,
-.form-achievements__title, 
+.form-achievements__title,
 .form-name__title,
-.form-contacts__title, 
+.form-contacts__title,
 .form-textarea__title {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
     color: $red;
     text-align: center;
+
     @include tablet {
         padding: 0 30px;
     }
+
+
     @include desktop {
         padding: 0 30px;
     }
@@ -490,13 +584,16 @@
             width: 280px;
         }
 
+
         &:hover {
             background-color: #1c9b5e;
         }
+
         &:active {
             background-color: #1c9b5e;
             color: #5cb78b;
         }
+
         &[disabled] {
             background-color: #e5e5e5;
             color: $white;
@@ -517,9 +614,11 @@ fieldset {
 input, textarea {
     outline: 0;
     vertical-align: middle;
+
     &:hover {
         border-color: #283645;
     }
+
     &:focus {
         border-color: $red;
     }

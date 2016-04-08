@@ -4,18 +4,22 @@
     &__block {
         display: flex;
         margin-top: 60px;
-        
+
         @include mobile {
             flex-direction: column;
         }
+
+
         @include tablet {
             flex-direction: row;
         }
+
+
         @include desktop {
             flex-direction: row;
         }
     }
-    
+
     &__actions {
         position: relative;
         display: flex;
@@ -26,10 +30,14 @@
             flex-direction: column;
             margin-right: 32px;
         }
+
+
         @include desktop {
             flex-direction: column;
             margin-right: 48px;
         }
+
+
         &-crop--active {
             fill: $red;
         }
@@ -37,9 +45,12 @@
 
     &__action {
         fill: #b5b9be;
+
         @include tablet {
             margin-bottom: 30px;
         }
+
+
         @include desktop {
             margin-top: 15px;
         }
@@ -50,12 +61,13 @@
         flex-direction: column;
 
         @include tablet {
-        margin-top: 55px;
+            margin-top: 55px;
         }
 
+
         @include desktop {
-        flex-direction: row;
-        margin-top: 115px;
+            flex-direction: row;
+            margin-top: 115px;
         }
     }
 
@@ -72,6 +84,8 @@
         @include desktop {
             width: 180px;
         }
+
+
         color: $red;
         border: 3px solid $red;
         background-color: $grey;
@@ -93,6 +107,8 @@
         @include desktop {
             width: 180px;
         }
+
+
         color: $darkgrey;
         border: 3px solid $darkgrey;
         background-color: $grey;
@@ -112,111 +128,131 @@
 }
 
 .get-wrapper {
-  display: flex;
+    display: flex;
 
-  @include mobile {
-      flex-direction: column;
-    }
-
-  @include tablet {
-      flex-direction: row;
-    }
-
-  @include desktop {
-      flex-direction: row;
-    }
-    
-  &__photo {
     @include mobile {
-      margin-top: 20px;
+        flex-direction: column;
     }
+
+
     @include tablet {
-      margin-top: 55px;
-      margin-bottom: 55px;
-      margin-right: 45px;
+        flex-direction: row;
     }
+
+
     @include desktop {
-        margin: 60px 80px;
+        flex-direction: row;
     }
-  }
+
+
+    &__photo {
+        @include mobile {
+            margin-top: 20px;
+        }
+
+
+        @include tablet {
+            margin-top: 55px;
+            margin-bottom: 55px;
+            margin-right: 45px;
+        }
+
+
+        @include desktop {
+            margin: 60px 80px;
+        }
+    }
 }
 
-.range-wrapper{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  flex-grow:1;
+.range-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
 .range-control {
-  flex-grow:1;
-  position: relative;
+    flex-grow: 1;
+    position: relative;
 
-  @include mobile {
-   display: none;
-  }
-
-  @include tablet {
-    width: 200px;
-    margin-top: 5px;
-  }
-
-  @include desktop {
-     margin-top: 31px;
+    @include mobile {
+        display: none;
     }
 
-  &__scale {
-  height: 2px;
-  background: #283645;
-  margin-top: 8px;
 
-  @include desktop {
-    margin-right: 30px;
-  }
-}
- &__toggle {
-    position: absolute;
-    top: 3px;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #d22856;
-    background: #f2f2f2;
-    cursor: pointer;
-    border-radius: 50%;
-    }   
+    @include tablet {
+        width: 200px;
+        margin-top: 5px;
+    }
+
+
+    @include desktop {
+        margin-top: 31px;
+    }
+
+
+    &__scale {
+        height: 2px;
+        background: #283645;
+        margin-top: 8px;
+
+        @include desktop {
+            margin-right: 30px;
+        }
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 3px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #d22856;
+        background: #f2f2f2;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
     &:after {
         position: absolute;
         content: "";
         border-bottom: 1px solid #dddfe0;
 
         @include mobile {
-        width: 320px;
-        top: 36px;
-        left: -40px;
+            width: 320px;
+            top: 36px;
+            left: -40px;
         }
+
+
         @include tablet {
-        width: 300px;
-        top: 40px;
-        left: -58px;
+            width: 300px;
+            top: 40px;
+            left: -58px;
         }
+
+
         @include desktop {
-        width: 412px;
-        top: 43px;
-        left: -97px;
+            width: 412px;
+            top: 43px;
+            left: -97px;
         }
     }
+
     &__toggle:hover {
-      background: #d22856;
+        background: #d22856;
     }
 }
-.c69-percent{
-  left:69%;
+
+.c69-percent {
+    left: 69%;
 }
-.c10-percent{
-  left:10%;
+
+.c10-percent {
+    left: 10%;
 }
-.c39-percent{
-  left:39%;
+
+.c39-percent {
+    left: 39%;
 }
 
 .range-control.range-control__active {
@@ -239,50 +275,52 @@
     transition: all 0.2s ease-in-out;
 
     @include mobile {
-
         &:hover {
-        cursor: pointer;
-        fill: #8d949b;
+            cursor: pointer;
+            fill: #8d949b;
         }
 
         &:active {
-        cursor: pointer;
-        fill: $red;
+            cursor: pointer;
+            fill: $red;
         }
-        }
-    
+    }
+
+
     @include tablet {
         width: 24px;
         height: 24px;
         fill: $red;
 
-      &:hover {
-        cursor: pointer;
-        fill: #8d949b;
-      }
+        &:hover {
+            cursor: pointer;
+            fill: #8d949b;
+        }
 
-      &:active {
-        cursor: $lightgrey;
-        fill: $red;
-      }
+        &:active {
+            cursor: $lightgrey;
+            fill: $red;
+        }
     }
+
 
     @include desktop {
         fill: $red;
 
-      &:hover {
-        cursor: pointer;
-        fill: #8d949b;
-      }
+        &:hover {
+            cursor: pointer;
+            fill: #8d949b;
+        }
 
-      &:active {
-        cursor: $lightgrey;
-        fill: $red;
-      }
-  }
+        &:active {
+            cursor: $lightgrey;
+            fill: $red;
+        }
+    }
 }
+
 .icon-contrast {
-     @include tablet {
+    @include tablet {
         width: 18px;
         height: 18px;
     }

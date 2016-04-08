@@ -1,242 +1,247 @@
 .modal {
+    @include mobile {
+        &-submitted {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -180px;
+            margin-left: -160px;
+            width: 320px;
+            height: 385px;
+            background-color: $white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
 
-    @include  mobile {
+            &__title {
+                font-size: 18px;
+                font-weight: 700;
+                padding: 30px 20px 20px 20px;
+            }
 
-      &-submitted {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -180px;
-        margin-left: -160px;
-        width: 320px;
-        height: 385px;
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        text-align: center;
+            &__text {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 0px 20px 20px 20px;
+            }
 
-        &__title {
-          font-size: 18px;
-          font-weight: 700;
-          padding: 30px 20px 20px 20px;
-
+            &__button {
+                background-color: $grey;
+                width: 100%;
+                height: 165px;
+                padding-top: 1px;
+            }
         }
 
-        &__text {
-          font-size: 14px;
-          font-weight: 400;
-          padding: 0px 20px 20px 20px;
+        &-wrong {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -160px;
+            width: 320px;
+            height: 300px;
+            background-color: $white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+
+            &__title {
+                font-size: 18px;
+                font-weight: 700;
+                padding: 30px 20px 20px 20px;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 0px 20px 0px 20px;
+            }
         }
-
-        &__button {
-          background-color: $grey;
-        }
-      }
-
-      &-wrong {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -150px;
-        margin-left: -160px;
-        width: 320px;
-        height: 300px;
-        background-color: $white;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-        text-align: center;
-
-        &__title {
-          font-size: 18px;
-          font-weight: 700;
-          padding: 30px 20px 20px 20px;
-
-        }
-
-        &__text {
-          font-size: 14px;
-          font-weight: 400;
-          padding: 0px 20px 0px 20px;
-        }
-      }
     }
 
 
+    @include tablet {
+        &-submitted {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -215px;
+            margin-left: -230px;
+            width: 460px;
+            height: 430px;
+            background-color: $white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
 
-    @include  tablet {
-      &-submitted {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -215px;
-        margin-left: -230px;
-        width: 460px;
-        height: 430px;
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        text-align: center;
+            &__title {
+                font-size: 28px;
+                font-weight: 700;
+                padding: 30px 80px 25px 80px;
+            }
 
-        &__title {
-          font-size: 28px;
-          font-weight: 700;
-          padding: 30px 80px 25px 80px;
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px 80px 30px 80px;
+            }
 
+            &__button {
+                background-color: $grey;
+                width: 100%;
+                height: 165px;
+                padding-top: 1px;
+            }
         }
 
-        &__text {
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0px 80px 30px 80px;
+        &-wrong {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -185px;
+            margin-left: -230px;
+            width: 460px;
+            height: 370px;
+            background-color: $white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+
+            &__title {
+                font-size: 28px;
+                font-weight: 700;
+                padding: 30px 80px 25px 80px;
+            }
+
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px 80px 0px 80px;
+            }
+
+            &__button {
+                background-color: $grey;
+            }
         }
-
-        &__button {
-          background-color: $grey;
-        }
-      }
-
-      &-wrong {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -185px;
-        margin-left: -230px;
-        width: 460px;
-        height: 370px;
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        text-align: center;
-
-        &__title {
-          font-size: 28px;
-          font-weight: 700;
-          padding: 30px 80px 25px 80px;
-
-        }
-
-        &__text {
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0px 80px 0px 80px;
-        }
-
-        &__button {
-          background-color: $grey;
-        }
-      }
-       
     }
 
-    @include  desktop {
-      
-      &-submitted {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -190px;
-        margin-left: -390px;
-        width: 780px;
-        height: 380px;
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        text-align: center;
 
-        &__title {
-          font-size: 28px;
-          font-weight: 700;
-          padding: 50px 80px 40px 80px;
+    @include desktop {
+        &-submitted {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -190px;
+            margin-left: -390px;
+            width: 780px;
+            height: 380px;
+            background-color: $white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
 
+            &__title {
+                font-size: 28px;
+                font-weight: 700;
+                padding: 50px 80px 40px 80px;
+            }
+
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px 80px 35px 80px;
+            }
+
+            &__button {
+                background-color: $grey;
+                width: 100%;
+                height: 165px;
+                padding-top: 45px;
+            }
         }
 
-        &__text {
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0px 80px 35px 80px;
+        &-wrong {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -185px;
+            margin-left: -230px;
+            width: 460px;
+            height: 370px;
+            background-color: $white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+
+            &__title {
+                font-size: 28px;
+                font-weight: 700;
+                padding: 30px 80px 25px 80px;
+            }
+
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                padding: 0px 80px 0px 80px;
+            }
+
+            &__button {
+                background-color: $grey;
+            }
         }
-
-        &__button {
-          background-color: $grey;
-        }
-      }
-
-      &-wrong {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -185px;
-        margin-left: -230px;
-        width: 460px;
-        height: 370px;
-        background-color: $white;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        text-align: center;
-
-        &__title {
-          font-size: 28px;
-          font-weight: 700;
-          padding: 30px 80px 25px 80px;
-
-        }
-
-        &__text {
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0px 80px 0px 80px;
-        }
-
-        &__button {
-          background-color: $grey;
-        }
-      }
-       
     }
 
-  &-hide {
-    display: none;
-  }
+
+    &-hide {
+        display: none;
+    }
 }
 
 .btn {
-  &__modal {
-    background-color: #2aab6d;
-    color: $white;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 0;
+    &__modal {
+        background-color: #2aab6d;
+        color: $white;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 0;
 
-    @include  mobile {
-      width: 280px;
-      height: 65px;
-      margin: 50px 20px;
-    }
+        @include mobile {
+            width: 280px;
+            height: 65px;
+            margin: 50px 20px;
+        }
 
-    @include  tablet {
-      width: 300px;
-      height: 65px;
-      margin: 50px 80px;
+
+        @include tablet {
+            width: 300px;
+            height: 65px;
+            margin: 50px 80px;
+        }
+
+
+        @include desktop {
+            width: 300px;
+            height: 65px;
+            margin: 50px 80px;
+        }
+
+
+        &:hover {
+            background-color: #1c9b5e;
+        }
+
+        &:active {
+            background-color: #1c9b5e;
+            color: #5cb78b;
+        }
+
+        &[disabled] {
+            background-color: #e5e5e5;
+            color: $white;
+        }
     }
-   
-    @include  desktop {
-      width: 300px;
-      height: 65px;
-      margin: 50px 80px;
-    }
-    &:hover {
-      background-color: #1c9b5e;
-      }
-      &:active {
-          background-color: #1c9b5e;
-          color: #5cb78b;
-      }
-      &[disabled] {
-          background-color: #e5e5e5;
-          color: $white;
-    }
-  }
 }
 
 .modal-submitted .btn__modal {
-  @include  desktop {
-      width: 460px;
-      height: 65px;
-      margin: 50px 160px;
-  }
+    @include desktop {
+        width: 460px;
+        height: 65px;
+        margin: 0px 160px;
+    }
 }

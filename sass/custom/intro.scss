@@ -1,227 +1,234 @@
 .intro {
-	display: flex;
-	flex-direction: column;
-	background-color: #1d2631;
+    display: flex;
+    flex-direction: column;
+    background-color: #1d2631;
 
-  @include mobile {
-      background-image: url("../img/bg-back-mobile.jpg");
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 237px;
-      @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: cover;
-      }
+    @include mobile {
+        background-image: url("../img/bg-back-mobile.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 237px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/bg-back-mobile@2x.jpg");
+            background-size: cover;
+        }
     }
+
 
     @include tablet {
-      background-image: url("../img/bg-back-tablet@1x.jpg");
-      background-position: center top; 
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 441px;
-      @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      }
+        background-image: url("../img/bg-back-tablet@1x.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 441px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/bg-back-tablet@2x.jpg");
+        }
     }
+
 
     @include desktop {
-      background-image: url("../img/bg-back-desktop.jpg");
-      background-position: center top; 
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 394px;
-      @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-desktop.jpg");
-      }
+        background-image: url("../img/bg-back-desktop.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 394px;
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/bg-back-desktop.jpg");
+        }
     }
 
-  &__index {
-  @include mobile {
-      background-image: url("../img/iphone-hand-mobile.png"),
-      url("../img/bg-back-mobile.jpg");
-      background-repeat: no-repeat;
-      background-position: 20% 176px, top; 
-      height: 735px;
-      padding-top: 447px;
-      @media
-      (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png"),
-      url("../img/bg-back-mobile@2x.jpg");
-      background-position: 20% 174px, top; 
-      background-size: 258px 286px, auto 460px;
-      }
+
+    &__index {
+        @include mobile {
+            background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
+            background-repeat: no-repeat;
+            background-position: 20% 176px, top;
+            height: 735px;
+            padding-top: 447px;
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+                background-position: 20% 174px, top;
+                background-size: 258px 286px, auto 460px;
+            }
+        }
+
+
+        @include tablet {
+            background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+            background-position: center bottom, center bottom;
+            background-size: 700px 545px, cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 729px;
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+            }
+        }
+
+
+        @include desktop {
+            background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop.jpg");
+            background-position: center bottom, center bottom;
+            background-size: 1050px 645px, cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 853px;
+
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop.jpg");
+            }
+        }
     }
 
-    @include tablet {
-      background-image: url("../img/iphone-hand-tablet@1x.png"),
-      url("../img/bg-back-tablet@1x.jpg");
-      background-position: center bottom, center bottom; 
-      background-size: 700px 545px, cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 729px;
-      @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png"),
-      url("../img/bg-back-tablet@2x.jpg");
-      }
-    }
-
-    @include desktop {
-      background-image: url("../img/iphone-hand-desktop@1x.png"),
-      url("../img/bg-back-desktop.jpg");
-      background-position: center bottom, center bottom; 
-      background-size: 1050px 645px, cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 853px;
-      @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.png"),
-      url("../img/bg-back-desktop.jpg");
-      }
-    }
-  }
-
-  	&__title {
-      font-weight: 300;
-      color: $white;
-      text-align: center;
-
-      @include mobile {
-      font-size: 24px;
-      padding-top: 100px;
-      }
-    
-      @include tablet {
-      font-size: $fiftypx;
-      line-height: 60px;
-      padding-top: 183px;
-      }
-
-      @include desktop {
-        font-size: $fiftypx;
-        line-height: 60px;
-        padding-top: 183px;
-      }
-
-      &-index {
+    &__title {
+        font-weight: 300;
         color: $white;
+        text-align: center;
 
-      @include mobile {
-        display: none;
-      }
+        @include mobile {
+            font-size: 24px;
+            padding-top: 100px;
+        }
 
-      @include tablet {
-        font-weight: 300;
-        font-size: $fortypx;
-        line-height: 50px;
-        padding-top: 75px;
-        padding-bottom: 12px;
-      }
 
-      @include desktop {
-        font-weight: 300;
-        font-size: 48px;
-        line-height: 60px;
-        padding-top: 85px;
-        margin-bottom: 60px;
-      }
-    }
+        @include tablet {
+            font-size: $fiftypx;
+            line-height: 60px;
+            padding-top: 183px;
+        }
+
+
+        @include desktop {
+            font-size: $fiftypx;
+            line-height: 60px;
+            padding-top: 183px;
+        }
+
+
+        &-index {
+            color: $white;
+
+            @include mobile {
+                display: none;
+            }
+
+
+            @include tablet {
+                font-weight: 300;
+                font-size: $fortypx;
+                line-height: 50px;
+                padding-top: 75px;
+                padding-bottom: 12px;
+            }
+
+
+            @include desktop {
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 60px;
+                padding-top: 85px;
+                margin-bottom: 60px;
+            }
+        }
     }
 }
 
 .btn {
-	&--download {
-		color: $white;
-		border: 3px solid $white;
-    transition: all 0.2s ease-in-out;
-    
-    @include mobile {
-        padding: 14px 35px;
+    &--download {
+        color: $white;
+        border: 3px solid $white;
+        transition: all 0.2s ease-in-out;
+
+        @include mobile {
+            padding: 14px 35px;
+        }
+
+
+        @include tablet {
+            width: 300px;
+            padding: 14px 45px;
+        }
+
+
+        @include desktop {
+            padding: 14px 35px;
+        }
     }
 
-		@include tablet {
-    		width: 300px;
-    		padding: 14px 45px;
-  	}
-
-    @include desktop {
-        padding: 14px 35px;
+    &--download:hover {
+        color: $red;
+        background-color: $white;
     }
-	}
-  &--download:hover {
-    color: $red;
-    background-color: $white;
-  }
-  &--download:active {
-    color: rgba(210,40,86,0.7);
-  }
+
+    &--download:active {
+        color: rgba(210, 40, 86, 0.7);
+    }
 }
 
 .download-app {
+    &__links {
+        margin-top: 34px;
+        font-size: 0px;
 
-	&__links {
-		margin-top: 34px;
-    font-size: 0px;
+        @include tablet {
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
 
-    @include tablet {
-      margin-top: 45px;
-      margin-bottom: 20px;
+
+        @include desktop {
+            margin-top: 70px;
+        }
     }
 
-    @include desktop {
-      margin-top: 70px;
+    &__link img {
+        margin: 10px 15px;
     }
-	}
 
-	&__link img {
-		margin: 10px 15px;
-	}
+    &__block {
+        text-align: center;
 
-	&__block {
-		text-align: center;
+        @include mobile {
+            margin-top: 60px;
+        }
 
-      @include mobile {
-        margin-top: 60px;
-      }
 
-  		@include tablet {
-  			padding-top: 100px;
-  			width: 300px;
-  			margin-left: 0;
-		  }
-      @include desktop {
-        padding-top: 100px;
-        width: 300px;
-        margin-left: 0;
+        @include tablet {
+            padding-top: 100px;
+            width: 300px;
+            margin-left: 0;
+        }
+
+
+        @include desktop {
+            padding-top: 100px;
+            width: 300px;
+            margin-left: 0;
+        }
     }
-	}
-	
-	&__text {
-		color: $grey;
-		font-size: 14px;
-		font-weight: 300;
-		line-height: 24px;
-		margin: 0;
-		margin-top: 5px;
 
-		@include tablet {
-    		font-size: 18px;
-  		}
-    @include desktop {
-        font-size: 18px;
-        margin-top: 40px;
-      }
-	}
+    &__text {
+        color: $grey;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0;
+        margin-top: 5px;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+
+        @include desktop {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    }
 }

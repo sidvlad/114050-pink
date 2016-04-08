@@ -12,50 +12,53 @@ $fiftypx: 50px;
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	width: 100%;
-	margin: 0 auto;
-	font: normal 400 18px/30px "Open Sans", Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    font: normal 400 18px/30px "Open Sans", Arial, sans-serif;
 }
 
 .wrapper {
-	margin: 0 auto;
+    margin: 0 auto;
 
-  @include mobile {
-    width: 280px;
-  }
+    @include mobile {
+        width: 280px;
+    }
 
-  @include tablet {
-    width: 620px;
-  }
 
-  @include desktop {
-    width: 940px;
-  }
+    @include tablet {
+        width: 620px;
+    }
+
+
+    @include desktop {
+        width: 940px;
+    }
 }
 
 .wrapper-form {
-  @include mobile {
-  margin: 0;
-  width: 100%;
-}
-
-  &>*{
     @include mobile {
-    width: 280px;
-    margin: 0 auto;
-  }
-  }
+        margin: 0;
+        width: 100%;
+    }
+
+
+    & > * {
+        @include mobile {
+            width: 280px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .btn {
-  display: block;
-  width: 280px;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 50px;
+    display: block;
+    width: 280px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
 }

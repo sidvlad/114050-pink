@@ -1,27 +1,45 @@
 .slogan {
-	font-weight: 400;
-	font-size: 14px;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	
-	&__text {
-	@include tablet {
-		font-size: 18px;
-		padding-top: 40px;
-    	padding-bottom: 30px;
-	}
-	@include desktop {
-		font-size: 18px;
-		padding-top: 40px;
-    	padding-bottom: 30px;
-    	width: 640px;
-    	margin: 0 auto;
-	}
-	
-	&-get-photo {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	}
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include mobile {
+        padding-bottom: 40px;
+    }
+
+
+    &__text {
+        @include tablet {
+            font-size: 18px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+
+        @include desktop {
+            font-size: 18px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            width: 640px;
+            margin: 0 auto;
+        }
+
+
+        &-get-photo {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &-hide {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
 }

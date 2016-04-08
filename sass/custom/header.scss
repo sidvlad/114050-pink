@@ -1,305 +1,337 @@
 .main-header.main-header__flow {
-  position: static;
-  background-color: $darkblue;
+    position: static;
+    background-color: $darkblue;
 }
 
-.main-header__expanded .main-menu, 
+.main-header__expanded .main-menu,
 .main-header__flow .main-menu {
-   @include mobile {
-      display: block;
+    @include mobile {
+        display: block;
     }
+
+
     @include tablet {
-      display: block;
+        display: block;
     }
 }
 
 .main-header.main-header__expanded {
-  @include mobile {
-      background-color: $darkblue;
+    @include mobile {
+        background-color: $darkblue;
     }
+
+
     @include tablet {
-      background-color: $darkblue;
+        background-color: $darkblue;
     }
 }
 
 .main-header {
-  position: absolute;
-  width: 100%;
-	display: flex; 
-	flex-direction: row;
-	background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0,0,0,0.3);
-
-
-  &__wrapper {
-    @include desktop {
-      width: 900px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-
-	&__block {
-  	display: flex;
-  	flex-direction: row;
-  	align-items: center;
-  	justify-content: space-between;
-
-    @include mobile {
-      height: 65px;
-    }
-
-    @include tablet {
-      height: 110px;
-    }
-    @include desktop {
-      height: 110px;
-    }
-  }
-
-  &__block--area {
+    position: absolute;
+    width: 100%;
     display: flex;
-    width: 50px;
-    height: 20px;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
 
-    @include desktop {
-      display: none;
-    }
-  }
-
-  &__block--toggle {
-    background-color: #fff;
-    height: 3px;
-    width: 40px;
-    margin: 0 auto;
-    transition: all 0.3s;
-    position: relative;
-
-    @include desktop {
-      display: none;
-    }
-  }
-
-  &__block--toggle:after {
-      content: " ";
-      position: absolute;
-      background-color: #fff;
-      height: 3px;
-      top: 20px;
-      width: 40px;
-      margin: 0 auto;
-      transition: all 0.3s;
-  }
-  &__block--toggle:before {
-      content: " ";
-      position: absolute;
-      top: 10px;
-      background-color: #fff;
-      height: 3px;
-      width: 40px;
-      margin: 0 auto;
-      transition: all 0.3s;
-  }
-
-  &__block--logo {
-
-    @include mobile {
-      width: 75px;
-      height: 23px;
-      margin-bottom: 31px;
-      flex-grow: 1;
+    &__wrapper {
+        @include desktop {
+            width: 900px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
-    @include tablet {
-      width: 150px;
-      height: 41px;
-      margin-bottom: 10px;
-      flex-grow: 1;
+    &__block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile {
+            height: 65px;
+        }
+
+
+        @include tablet {
+            height: 110px;
+        }
+
+
+        @include desktop {
+            height: 110px;
+        }
     }
 
-    @include desktop {
-      width: 150px;
-      height: 41px;
-      margin-bottom: 18px;
-    }
-  }
+    &__block--area {
+        display: flex;
+        width: 50px;
+        height: 20px;
 
-  &__text {
-    text-align: center;
-    color: $white;
-    font-weight: 300;
-    font-size: 24px;
-  }
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__block--toggle {
+        background-color: #fff;
+        height: 3px;
+        width: 40px;
+        margin: 0 auto;
+        transition: all 0.3s;
+        position: relative;
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__block--toggle:after {
+        content: " ";
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        top: 20px;
+        width: 40px;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+
+    &__block--toggle:before {
+        content: " ";
+        position: absolute;
+        top: 10px;
+        background-color: #fff;
+        height: 3px;
+        width: 40px;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+
+    &__block--logo {
+        @include mobile {
+            width: 75px;
+            height: 23px;
+            margin-bottom: 31px;
+            flex-grow: 1;
+        }
+
+
+        @include tablet {
+            width: 150px;
+            height: 41px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+
+
+        @include desktop {
+            width: 150px;
+            height: 41px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: $white;
+        font-weight: 300;
+        font-size: 24px;
+    }
 }
 
 .main-menu {
-  display: flex;
-  align-items: center;
-  @include mobile {
-      display: none;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        display: none;
     }
-  @include tablet {
-      display: none;
+
+
+    @include tablet {
+        display: none;
     }
 }
 
 .main-menu__list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 
-  @include mobile {
-    width: 100%;
-    flex-direction: column;
-    background-color: $darkblue;
-  }
-
-  @include tablet {
-    width: 100%;
-    flex-direction: column;
-    background-color: $darkblue;
+    @include mobile {
+        width: 100%;
+        flex-direction: column;
+        background-color: $darkblue;
     }
 
-  @include desktop {
-    width: 620px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+
+    @include tablet {
+        width: 100%;
+        flex-direction: column;
+        background-color: $darkblue;
+    }
+
+
+    @include desktop {
+        width: 620px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .main-menu__item:last-child {
-  @include mobile {
-    border-bottom: none;
-  }
-   @include tablet {
-    border-bottom: none;
-  }
+    @include mobile {
+        border-bottom: none;
+    }
+
+
+    @include tablet {
+        border-bottom: none;
+    }
 }
 
 .main-menu__item {
-  list-style: none;
-  transition: all 0.2s ease-in-out;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
 
     @include mobile {
-      border-bottom: 1px solid $black;
-      border-top: 1px solid #495461;
+        border-bottom: 1px solid $black;
+        border-top: 1px solid #495461;
     }
+
 
     @include tablet {
-      border-bottom: 1px solid $black;
-      border-top: 1px solid #495461;
+        border-bottom: 1px solid $black;
+        border-top: 1px solid #495461;
     }
+
 
     @include desktop {
-      border-bottom: 3px solid transparent;
-      border-top: none;
+        border-bottom: 3px solid transparent;
+        border-top: none;
     }
 
+
     &--active {
-      opacity: 0.3;
-      border-bottom: 3px solid transparent;
+        opacity: 0.3;
+        border-bottom: 3px solid transparent;
     }
 
     &:last-child {
-      margin-right: 0;
+        margin-right: 0;
     }
 
     &:hover {
-      @include desktop {
-        border-bottom: 3px solid $white;
-      }
-    &:active {
-      @include desktop {
-        opacity: 0.3;
-        border-bottom: 3px solid transparent;
-      }
+        @include desktop {
+            border-bottom: 3px solid $white;
+        }
+
+
+        &:active {
+            @include desktop {
+                opacity: 0.3;
+                border-bottom: 3px solid transparent;
+            }
+        }
     }
-  }
 }
 
 .main-menu__item a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $white;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
 
-  @include desktop {
-    font-weight: 400;
-    text-transform: none;
-  }
-  &:hover {
-    transition: all 0.2s ease-in-out;
-  @include mobile {
-        color: $red;
-      }
-      @include tablet {
-        color: $red;
-      }
-  }
-  &:active {
-  @include mobile {
-        color: $red;
-        opacity: 0.3;
-      }
-      @include tablet {
-        color: $red;
-        opacity: 0.3;
-      }
-  }
+    @include desktop {
+        font-weight: 400;
+        text-transform: none;
+    }
+
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+
+        @include mobile {
+            color: $red;
+        }
+
+
+        @include tablet {
+            color: $red;
+        }
+    }
+
+    &:active {
+        @include mobile {
+            color: $red;
+            opacity: 0.3;
+        }
+
+
+        @include tablet {
+            color: $red;
+            opacity: 0.3;
+        }
+    }
 }
 
 .logo-svg {
-  fill: $white;
-  transition: all 0.2s ease-in-out;
-
-  &__text {
-  }
-
-  &__glasses {
-    @include tablet {
-        display: none;
-      }
-
-    &-full {
-
-      @include mobile {
-        display: none;
-      }
-      @include desktop {
-        display: none;
-      }
-
-    }
-    @include mobile {
-      display: none;
-    }
-  }
-
-  &__star {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-  }
-
-  &:hover {
-    fill: $red;
-  }
-  &:active {
     fill: $white;
-    opacity: 0.3;
-  }
+    transition: all 0.2s ease-in-out;
 
-  @include mobile {
-    margin-left: -50px;
-  }
+    &__text {}
+
+    &__glasses {
+        @include tablet {
+            display: none;
+        }
+
+
+        &-full {
+            @include mobile {
+                display: none;
+            }
+
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__star {
+        @include mobile {
+            display: none;
+        }
+
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &:hover {
+        fill: $red;
+    }
+
+    &:active {
+        fill: $white;
+        opacity: 0.3;
+    }
+
+    @include mobile {
+        margin-left: -50px;
+    }
 }
 
 .main-header__expanded .main-header__block--toggle {
@@ -319,12 +351,12 @@
 .main-header__block--area:hover .main-header__block--toggle,
 .main-header__block--area:hover .main-header__block--toggle:after,
 .main-header__block--area:hover .main-header__block--toggle:before {
-  background-color: $red;
+    background-color: $red;
 }
 
 .main-header__block--area:active .main-header__block--toggle,
 .main-header__block--area:active .main-header__block--toggle:after,
 .main-header__block--area:active .main-header__block--toggle:before {
-  background-color: $red;
-  opacity: 0.7;
+    background-color: $red;
+    opacity: 0.7;
 }
